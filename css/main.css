@@ -140,7 +140,10 @@ input {
 }
 .menu__btn {
   display: block;
+<<<<<<< HEAD
   border: none;
+=======
+>>>>>>> 7a52ed3912bd99c79964c85a52d701b4d85228dd
   background: none;
   margin: 0;
   padding: 0;
@@ -315,7 +318,7 @@ html {
   border-right: none;
   padding: 2rem;
   margin-left: 1rem;
-  margin-right: 2.8rem;
+  margin-right: 2.2rem;
   position: relative;
 }
 .testimonial__quotes {
@@ -334,6 +337,8 @@ html {
 }
 .testimonial__person-text {
   align-self: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .testimonial-text {
