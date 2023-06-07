@@ -122,4 +122,15 @@ input {
   font-family: "Repeater";
   src: url("../fonts/Repeater-Regular.ttf");
   font-weight: 400;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__right {
+  background-image: url("../sourse/img/House.png");
+  height: 100vh;
+  width: 100%;
+  position: fixed;
 }/*# sourceMappingURL=main.css.map */
