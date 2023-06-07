@@ -2,6 +2,12 @@
   &__left {
     overflow-x: hidden;
     overflow-y: scroll;
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      /* Chrome, Safari, and Opera */
+      display: none;
+    }
   }
   &__left-box {
     height: 100vh;
