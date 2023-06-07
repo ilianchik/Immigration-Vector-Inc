@@ -175,6 +175,13 @@ main {
   transform: translateX(-50%);
 }
 
+.fixed {
+  position: fixed;
+  position: fixed;
+  left: 50%;
+  right: 0;
+}
+
 .main__right {
   background-image: url("../sourse/img/House.png");
   height: 100vh;
@@ -234,6 +241,10 @@ html {
   display: none;
 }
 .main__left-box {
+  height: 100vh;
+  position: relative;
+}
+.main__left-box2 {
   height: 100vh;
   position: relative;
 }
