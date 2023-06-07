@@ -7,8 +7,6 @@ function toggleMenu() {
     var logoContainer = document.querySelector(".logo");
     var logoImg = document.querySelector(".logo__img");
 
-    const scroll = document.querySelector('.main__left');
-
     if (menuBtn.classList.contains('closed')) {
       menuBtn.classList.remove('closed');
       menuBtn.classList.add('opened');
