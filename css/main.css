@@ -116,6 +116,11 @@ input {
 }
 @font-face {
   font-family: "Mont";
+  src: url("../fonts/Mont-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Mont";
   src: url("../fonts/Mont Heavy.ttf");
   font-weight: 900;
 }
@@ -265,9 +270,9 @@ html {
   margin-bottom: 6rem;
 }
 .main__left-box2 {
-  height: 100vh;
   position: relative;
   transition: all 0.7s;
+  margin-bottom: 35rem;
 }
 .main__left-box2.scrolled {
   opacity: 0;
@@ -318,11 +323,12 @@ html {
 .left__box2-title {
   font-family: "Mont";
   font-size: 6rem;
-  font-weight: 900;
+  font-weight: 700;
   color: #7f7f7f;
   text-align: center;
   width: 42rem;
   margin-bottom: 6rem;
+  text-transform: uppercase;
 }
 
 .left__title-box {
@@ -379,6 +385,62 @@ html {
   font-family: "Josefin Sans";
   font-size: 2rem;
   font-weight: 600;
+}
+
+.main__left-box3 {
+  margin-bottom: 35rem;
+}
+
+.left__box3-title {
+  font-family: "Mont";
+  font-size: 6rem;
+  font-weight: 700;
+  color: #7f7f7f;
+  text-align: center;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 10rem;
+}
+.left__box3-container {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7rem;
+  padding-left: 7rem;
+}
+
+.box3__container-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5.6rem;
+}
+.box3__number {
+  font-family: "Mont";
+  font-size: 12rem;
+  font-weight: 700;
+  color: #333333;
+  transform: translateY(-67%);
+}
+.box3__text {
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+.box3__btn-box {
+  display: flex;
+  justify-content: end;
+}
+.box3__btn {
+  display: inline;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  border: 1px solid red;
+  background-color: #f0b4b4;
+  padding: 1.6rem 15.8rem;
+  margin-right: 7.3rem;
 }
 
 @keyframes jump {
