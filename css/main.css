@@ -136,7 +136,7 @@ input {
 }
 .menu {
   position: fixed;
-  z-index: 500;
+  z-index: 1;
   top: 45%;
   transition: all 0.7s;
 }
@@ -145,6 +145,7 @@ input {
   top: 1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 .menu__btn {
+  z-index: 3;
   display: block;
   border: none;
   background: transparent;
@@ -176,6 +177,32 @@ input {
 .menu__btn.opened::before {
   transform: translate(-41%, -50%) rotate(45deg);
 }
+.menu__nav {
+  transition: all 2s;
+  position: fixed;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 2;
+  padding: 2.4rem 2.4rem 0 10rem;
+  background-color: white;
+}
+.menu__nav.opened {
+  top: 0;
+}
+.menu__nav.closed {
+  top: -100vh;
+}
+.menu__nav__title {
+  font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
+  font-size: 8.4rem;
+  font-weight: bolder;
+  letter-spacing: 0.4rem;
+  color: #ccc;
+}
+.menu__nav__title div:last-child {
+  text-align: right;
+}
 
 main {
   display: grid;
@@ -183,7 +210,7 @@ main {
 }
 
 .logo {
-  z-index: 500;
+  z-index: 1;
   position: fixed;
   top: 2.6rem;
   left: 25%;
@@ -247,6 +274,11 @@ main {
 
 html {
   font-size: 62.5%;
+}
+
+*::selection {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.623);
 }
 
 .main__left {
