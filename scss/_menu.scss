@@ -1,1 +1,40 @@
+.menu{
+    position: absolute;
+
+    &__btn{
+        
+        background: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+
+        font-family: 'ducine';
+        font-size: 1.8rem;
+        position: relative;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+
+        &::before, &::after{
+            transition: all 0.5s;
+            font-size: 5.2rem;
+            color: black;
+            content: '|';
+            position: absolute;
+            left: -50%; /* Position from the left center */
+            top: 50%; /* Position from the top center */
+            transform: translate(-50%, -50%); /* Rotate and center the pseudo-elements */
+          
+        }
+        &.closed::before{
+            left: -75%;
+        }
+        &.opened::after{
+            transform: translate(-59%, -50%) rotate(-45deg);
+        }
+        &.opened::before{
+            transform: translate(-41%, -50%) rotate(45deg);
+        }
+    }
+
+    }
 
