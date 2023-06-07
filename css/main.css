@@ -129,6 +129,13 @@ input {
   src: url("../fonts/ducine.ttf");
   font-weight: 400;
 }
+<<<<<<< HEAD
+@font-face {
+  font-family: "JournalSans";
+  src: url("../fonts/JournalSans.ttf");
+  font-weight: 400;
+}
+=======
 .menu {
   position: absolute;
 }
@@ -163,6 +170,7 @@ input {
   transform: translate(-41%, -50%) rotate(45deg);
 }
 
+>>>>>>> dad662e926f8a3999b46d17cb9c06b81555f83a8
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -243,6 +251,7 @@ html {
 .main__left-box {
   height: 100vh;
   position: relative;
+  margin-bottom: 10rem;
 }
 .main__left-box2 {
   height: 100vh;
@@ -277,4 +286,68 @@ html {
 .arrow__button-down {
   width: 40px;
   height: 40px;
+}
+
+.left__box2-title {
+  font-family: "Mont";
+  font-size: 6rem;
+  font-weight: 900;
+  color: #7f7f7f;
+  text-align: center;
+  width: 42rem;
+  margin-bottom: 6rem;
+}
+
+.left__title-box {
+  display: flex;
+  justify-content: end;
+}
+
+.left__testimonial-box {
+  display: flex;
+}
+
+.testimonial__text-box {
+  width: 55rem;
+  border: 1px solid #7f7f7f;
+  border-right: none;
+  padding: 2rem;
+  margin-left: 1rem;
+  margin-right: 2.8rem;
+  position: relative;
+}
+.testimonial__quotes {
+  font-family: "JournalSans";
+  font-weight: 400;
+  font-size: 15rem;
+  letter-spacing: -3rem;
+  position: absolute;
+  top: -25px;
+  right: -35px;
+}
+.testimonial__person-img {
+  width: 8.8rem;
+  height: 8.8rem;
+  align-self: center;
+}
+.testimonial__person-text {
+  align-self: center;
+}
+
+.testimonial-text {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+.person__text-name {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 300;
+}
+.person__text-country {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
