@@ -1,19 +1,22 @@
 .menu{
-    position: absolute;
+    position: fixed;
+    z-index: 500;
 
     &__btn{
         display: block;
-        
+
+        border: none;
         background: none;
+
         margin: 0;
         padding: 0;
-        border: none;
 
         font-family: 'ducine';
         font-size: 1.8rem;
         position: relative;
         writing-mode: vertical-rl;
         text-orientation: upright;
+
         cursor: pointer;
 
         &::before, &::after{

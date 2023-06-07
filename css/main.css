@@ -135,18 +135,21 @@ input {
   font-weight: 400;
 }
 .menu {
-  position: absolute;
+  position: fixed;
+  z-index: 500;
 }
 .menu__btn {
+  display: block;
+  border: none;
   background: none;
   margin: 0;
   padding: 0;
-  border: none;
   font-family: "ducine";
   font-size: 1.8rem;
   position: relative;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  cursor: pointer;
 }
 .menu__btn::before, .menu__btn::after {
   transition: all 0.5s;
@@ -215,6 +218,7 @@ main {
   position: absolute;
   bottom: 1.8rem;
   right: 1.2rem;
+  z-index: 1;
 }
 
 .black-btn {
@@ -236,6 +240,7 @@ html {
 }
 
 .main__left {
+  padding-left: 3.6rem;
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none; /* Internet Explorer and Edge */
