@@ -145,6 +145,17 @@ main {
   height: 100vh;
   width: 100%;
   background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main__right .icon {
+  position: absolute;
+  color: #fff;
+  font-size: 5rem;
+}
+.main__right .map-icon {
+  right: 1.8rem;
+  top: 1.2rem;
 }
 
 html {

@@ -4,5 +4,17 @@
   width: 100%;
 
   background-position: center;
-  
+  background-size: cover;
+
+  position: relative;
+
+  .icon{
+    position: absolute;
+    color: #fff;
+    font-size: 5rem;
+
+  }
+  .map-icon{
+    right: 1.8rem; top: 1.2rem;
+  }
 }
