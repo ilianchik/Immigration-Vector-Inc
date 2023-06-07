@@ -132,7 +132,5 @@ main {
   background-image: url("../sourse/img/House.png");
   height: 100vh;
   width: 100%;
-  background-size: cover;
   background-position: center;
-  overflow-y: hidden;
 }/*# sourceMappingURL=main.css.map */
