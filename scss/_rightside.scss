@@ -1,8 +1,6 @@
-.main__right{
-    background-image: url('../sourse/img/House.png');
-    height: 100vh; width: 100%;
-    background-size: cover;
-    background-position: center;
-
-    overflow-y: hidden;
+.main__right {
+  background-image: url("../sourse/img/House.png");
+  height: 100vh;
+  width: 100%;
+  position: fixed;
 }
