@@ -129,13 +129,11 @@ input {
   src: url("../fonts/ducine.ttf");
   font-weight: 400;
 }
-<<<<<<< HEAD
 @font-face {
   font-family: "JournalSans";
   src: url("../fonts/JournalSans.ttf");
   font-weight: 400;
 }
-=======
 .menu {
   position: absolute;
 }
@@ -170,7 +168,6 @@ input {
   transform: translate(-41%, -50%) rotate(45deg);
 }
 
->>>>>>> dad662e926f8a3999b46d17cb9c06b81555f83a8
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
