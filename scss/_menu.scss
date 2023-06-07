@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  z-index: 500;
+  z-index: 1;
   top: 45%;
   transition: all 0.7s;
   &.scrolled {
@@ -9,6 +9,7 @@
   }
 
   &__btn {
+    z-index: 3;
     display: block;
 
     border: none;
@@ -49,4 +50,42 @@
       transform: translate(-41%, -50%) rotate(45deg);
     }
   }
+
+
+  &__nav{
+
+    transition: all 2s;
+
+    position: fixed; 
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 2;
+
+    padding: 2.4rem 2.4rem 0 10rem;
+
+    background-color: white;
+
+      &.opened{
+        top: 0;
+      }
+      &.closed{
+        top: -100vh;
+      }
+
+      &__title{
+        font-family: Mont Heavy,  'Arial Narrow Bold', sans-serif ;
+        font-size: 8.4rem;
+        font-weight: bolder;
+        letter-spacing: 0.4rem;
+        color: #ccc;
+
+          & div:last-child{
+            text-align: right;
+          }
+      }
+
+  }
+
+
 }
