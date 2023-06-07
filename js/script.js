@@ -38,7 +38,7 @@ window.addEventListener("scroll", function () {
 });
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".main__left-box2");
-  if (window.scrollY > 770) {
+  if (window.scrollY > 750) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
@@ -47,7 +47,7 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".main__left-box3");
-  if (window.scrollY > 1370) {
+  if (window.scrollY > 1350) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
@@ -57,7 +57,7 @@ window.addEventListener("scroll", function () {
   var textContainers = document.querySelectorAll(".box4__container-box");
 
   textContainers.forEach(function (textContainer) {
-    if (window.scrollY > 1900) {
+    if (window.scrollY > 1850) {
       textContainer.classList.add("scrolled");
     } else {
       textContainer.classList.remove("scrolled");
