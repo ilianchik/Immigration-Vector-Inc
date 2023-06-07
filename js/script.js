@@ -53,3 +53,14 @@ window.addEventListener("scroll", function () {
     textContainer.classList.remove("scrolled");
   }
 });
+window.addEventListener("scroll", function () {
+  var textContainers = document.querySelectorAll(".box4__container-box");
+
+  textContainers.forEach(function (textContainer) {
+    if (window.scrollY > 1900) {
+      textContainer.classList.add("scrolled");
+    } else {
+      textContainer.classList.remove("scrolled");
+    }
+  });
+});

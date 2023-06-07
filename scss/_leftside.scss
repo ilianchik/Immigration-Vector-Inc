@@ -34,9 +34,7 @@
     transition: all 0.5s ease-in-out;
     &.scrolled {
       opacity: 0;
-      transform: translateY(
-        -50px
-      ); /* змініть на висоту, на яку ви хочете перемістити текст */
+      transform: translateY(-50px);
     }
   }
 }
@@ -50,7 +48,7 @@
     height: 8rem;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid black; /* Додайте цей рядок */
+    border: 2px solid black;
     cursor: pointer;
     outline: none;
     position: absolute;
@@ -62,7 +60,6 @@
     &.scrolled {
       opacity: 0;
       bottom: 10rem;
-      /* змініть на висоту, на яку ви хочете перемістити текст */
     }
   }
 }
@@ -245,6 +242,13 @@
     display: flex;
     padding-left: 13rem;
     margin-bottom: 7rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+    &.scrolled {
+      opacity: 1;
+      transform: translateY(-50px);
+    }
   }
 
   &__icon-box {
