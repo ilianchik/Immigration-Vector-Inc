@@ -331,7 +331,7 @@ html {
 .main__left-box2 {
   position: relative;
   transition: all 0.7s;
-  margin-bottom: 35rem;
+  margin-bottom: 30rem;
 }
 .main__left-box2.scrolled {
   opacity: 0;
@@ -348,7 +348,7 @@ html {
 }
 .main__left-text.scrolled {
   opacity: 0;
-  transform: translateY(-50px); /* змініть на висоту, на яку ви хочете перемістити текст */
+  transform: translateY(-50px);
 }
 
 .left__arrow-button {
@@ -359,7 +359,7 @@ html {
   height: 8rem;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid black; /* Додайте цей рядок */
+  border: 2px solid black;
   cursor: pointer;
   outline: none;
   position: absolute;
@@ -371,7 +371,6 @@ html {
 .left__arrow-button.scrolled {
   opacity: 0;
   bottom: 10rem;
-  /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 
 .arrow__button-down {
@@ -447,7 +446,7 @@ html {
 }
 
 .main__left-box3 {
-  margin-bottom: 35rem;
+  margin-bottom: 30rem;
   transition: all 0.7s;
 }
 .main__left-box3.scrolled {
@@ -506,6 +505,60 @@ html {
   padding: 1.6rem 14.8rem;
   margin-right: 7.3rem;
   cursor: pointer;
+}
+
+.main__left-box4 {
+  margin-bottom: 7.5rem;
+}
+
+.left__box4-title {
+  font-family: "Mont";
+  font-size: 6rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+  padding-left: 7%;
+}
+.left__box4-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8rem;
+}
+
+.box4__container-box {
+  display: flex;
+  padding-left: 13rem;
+  margin-bottom: 7rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+.box4__container-box.scrolled {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+.box4__icon-box {
+  padding-right: 4rem;
+}
+.box4__img {
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(50%);
+}
+.box4-subtitle {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin-bottom: 4rem;
+}
+
+.box4-text {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 2.4rem;
 }
 
 @keyframes jump {
