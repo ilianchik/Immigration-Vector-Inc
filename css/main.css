@@ -152,6 +152,27 @@ main {
   right: 1.8rem;
   top: 1.2rem;
 }
+.main__right .sotial_networks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  bottom: 1.8rem;
+  left: 1.2rem;
+}
+.main__right .get_in_touch {
+  position: absolute;
+  bottom: 1.8rem;
+  right: 1.2rem;
+}
+
+.black-btn {
+  color: #fff;
+  border-radius: 0;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Dusine";
+  text-transform: uppercase;
+}
 
 html {
   font-size: 62.5%;
