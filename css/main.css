@@ -123,6 +123,11 @@ input {
   src: url("../fonts/Repeater-Regular.ttf");
   font-weight: 400;
 }
+@font-face {
+  font-family: "Ducine";
+  src: url("../fonts/ducine.ttf");
+  font-weight: 400;
+}
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,4 +149,12 @@ main {
 
 html {
   font-size: 62.5%;
+}
+
+.main__left-text {
+  margin-top: 22rem;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Ducine";
+  padding: 0 7.5rem;
 }/*# sourceMappingURL=main.css.map */
