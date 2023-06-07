@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ilianchik/Immigration-Vector-Inc#readme",
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "node-scss": "^7.0.3"
   }
 }
