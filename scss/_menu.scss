@@ -2,6 +2,7 @@
     position: absolute;
 
     &__btn{
+        display: block;
         
         background: none;
         margin: 0;
@@ -13,6 +14,7 @@
         position: relative;
         writing-mode: vertical-rl;
         text-orientation: upright;
+        cursor: pointer;
 
         &::before, &::after{
             transition: all 0.5s;
