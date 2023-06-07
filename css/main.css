@@ -142,7 +142,7 @@ input {
 }
 .menu.scrolled {
   opacity: 1;
-  top: -1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
+  top: 1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 .menu__btn {
   display: block;
@@ -191,12 +191,8 @@ main {
   transition: all 0.5s ease-in-out;
 }
 .logo.scrolled {
-  transform: translateX(100%);
+  left: 67%;
 }
-.logo__img {
-  transition: filter 0.5s ease-in-out;
-}
-
 .fixed {
   position: fixed;
   position: fixed;
@@ -271,6 +267,11 @@ html {
 .main__left-box2 {
   height: 100vh;
   position: relative;
+  transition: all 0.7s;
+}
+.main__left-box2.scrolled {
+  opacity: 0;
+  transform: translateX(100%); /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 .main__left-text {
   padding-top: 22rem;

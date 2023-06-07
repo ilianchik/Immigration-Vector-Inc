@@ -17,6 +17,13 @@
   &__left-box2 {
     height: 100vh;
     position: relative;
+    transition: all 0.7s;
+    &.scrolled {
+      opacity: 0;
+      transform: translateX(
+        100%
+      ); /* змініть на висоту, на яку ви хочете перемістити текст */
+    }
   }
 
   &__left-text {

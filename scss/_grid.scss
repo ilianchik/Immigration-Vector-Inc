@@ -10,10 +10,9 @@ main {
   transform: translateX(-50%);
   transition: all 0.5s ease-in-out;
   &.scrolled {
-    transform: translateX(100%);
+    left: 67%;
   }
   &__img {
-    transition: filter 0.5s ease-in-out;
   }
 }
 
