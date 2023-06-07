@@ -137,14 +137,17 @@ input {
 .menu {
   position: fixed;
   z-index: 500;
+  top: 45%;
+  transition: all 0.7s;
+}
+.menu.scrolled {
+  opacity: 1;
+  top: -1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 .menu__btn {
   display: block;
-<<<<<<< HEAD
   border: none;
-=======
->>>>>>> 7a52ed3912bd99c79964c85a52d701b4d85228dd
-  background: none;
+  background: transparent;
   margin: 0;
   padding: 0;
   font-family: "ducine";
@@ -180,10 +183,18 @@ main {
 }
 
 .logo {
-  position: absolute;
+  z-index: 500;
+  position: fixed;
   top: 2.6rem;
   left: 25%;
   transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+.logo.scrolled {
+  transform: translateX(100%);
+}
+.logo__img {
+  transition: filter 0.5s ease-in-out;
 }
 
 .fixed {
@@ -243,7 +254,6 @@ html {
 }
 
 .main__left {
-  padding-left: 3.6rem;
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none; /* Internet Explorer and Edge */
@@ -269,6 +279,11 @@ html {
   font-family: "Ducine";
   padding-right: 5rem;
   padding-left: 5rem;
+  transition: all 0.5s ease-in-out;
+}
+.main__left-text.scrolled {
+  opacity: 0;
+  transform: translateY(-50px); /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 
 .left__arrow-button {
@@ -286,6 +301,12 @@ html {
   bottom: 6.8rem;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+.left__arrow-button.scrolled {
+  opacity: 0;
+  bottom: 10rem;
+  /* змініть на висоту, на яку ви хочете перемістити текст */
 }
 
 .arrow__button-down {

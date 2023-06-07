@@ -3,10 +3,18 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 .logo {
-  position: absolute;
+  z-index: 500;
+  position: fixed;
   top: 2.6rem;
   left: 25%;
   transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+  &.scrolled {
+    transform: translateX(100%);
+  }
+  &__img {
+    transition: filter 0.5s ease-in-out;
+  }
 }
 
 .fixed {

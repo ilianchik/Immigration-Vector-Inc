@@ -1,45 +1,52 @@
-.menu{
-    position: fixed;
-    z-index: 500;
+.menu {
+  position: fixed;
+  z-index: 500;
+  top: 45%;
+  transition: all 0.7s;
+  &.scrolled {
+    opacity: 1;
+    top: -1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
+  }
 
-    &__btn{
-        display: block;
+  &__btn {
+    display: block;
 
-        border: none;
-        background: none;
+    border: none;
+    background: transparent;
 
-        margin: 0;
-        padding: 0;
+    margin: 0;
+    padding: 0;
 
-        font-family: 'ducine';
-        font-size: 1.8rem;
-        position: relative;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
+    font-family: "ducine";
+    font-size: 1.8rem;
+    position: relative;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
 
-        cursor: pointer;
+    cursor: pointer;
 
-        &::before, &::after{
-            transition: all 0.5s;
-            font-size: 5.2rem;
-            color: black;
-            content: '|';
-            position: absolute;
-            left: -50%; /* Position from the left center */
-            top: 50%; /* Position from the top center */
-            transform: translate(-50%, -50%); /* Rotate and center the pseudo-elements */
-          
-        }
-        &.closed::before{
-            left: -75%;
-        }
-        &.opened::after{
-            transform: translate(-59%, -50%) rotate(-45deg);
-        }
-        &.opened::before{
-            transform: translate(-41%, -50%) rotate(45deg);
-        }
+    &::before,
+    &::after {
+      transition: all 0.5s;
+      font-size: 5.2rem;
+      color: black;
+      content: "|";
+      position: absolute;
+      left: -50%; /* Position from the left center */
+      top: 50%; /* Position from the top center */
+      transform: translate(
+        -50%,
+        -50%
+      ); /* Rotate and center the pseudo-elements */
     }
-
+    &.closed::before {
+      left: -75%;
     }
-
+    &.opened::after {
+      transform: translate(-59%, -50%) rotate(-45deg);
+    }
+    &.opened::before {
+      transform: translate(-41%, -50%) rotate(45deg);
+    }
+  }
+}
