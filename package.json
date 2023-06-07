@@ -1,0 +1,22 @@
+{
+  "name": "emigration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilianchik/Immigration-Vector-Inc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilianchik/Immigration-Vector-Inc/issues"
+  },
+  "homepage": "https://github.com/ilianchik/Immigration-Vector-Inc#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
