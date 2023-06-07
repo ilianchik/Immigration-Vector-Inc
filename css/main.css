@@ -449,6 +449,53 @@ html {
   cursor: pointer;
 }
 
+.main__left-box4 {
+  margin-bottom: 7.5rem;
+}
+
+.left__box4-title {
+  font-family: "Mont";
+  font-size: 6rem;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 8rem;
+  padding-left: 7%;
+}
+.left__box4-container {
+  display: flex;
+  flex-direction: column;
+  padding-right: 8rem;
+}
+
+.box4__container-box {
+  display: flex;
+  padding-left: 13rem;
+  margin-bottom: 7rem;
+}
+.box4__icon-box {
+  padding-right: 4rem;
+}
+.box4__img {
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(50%);
+}
+.box4-subtitle {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin-bottom: 4rem;
+}
+
+.box4-text {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
 @keyframes jump {
   0% {
     transform: translate(-50%, 0);

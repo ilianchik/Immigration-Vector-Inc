@@ -215,3 +215,59 @@
     cursor: pointer;
   }
 }
+
+.main {
+  &__left-box4 {
+    margin-bottom: 7.5rem;
+  }
+}
+.left {
+  &__box4-title {
+    font-family: "Mont";
+    font-size: 6rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 8rem;
+    padding-left: 7%;
+  }
+
+  &__box4-container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 8rem;
+  }
+}
+.box4 {
+  &__container-box {
+    display: flex;
+    padding-left: 13rem;
+    margin-bottom: 7rem;
+  }
+
+  &__icon-box {
+    padding-right: 4rem;
+  }
+
+  &__img {
+    width: 4rem;
+    height: 4rem;
+    transform: translateY(50%);
+  }
+
+  &__text-box {
+  }
+}
+.box4-subtitle {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 3.6rem;
+  margin-bottom: 4rem;
+}
+.box4-text {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-size: 2.4rem;
+}
