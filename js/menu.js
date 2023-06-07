@@ -8,14 +8,16 @@ function toggleMenu() {
     var logoImg = document.querySelector(".logo__img");
 
     if (menuBtn.classList.contains('closed')) {
+      setTimeout(function() {
       menuBtn.classList.remove('closed');
       menuBtn.classList.add('opened');
-
-      logoContainer.classList.add("scrolled");
-      logoImg.src = "../sourse/img/logo2.png";
       
       menuBody.classList.remove('closed');
       menuBody.classList.add('opened');
+      }, 1000);
+      
+      logoContainer.classList.add("scrolled");
+      logoImg.src = "../sourse/img/logo2.png";
 
       document.body.style.overflow = 'hidden';
 
@@ -23,11 +25,14 @@ function toggleMenu() {
       menuBtn.classList.remove('opened');
       menuBtn.classList.add('closed');
 
-      logoContainer.classList.remove("scrolled");
-      logoImg.src = "../sourse/img/logo.png";
-
       menuBody.classList.remove('opened');
       menuBody.classList.add('closed');
+
+      setTimeout(function() {
+        logoContainer.classList.remove("scrolled");
+        logoImg.src = "../sourse/img/logo.png";
+      }, 1000); 
+
 
       document.body.style.overflow = 'auto';
     }

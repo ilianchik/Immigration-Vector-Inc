@@ -8,7 +8,7 @@ main {
   top: 2.6rem;
   left: 25%;
   transform: translateX(-50%);
-  transition: all 0.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
   &.scrolled {
     left: 67%;
   }

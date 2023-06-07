@@ -122,14 +122,22 @@
         }
       }
 
-
       &__hr {
+        
         height: 1.5px;
         background-color: black;
         border: none;
         margin-left: 16%;
         margin-top: 1.8rem;
+        transition: all 1s ease;
+
+        .closed>&{
+          margin-left: 100%;
+        }
       }
+      
+
+
       &__contact-us {
         font-family: "ducine";
         font-weight: bold;
@@ -137,7 +145,13 @@
         font-size: 3.8rem;
         letter-spacing: 1px;
         margin-top: 1.8rem;
+        
+        transition: all 2s;
+        .closed>&{
+          transform: translateY(110vh);
+        }
       }
+      
 
   }
 
