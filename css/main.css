@@ -138,6 +138,7 @@ input {
   position: absolute;
 }
 .menu__btn {
+  display: block;
   background: none;
   margin: 0;
   padding: 0;
@@ -147,6 +148,7 @@ input {
   position: relative;
   writing-mode: vertical-rl;
   text-orientation: upright;
+  cursor: pointer;
 }
 .menu__btn::before, .menu__btn::after {
   transition: all 0.5s;
@@ -215,6 +217,7 @@ main {
   position: absolute;
   bottom: 1.8rem;
   right: 1.2rem;
+  z-index: 1;
 }
 
 .black-btn {
@@ -329,6 +332,7 @@ html {
 }
 .testimonial__person-text {
   align-self: center;
+  margin-left: 1rem;
 }
 
 .testimonial-text {
