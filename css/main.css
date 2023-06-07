@@ -106,4 +106,20 @@ input {
   appearance: none;
   -webkit-appearance: none;
   border-radius: 0;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Mont ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Mont";
+  src: url("../fonts/Mont Heavy.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Repeater";
+  src: url("../fonts/Repeater-Regular.ttf");
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
