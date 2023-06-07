@@ -38,7 +38,16 @@ window.addEventListener("scroll", function () {
 });
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".main__left-box2");
-  if (window.scrollY > 900) {
+  if (window.scrollY > 770) {
+    textContainer.classList.add("scrolled");
+  } else {
+    textContainer.classList.remove("scrolled");
+  }
+});
+
+window.addEventListener("scroll", function () {
+  var textContainer = document.querySelector(".main__left-box3");
+  if (window.scrollY > 1370) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
