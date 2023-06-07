@@ -174,9 +174,14 @@ main {
   color: #fff;
   border-radius: 0;
   border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: "Dusine";
+  background-color: rgba(80, 80, 80, 0.5);
+  font-family: "ducine";
+  font-size: 2.8rem;
+  font-weight: 300;
   text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 0.2rem 2.2rem 0.6rem;
 }
 
 html {
