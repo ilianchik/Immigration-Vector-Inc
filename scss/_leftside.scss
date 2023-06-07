@@ -1,12 +1,44 @@
 .main {
   &__left {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  &__left-box {
+    height: 100vh;
+    position: relative;
   }
 
   &__left-text {
-    margin-top: 22rem;
+    padding-top: 22rem;
     text-align: center;
     font-size: 3.6rem;
     font-family: "Ducine";
-    padding: 0 7.5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+.left {
+  &__arrow-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid black; /* Додайте цей рядок */
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    bottom: 6.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.arrow {
+  &__button-down {
+    width: 40px;
+    height: 40px;
   }
 }
