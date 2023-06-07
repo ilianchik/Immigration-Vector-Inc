@@ -38,7 +38,7 @@ window.addEventListener("scroll", function () {
 });
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".main__left-box2");
-  if (window.scrollY > 750) {
+  if (window.scrollY > 700) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");

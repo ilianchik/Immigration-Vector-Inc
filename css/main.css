@@ -262,7 +262,7 @@ html {
 .main__left-box {
   height: 100vh;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .main__left-box2 {
   height: 100vh;
@@ -301,8 +301,8 @@ html {
   position: absolute;
   bottom: 6.8rem;
   left: 50%;
-  transform: translateX(-50%);
   transition: all 0.5s ease-in-out;
+  animation: jump 0.5s infinite;
 }
 .left__arrow-button.scrolled {
   opacity: 0;
@@ -379,4 +379,17 @@ html {
   font-family: "Josefin Sans";
   font-size: 2rem;
   font-weight: 600;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+    transform: translate();
+  }
 }/*# sourceMappingURL=main.css.map */
