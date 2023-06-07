@@ -1,5 +1,4 @@
 function toggleMenu() {
-    alert('works!');
     const menuBtn = document.querySelector('.menu__btn');
     
     if (menuBtn.classList.contains('closed')) {
