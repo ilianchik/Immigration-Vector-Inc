@@ -65,4 +65,4 @@ window.addEventListener("scroll", function () {
   });
 });
 
-// const swup = new Swup();
+$(".slider").slick();
