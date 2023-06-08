@@ -10,7 +10,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   var scrollSpeed = Math.abs(window.scrollY - (this.prevScrollY || 0));
   var duration = 1.0 / scrollSpeed;
 
@@ -72,4 +72,14 @@ window.addEventListener("scroll", function () {
   });
 });
 
-$(".slider").slick({ arrows: false });
+$(".slider").slick({
+  arrows: false,
+  swipe: false,
+  infinite: false,
+  speed: 400,
+});
+
+$(".box3__btn").click(function () {
+  var slideIndex = $(this).data("slide");
+  $(".slider").slick("slickGoTo", slideIndex);
+});
