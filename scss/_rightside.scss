@@ -29,8 +29,11 @@
     bottom: 1.8rem; right: 1.2rem;
     z-index: 500;
   }
-}
 
+  &__text-slider{
+    background-image: url('../sourse/img/textslider.png');
+}
+}
 
 .black-btn{
   color: #fff;
@@ -47,4 +50,13 @@
   margin: 0;
   padding: 0.2rem 2.2rem 0.6rem;
 
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }
