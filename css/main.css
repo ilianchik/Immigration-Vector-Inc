@@ -270,9 +270,12 @@ main {
   top: 2.6rem;
   left: 25%;
   transform: translateX(-50%);
-  transition: all 1.5s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 .logo.scrolled {
+  left: 67%;
+}
+.logo.moved {
   left: 67%;
 }
 .fixed {
@@ -416,13 +419,13 @@ html {
   transform: translateX(100%);
 }
 .main__left-text {
-  padding-top: 22rem;
+  padding-top: 24rem;
   text-align: center;
   font-size: 3.6rem;
   font-family: "Ducine";
   padding-right: 5rem;
   padding-left: 5rem;
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .main__left-text.scrolled {
   opacity: 0;

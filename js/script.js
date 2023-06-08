@@ -10,13 +10,20 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function() {
+  var scrollSpeed = Math.abs(window.scrollY - (this.prevScrollY || 0));
+  var duration = 1.0 / scrollSpeed;
+
   var textContainer = document.querySelector(".main__left-text");
+  textContainer.style.transitionDuration = duration + "s";
+
   if (window.scrollY > 0) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
   }
+
+  this.prevScrollY = window.scrollY;
 });
 
 window.addEventListener("scroll", function () {
