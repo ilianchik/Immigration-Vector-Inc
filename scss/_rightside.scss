@@ -1,13 +1,4 @@
 .main__right {
-  background-image: url("../sourse/img/House.png");
-  height: 100vh;
-  width: 100%;
-
-  background-position: center;
-  background-size: cover;
-
-  position: relative;
-
   .icon {
     position: absolute;
     color: #fff;
@@ -39,9 +30,14 @@
   left: 50%;
   transform: translate(50%, -50%);
   bottom: -100vh;
-  &__form{
+  &__form {
     text-align: right;
-    & input, & select, & option, & textarea, & input::placeholder,& textarea::placeholder{
+    & input,
+    & select,
+    & option,
+    & textarea,
+    & input::placeholder,
+    & textarea::placeholder {
       display: block;
       width: 100%;
       background-color: rgba(37, 37, 37, 0.5);
@@ -49,7 +45,8 @@
       text-align: right;
       padding: 1rem;
       overflow: hidden;
-      border: none; border-bottom: 2px solid #fff;
+      border: none;
+      border-bottom: 2px solid #fff;
       position: relative;
       border-radius: 0;
 
@@ -57,15 +54,15 @@
       font-family: "repeater";
 
       border-collapse: hidden;
-
     }
 
-    & input::placeholder,& textarea::placeholder{
+    & input::placeholder,
+    & textarea::placeholder {
       position: absolute;
-      top: 0px; right: 0;
-
+      top: 0px;
+      right: 0;
     }
-    &__submit{
+    &__submit {
       cursor: pointer;
       width: fit-content !important;
       position: absolute !important;
@@ -73,17 +70,19 @@
       padding: 1rem 4.6rem !important;
     }
   }
-  &__btn{
+  &__btn {
     transition: all 3s;
     margin-bottom: 30vh;
     margin-right: -4.2rem;
     cursor: pointer;
   }
 
-  &.opened{
-    bottom: 0; 
+  &.opened {
+    bottom: 0;
   }
-  &.opened > &__btn{margin-bottom: 2.8rem;}
+  &.opened > &__btn {
+    margin-bottom: 2.8rem;
+  }
 }
 
 .black-btn {
@@ -100,11 +99,37 @@
 
   padding: 0.2rem 2.2rem 0.6rem;
 
-  &:hover{
+  &:hover {
     background-color: rgba(107, 107, 107, 0.5);
   }
-  &:active{
+  &:active {
     background-color: rgba(152, 152, 152, 0.5);
-    
   }
+}
+
+.slider {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.slide1 {
+  background-image: url("../sourse/img/House.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.slide2 {
+  background-image: url("../sourse/img/Right-background.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
 }

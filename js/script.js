@@ -65,4 +65,4 @@ window.addEventListener("scroll", function () {
   });
 });
 
-$(".slider").slick();
+$(".slider").slick({ arrows: false });
