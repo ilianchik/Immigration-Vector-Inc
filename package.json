@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ilianchik/Immigration-Vector-Inc/issues"
   },
-  "homepage": "https://github.com/ilianchik/Immigration-Vector-Inc#readme"
+  "homepage": "https://github.com/ilianchik/Immigration-Vector-Inc#readme",
+  "dependencies": {
+    "swup": "^3.0.8"
+  }
 }
