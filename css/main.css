@@ -307,10 +307,10 @@ main {
   left: 1.2rem;
 }
 .main__right .get_in_touch {
-  position: absolute;
+  position: fixed;
   bottom: 1.8rem;
   right: 1.2rem;
-  z-index: 1;
+  z-index: 500;
 }
 
 .black-btn {

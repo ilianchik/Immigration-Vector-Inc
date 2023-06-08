@@ -14,7 +14,7 @@ function toggleMenu() {
       
       menuBody.classList.remove('closed');
       menuBody.classList.add('opened');
-      }, 1000);
+      }, 700);
       
       logoContainer.classList.add("scrolled");
       logoImg.src = "../sourse/img/logo2.png";
@@ -31,7 +31,7 @@ function toggleMenu() {
       setTimeout(function() {
         logoContainer.classList.remove("scrolled");
         logoImg.src = "../sourse/img/logo.png";
-      }, 1000); 
+      }, 700); 
 
 
       document.body.style.overflow = 'auto';
