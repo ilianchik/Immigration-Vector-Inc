@@ -26,23 +26,70 @@
     left: 1.2rem;
   }
 
-  .get_in_touch {
-    position: fixed;
-    bottom: 1.8rem;
-    right: 1.2rem;
-    z-index: 500;
-  }
-
   &__text-slider {
     background-image: url("../sourse/img/textslider.png");
   }
+}
+
+.get_in_touch {
+  transition: all 3s;
+  position: fixed;
+  z-index: 1;
+  text-align: right;
+  left: 50%;
+  transform: translate(50%, -50%);
+  bottom: -100vh;
+  &__form{
+    text-align: right;
+    & input, & select, & option, & textarea, & input::placeholder,& textarea::placeholder{
+      display: block;
+      width: 100%;
+      background-color: rgba(37, 37, 37, 0.5);
+      color: #fff;
+      text-align: right;
+      padding: 1rem;
+      overflow: hidden;
+      border: none; border-bottom: 2px solid #fff;
+      position: relative;
+      border-radius: 0;
+
+      font-size: 1.6rem;
+      font-family: "repeater";
+
+      border-collapse: hidden;
+
+    }
+
+    & input::placeholder,& textarea::placeholder{
+      position: absolute;
+      top: 0px; right: 0;
+
+    }
+    &__submit{
+      cursor: pointer;
+      width: fit-content !important;
+      position: absolute !important;
+      right: 0 !important;
+    }
+  }
+  &__btn{
+    transition: all 3s;
+    margin-bottom: 30vh;
+    margin-right: -4.2rem;
+    cursor: pointer;
+  }
+
+  &.opened{
+    bottom: 0; 
+  }
+  &.opened > &__btn{margin-bottom: 2.8rem;}
 }
 
 .black-btn {
   color: #fff;
   border-radius: 0;
   border: 2px solid white;
-  background-color: rgba(80, 80, 80, 0.5);
+  background-color: rgba(60, 60, 60, 0.5);
 
   font-family: "ducine";
   font-size: 2.8rem;
@@ -50,6 +97,13 @@
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 
-  margin: 0;
   padding: 0.2rem 2.2rem 0.6rem;
+
+  &:hover{
+    background-color: rgba(107, 107, 107, 0.5);
+  }
+  &:active{
+    background-color: rgba(152, 152, 152, 0.5);
+    
+  }
 }

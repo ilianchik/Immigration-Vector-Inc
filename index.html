@@ -21,6 +21,7 @@
     <script defer src="./js/slick.min.js"></script>
     <script defer src="./js/menu.js"></script>
     <script defer src="./js/script.js"></script>
+    <script defer src="./js/form.js"></script>
   </head>
   <body>
     <menu class="menu">
@@ -175,8 +176,28 @@
             <i class="ph-light ph-facebook-logo"></i>
             <i class="ph-light ph-instagram-logo"></i>
           </div>
+<<<<<<< HEAD
 
           <button class="black-btn get_in_touch">get in touch</button>
+=======
+          <div class="get_in_touch opened">
+             <button class="black-btn get_in_touch__btn" onclick="toggleGetInTouch()">get in touch</button>
+
+             <form action="#" class="get_in_touch__form">
+                <input type="text" id="input_username" placeholder="Name">
+                <input type="text" id="input_userphone" placeholder="Phone">
+                <input type="email" id="input_useremail" placeholder="Email">
+                <select name="" id="input_usercountry">
+                  <option value="def" disabled>Your Country</option>
+                  <option value="def">Your Country</option>
+                  <option value="def">Your Country</option>
+                </select>
+                <textarea name="" id="" cols="40" rows="5" placeholder="Message"></textarea>
+                <input type="submit" value="Send" class="get_in_touch__form__submit">
+             </form>
+          </div>
+         
+>>>>>>> da91494354a7d8a2d54e276bb27dc57cc3e48826
         </div>
       </div>
     </main>
