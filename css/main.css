@@ -348,6 +348,7 @@ main {
   width: fit-content !important;
   position: absolute !important;
   right: 0 !important;
+  padding: 1rem 4.6rem !important;
 }
 .get_in_touch__btn {
   transition: all 3s;
