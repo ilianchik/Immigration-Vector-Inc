@@ -14,9 +14,9 @@ function toggleMenu() {
       
       menuBody.classList.remove('closed');
       menuBody.classList.add('opened');
-      }, 700);
+      }, 500);
       
-      logoContainer.classList.add("scrolled");
+      logoContainer.classList.add("moved");
       logoImg.src = "../sourse/img/logo2.png";
 
       document.body.style.overflow = 'hidden';
@@ -29,9 +29,10 @@ function toggleMenu() {
       menuBody.classList.add('closed');
 
       setTimeout(function() {
-        logoContainer.classList.remove("scrolled");
-        logoImg.src = "../sourse/img/logo.png";
-      }, 700); 
+        logoContainer.classList.remove("moved");
+        if (!logoContainer.classList.contains('scrolled')) {logoImg.src = "../sourse/img/logo.png";}
+        
+      }, 500); 
 
 
       document.body.style.overflow = 'auto';

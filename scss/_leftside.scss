@@ -25,13 +25,13 @@
   }
 
   &__left-text {
-    padding-top: 22rem;
+    padding-top: 24rem;
     text-align: center;
     font-size: 3.6rem;
     font-family: "Ducine";
     padding-right: 5rem;
     padding-left: 5rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
     &.scrolled {
       opacity: 0;
       transform: translateY(-50px);
