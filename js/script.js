@@ -1,10 +1,3 @@
-const swup = new Swup();
-
-// swup.on("animationInStart", (nextPage) => {
-//   const nextContainer = nextPage.container;
-//   nextContainer.classList.add("swup-transition-slide-next");
-// });
-
 window.addEventListener("scroll", function () {
   var logoContainer = document.querySelector(".logo");
   var logoImg = document.querySelector(".logo__img");

@@ -70,6 +70,15 @@
 //   opacity: 1;
 // }
 
+// .transition-fade {
+//   transition: transform 0.4s;
+//   transform: translateX(0);
+// }
+
+// html.is-animating .transition-fade {
+//   transform: translateX(-100%);
+// }
+
 .transition-fade {
   transition: transform 0.4s;
   transform: translateX(0);
@@ -79,6 +88,6 @@ html.is-animating .transition-fade {
   transform: translateX(-100%);
 }
 
-// html.is-animating .swup-transition-slide-next {
-//   transform: translateX(100%);
-// }
+html.is-animating .swup-transition-slide-next {
+  transform: translateX(100%);
+}

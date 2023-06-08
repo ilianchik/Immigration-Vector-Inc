@@ -339,6 +339,10 @@ html.is-animating .transition-fade {
   transform: translateX(-100%);
 }
 
+html.is-animating .swup-transition-slide-next {
+  transform: translateX(100%);
+}
+
 html {
   font-size: 62.5%;
 }
