@@ -256,7 +256,7 @@ input {
   transition: all 2s;
 }
 .closed > .menu__nav__contact-us {
-  transform: translateY(110vh);
+  transform: translateY(200vh);
 }
 
 main {
