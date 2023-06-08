@@ -331,12 +331,12 @@ main {
 }
 
 .transition-fade {
-  transition: 0.4s;
-  opacity: 1;
+  transition: transform 0.4s;
+  transform: translateX(0);
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+  transform: translateX(-100%);
 }
 
 html {

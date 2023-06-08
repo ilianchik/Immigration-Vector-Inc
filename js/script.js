@@ -1,7 +1,9 @@
+const swup = new Swup();
+
 window.addEventListener("scroll", function () {
   var logoContainer = document.querySelector(".logo");
   var logoImg = document.querySelector(".logo__img");
-  if (window.scrollY > 0 ) {
+  if (window.scrollY > 0) {
     logoContainer.classList.add("scrolled");
     logoImg.src = "../sourse/img/logo2.png";
   } else {
@@ -64,3 +66,5 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+
+// const swup = new Swup();

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.css" />
 
     <title>Immigration Services</title>
-    <link rel="icon" type="image/png" href="./sourse/img/favicon.png">
+    <link rel="icon" type="image/png" href="./sourse/img/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,11 +16,10 @@
       rel="stylesheet"
     />
 
-    <script defer src="./node_modules/swup/dist/Swup.modern.js"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/slider.js"></script>
+    <script defer src="https://unpkg.com/swup@3"></script>
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="./js/menu.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
   <body>
     <menu class="menu">
@@ -28,7 +27,10 @@
         SERVICES<br />IMMIGRATION
       </button>
       <nav class="menu__nav closed">
-        <h1 class="menu__nav__title"><div>Immigration</div><div>Services</div></h1>
+        <h1 class="menu__nav__title">
+          <div>Immigration</div>
+          <div>Services</div>
+        </h1>
         <a href="" class="menu__nav__item">PERMANENT RESIDENCE</a>
         <a href="" class="menu__nav__item">FAMILY SPONSORSHIP</a>
         <a href="" class="menu__nav__item">STUDY PERMITS</a>
@@ -38,8 +40,8 @@
         <a href="" class="menu__nav__item">BUSINESS IMMIGRATION</a>
         <a href="" class="menu__nav__item">PROVINCIAL NOMINEE PROGRAMS</a>
         <a href="" class="menu__nav__item">IMMIGRATION REFUSALS</a>
-        <hr class="menu__nav__hr">
-        <h3 class="menu__nav__contact-us" >contact us</h3>
+        <hr class="menu__nav__hr" />
+        <h3 class="menu__nav__contact-us">contact us</h3>
       </nav>
     </menu>
     <main>
@@ -105,7 +107,9 @@
             </div>
           </div>
           <div class="box3__btn-box">
-            <button class="box3__btn"><a href="./pages/textSliderPage.html">Read more</a></button>
+            <button class="box3__btn">
+              <a href="./slider.html">Read more</a>
+            </button>
           </div>
         </div>
         <div class="main__left-box4">
@@ -160,8 +164,8 @@
           </div>
         </div>
       </div>
-      <div class="fixed">
-        <div id="swup" class="main__right transition-fade">
+      <div id="swup" class="fixed transition-fade">
+        <div class="main__right">
           <div class="map-icon icon">
             <i class="ph-light ph-map-pin"></i>
           </div>
