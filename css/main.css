@@ -530,21 +530,18 @@ html {
 }
 .box3__btn {
   display: inline;
-  border: 1px solid red;
-  background-color: #f0b4b4;
-  padding: 1.6rem 14.8rem;
-  margin-right: 7.3rem;
-  cursor: pointer;
-}
-.box3__btn a {
   text-decoration: none;
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  border: 1px solid red;
+  background-color: #f0b4b4;
+  padding: 1.6rem 14.8rem;
+  margin-right: 7.3rem;
+  cursor: pointer;
 }
-
 .main__left-box4 {
   margin-bottom: 7.5rem;
 }
