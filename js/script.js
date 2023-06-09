@@ -131,25 +131,40 @@ $(".slider-inside").on(
 );
 
 let currentContent = 1;
+let isAnimating = false; // Додаємо змінну для відстеження стану анімації
 
 function changeContent(newContent) {
-  if (currentContent === newContent) return;
+  if (currentContent === newContent || isAnimating) return; // Перевіряємо, чи триває анімація
+
+  isAnimating = true; // Встановлюємо стан анімації в true
 
   const oldContentElement = document.getElementById(`content${currentContent}`);
   const newContentElement = document.getElementById(`content${newContent}`);
+
   oldContentElement.style.transform = "translateX(-100%)";
   newContentElement.style.transform = "translateX(0)";
 
-  // Додаємо затримку перед переміщенням старого контенту назад вправо
+  // Видаляємо клас 'active' зі старого контенту
+  oldContentElement.classList.remove("active");
+
+  // Додаємо клас 'active' до нового контенту
+  newContentElement.classList.add("active");
+
+  // Збільшено затримку перед переміщенням старого контенту назад вправо
   setTimeout(() => {
     oldContentElement.style.transition = "none";
     oldContentElement.style.transform = "translateX(100%)";
 
     // Відновлюємо анімацію для наступного разу
     setTimeout(() => {
-      oldContentElement.style.transition = "transform 0.7s";
+      oldContentElement.style.transition = "transform 0.6s";
     }, 50);
-  }, 700);
+  }, 600);
+
+  // Встановлюємо стан анімації в false після завершення анімації
+  setTimeout(() => {
+    isAnimating = false;
+  }, 600);
 
   currentContent = newContent;
 }
