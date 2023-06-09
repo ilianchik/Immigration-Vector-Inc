@@ -135,11 +135,10 @@
 .get_in_touch__opened {
   background-position: bottom !important;
 
-    &.slide2 >.slide2-slider {
-      transform: translateY(-20%);
-      opacity: 0;
-    }
-  
+  &.slide2 > .slide2-slider {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
 }
 
 .slider {
@@ -164,8 +163,8 @@
   align-items: center;
   justify-content: center;
 
-  &-slider{
-    transition: all 1s;  
+  &-slider {
+    transition: all 1s;
   }
 }
 
@@ -328,5 +327,5 @@
 
 .content {
   position: absolute;
-  transition: transform 0.7s;
+  transition: transform 0.6s;
 }
