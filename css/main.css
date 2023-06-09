@@ -407,7 +407,7 @@ main {
 }
 
 .get_in_touch__reaction {
-  transition: background-position 2s;
+  transition: background-position 2s !important;
 }
 
 .get_in_touch__opened {
