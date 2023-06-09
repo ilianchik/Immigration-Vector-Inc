@@ -197,6 +197,7 @@ input {
 }
 .menu__nav.closed {
   top: -100vh;
+  transform: translateY(-200%);
 }
 .menu__nav__title {
   font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;

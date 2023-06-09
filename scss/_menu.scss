@@ -68,6 +68,7 @@
     }
     &.closed {
       top: -100vh;
+      transform: translateY(-200%);
     }
 
     &__title {
