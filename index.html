@@ -24,6 +24,16 @@
     <script defer src="./js/form.js"></script>
   </head>
   <body>
+
+    <div class="massege_was_sent">
+      <div class="massege_was_sent__text">
+        message was sent <br>successfully
+        <br>
+      </div>
+      <i class="ph ph-check-circle"></i>
+      <button class="black-btn massege_was_sent__close_btn" onclick="sendMassegeClose()">CLOSE</button>
+    </div>
+
     <menu class="menu">
       <button class="menu__btn closed" onclick="toggleMenu()">
         SERVICES<br />IMMIGRATION
@@ -424,9 +434,7 @@
               <input type="text" id="input_userphone" placeholder="Phone" />
               <input type="email" id="input_useremail" placeholder="Email" />
               <select name="" id="input_usercountry">
-                <option value="def" disabled>Your Country</option>
-                <option value="def">Your Country</option>
-                <option value="def">Your Country</option>
+                <option value="0" disabled>Your Country</option>
               </select>
               <textarea
                 name=""
@@ -436,10 +444,11 @@
                 placeholder="Message"
               ></textarea>
               <input
-                type="submit"
-                value="Send"
-                class="get_in_touch__form__submit"
-              />
+              type="submit"
+              value="Send"
+              class="get_in_touch__form__submit"
+              onclick="sendMassege()"
+            />
             </form>
           </div>
         </div>

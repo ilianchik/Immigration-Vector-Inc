@@ -214,7 +214,12 @@
     padding: 1.6rem 10.8rem;
     margin-right: 7.3rem;
     cursor: pointer;
-    & a {
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: #ec9393;
+    }
+    &:active {
+      background-color: #d86161;
     }
   }
 }

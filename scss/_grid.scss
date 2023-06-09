@@ -26,3 +26,39 @@ main {
   left: 50%;
   right: 0;
 }
+
+.massege_was_sent{
+
+  &.opened{
+    display: flex;
+  }
+
+  position: fixed;
+  z-index: 999999;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  text-align: center;
+  color: white;
+  font-family: 'ducine';
+  font-size: 8.4rem;
+
+  display: none;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  row-gap: 1rem;
+
+  &__close_btn{
+    margin-top: 4.2rem;
+    font-size: 3.2rem ;
+    padding: 0.6rem 5.2rem !important;
+  }
+
+  &__text{
+    text-transform: uppercase;
+  }
+}
