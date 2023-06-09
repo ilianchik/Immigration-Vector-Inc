@@ -9,14 +9,14 @@ main {
   left: 25%;
   transform: translateX(-50%);
   transition: all 0.7s ease-in-out;
-  &.scrolled {
-    left: 67%;
-  }
-  &.moved {
-    left: 67%;
+
+  &.scrolled, &.moved{
+    transform: translateX(10%);
+    left: 50%;
   }
 
   &__img {
+    width: 30rem;
   }
 }
 

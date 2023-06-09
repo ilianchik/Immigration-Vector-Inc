@@ -279,12 +279,14 @@ main {
   transform: translateX(-50%);
   transition: all 0.7s ease-in-out;
 }
-.logo.scrolled {
-  left: 67%;
+.logo.scrolled, .logo.moved {
+  transform: translateX(10%);
+  left: 50%;
 }
-.logo.moved {
-  left: 67%;
+.logo__img {
+  width: 30rem;
 }
+
 .fixed {
   position: fixed;
   position: fixed;
