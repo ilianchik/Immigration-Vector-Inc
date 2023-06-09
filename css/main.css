@@ -197,7 +197,10 @@ input {
 }
 .menu__nav.closed {
   top: -100vh;
-  transform: translateY(-200%);
+}
+.menu__nav.closed > .menu__nav__item {
+  position: absolute;
+  top: -100vh;
 }
 .menu__nav__title {
   font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
@@ -254,7 +257,9 @@ input {
   text-transform: uppercase;
   font-size: 3.8rem;
   letter-spacing: 1px;
-  margin-top: 1.8rem;
+  /*margin-top: 1.8rem;*/
+  position: absolute;
+  bottom: 2.4rem;
   transition: all 2s;
 }
 .closed > .menu__nav__contact-us {
