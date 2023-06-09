@@ -407,7 +407,7 @@ main {
 }
 
 .get_in_touch__reaction {
-  transition: background-position 2s !important;
+  transition: background-position 2s;
 }
 
 .get_in_touch__opened {
@@ -775,7 +775,7 @@ html {
 }
 .left__box3-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-right: 2rem;
   padding-left: 2rem;
 }
@@ -785,10 +785,11 @@ html {
   display: flex;
   justify-content: center;
   margin-bottom: 5.6rem;
+  width: 30%;
 }
 .box3__number {
   font-family: "Mont";
-  font-size: 12rem;
+  font-size: 8.6rem;
   font-weight: 700;
   color: #333333;
   transform: translateY(-67%);
@@ -796,7 +797,7 @@ html {
 .box3__text {
   font-family: "Josefin Sans";
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
 }
 .box3__btn-box {
   display: flex;
@@ -807,12 +808,12 @@ html {
   text-decoration: none;
   font-family: "Josefin Sans";
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   border: 1px solid red;
   background-color: #f0b4b4;
-  padding: 1.6rem 14.8rem;
+  padding: 1.6rem 10.8rem;
   margin-right: 7.3rem;
   cursor: pointer;
 }
@@ -822,13 +823,13 @@ html {
 
 .left__box4-title {
   font-family: "Mont";
-  font-size: 6rem;
+  font-size: 5.2rem;
   font-weight: 700;
   color: #000000;
   text-align: center;
   margin-bottom: 6rem;
   text-transform: uppercase;
-  margin-bottom: 8rem;
+  margin-bottom: 9.8rem;
   padding-left: 7%;
 }
 .left__box4-container {
@@ -853,21 +854,21 @@ html {
   padding-right: 4rem;
 }
 .box4__img {
-  width: 4rem;
-  height: 4rem;
+  width: 4.2rem;
+  height: 4.2rem;
   transform: translateY(50%);
 }
 .box4-subtitle {
   font-family: "Josefin Sans";
   font-weight: 400;
-  font-size: 3.6rem;
-  margin-bottom: 4rem;
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
 }
 
 .box4-text {
   font-family: "Josefin Sans";
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 
 @keyframes jump {
