@@ -401,6 +401,9 @@ main {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slick-track {
@@ -481,6 +484,82 @@ main {
   background-size: cover;
   height: 100vh;
   width: 100%;
+}
+
+.slider-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5rem;
+}
+
+.slider__inside-slide {
+  padding-right: 12rem;
+  padding-left: 12rem;
+}
+.slider__inside-title {
+  font-family: "Josefin Sans";
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: white;
+  max-width: 50rem;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
+  letter-spacing: 0.3rem;
+}
+.slider__inside-text {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: white;
+}
+.slider__inside-text:last-child {
+  margin-bottom: 0;
+}
+.slider__inside-list {
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+.slider__inside-item {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.slide2-slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider__inside-prev {
+  position: absolute;
+  left: 10%;
+  bottom: -8%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+.slider__inside-next {
+  position: absolute;
+  right: 10%;
+  bottom: -8%;
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.inside-arrow--hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none;
 }
 
 html {

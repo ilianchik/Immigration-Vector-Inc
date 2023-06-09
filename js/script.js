@@ -77,7 +77,7 @@ $(".slider").slick({
   swipe: true,
   infinite: false,
   swipe: false,
-  speed: 500,
+  speed: 400,
   cssEase: "linear",
   fade: true,
 });
@@ -95,3 +95,35 @@ $(".go-to-slide").click(function () {
   var slideIndex = $(this).data("slide");
   $(".slider").slick("slickGoTo", slideIndex);
 });
+
+$(".slider-inside").slick({
+  arrows: false,
+  swipe: true,
+  infinite: false,
+  speed: 400,
+});
+
+$(".slider__inside-next").on("click", function () {
+  $(".slider-inside").slick("slickNext");
+});
+
+$(".slider__inside-prev").on("click", function () {
+  $(".slider-inside").slick("slickPrev");
+});
+
+$(".slider-inside").on(
+  "beforeChange",
+  function (event, slick, currentSlide, nextSlide) {
+    if (nextSlide === 0) {
+      $(".slider__inside-prev").addClass("inside-arrow--hidden");
+    } else {
+      $(".slider__inside-prev").removeClass("inside-arrow--hidden");
+    }
+
+    if (nextSlide === slick.slideCount - 1) {
+      $(".slider__inside-next").addClass("inside-arrow--hidden");
+    } else {
+      $(".slider__inside-next").removeClass("inside-arrow--hidden");
+    }
+  }
+);
