@@ -30,11 +30,13 @@
   z-index: 1;
   text-align: right;
   left: 50%;
-  transform: translate(50%, -50%);
-  bottom: -100vh;
+  transform: translate(50%, 0);
+  bottom: -50%;
   z-index: 1000;
   &__form {
+    transition: all 3s;
     text-align: right;
+    opacity: 0;
     & input,
     & select,
     & option,
@@ -74,16 +76,34 @@
     }
   }
   &__btn {
-    transition: all 3s;
-    margin-bottom: 30vh;
-    margin-right: -4.2rem;
+    transition: all 2s;
+    margin-bottom: 15rem;
+    margin-right: -10%;
     cursor: pointer;
   }
+  
+  @media (max-aspect-ratio: 1/1) and (max-width: 1000px) and (zoom: 0.75){
+    &__btn {
+      margin-bottom: 20rem;
+    }
+  }
+  
+  @media (max-aspect-ratio: 1/1) and (zoom: 1.25) {
+    &__btn {
+      margin-bottom: 20rem;
+    }
+  }
+  
 
   &.opened {
     bottom: 0;
+    transform: translate(50%, -50%);
   }
   &.opened > &__btn {
+    margin-bottom: 2.8rem;
+  }
+  &.opened > &__form {
+    opacity: 100;
     margin-bottom: 2.8rem;
   }
 }
