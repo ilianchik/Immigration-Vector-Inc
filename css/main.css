@@ -407,6 +407,78 @@ main {
   overflow: hidden;
 }
 
+.slide3 {
+  background-image: url("../sourse/img/Permanent-Residence.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide4 {
+  background-image: url("../sourse/img/Family-Sponsorrship.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide5 {
+  background-image: url("../sourse/img/Study-Permits.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide6 {
+  background-image: url("../sourse/img/Work-Permits.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide7 {
+  background-image: url("../sourse/img/Visitor-Visas.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide8 {
+  background-image: url("../sourse/img/Citizenship-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide9 {
+  background-image: url("../sourse/img/Business-Immigration.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide10 {
+  background-image: url("../sourse/img/PNP-1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide11 {
+  background-image: url("../sourse/img/Immigration-Refusals.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
 html {
   font-size: 62.5%;
 }

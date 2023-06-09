@@ -74,10 +74,18 @@ window.addEventListener("scroll", function () {
 
 $(".slider").slick({
   arrows: false,
-  swipe: false,
+  swipe: true,
   infinite: false,
-  speed: 400,
 });
+
+var slide1 = document.querySelector(".slide1");
+
+// $("#nextSlide").on("click", function () {
+//   $(".slider").slick("slickNext");
+//   setTimeout(function () {
+//     slide1.style.display = "none";
+//   }, 3000);
+// });
 
 $(".box3__btn").click(function () {
   var slideIndex = $(this).data("slide");
