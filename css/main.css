@@ -404,6 +404,18 @@ main {
   background-color: rgba(152, 152, 152, 0.5);
 }
 
+.get_in_touch__reaction {
+  transition: background-position 2s;
+}
+
+.get_in_touch__opened {
+  background-position: bottom !important;
+}
+.get_in_touch__opened.slide2 > .slide2-slider {
+  transform: translateY(-200%);
+  opacity: 0;
+}
+
 .slider {
   height: 100vh;
   width: 100%;
@@ -427,6 +439,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.slide2-slider {
+  transition: all 3s;
 }
 
 .slick-track {
