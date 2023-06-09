@@ -412,7 +412,7 @@ main {
   background-position: bottom !important;
 }
 .get_in_touch__opened.slide2 > .slide2-slider {
-  transform: translateY(-200%);
+  transform: translateY(-20%);
   opacity: 0;
 }
 
@@ -441,7 +441,7 @@ main {
   justify-content: center;
 }
 .slide2-slider {
-  transition: all 3s;
+  transition: all 1s;
 }
 
 .slick-track {

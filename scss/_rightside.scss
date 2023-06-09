@@ -139,7 +139,7 @@
   background-position: bottom !important;
 
     &.slide2 >.slide2-slider {
-      transform: translateY(-200%);
+      transform: translateY(-20%);
       opacity: 0;
     }
   
@@ -168,7 +168,7 @@
   justify-content: center;
 
   &-slider{
-    transition: all 3s;  
+    transition: all 1s;  
   }
 
 }
