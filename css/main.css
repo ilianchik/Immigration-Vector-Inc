@@ -217,6 +217,7 @@ input {
   font-size: 3.6rem;
   text-decoration: none;
   color: black;
+  cursor: pointer;
   transition: all 1s;
 }
 .menu__nav__item:hover {

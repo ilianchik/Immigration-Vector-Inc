@@ -49,15 +49,11 @@
     &.opened::before {
       transform: translate(-41%, -50%) rotate(45deg);
     }
-
-
   }
 
-
-  &__nav{
-
+  &__nav {
     transition: all 2s;
-    position: fixed; 
+    position: fixed;
     left: 0;
     width: 50%;
     height: 100vh;
@@ -67,93 +63,84 @@
 
     background-color: white;
 
-      &.opened{
-        top: 0;
+    &.opened {
+      top: 0;
+    }
+    &.closed {
+      top: -100vh;
+    }
+
+    &__title {
+      font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
+      font-size: 8.4rem;
+      font-weight: bolder;
+      letter-spacing: 0.4rem;
+      color: #ccc;
+
+      & div:last-child {
+        text-align: right;
       }
-      &.closed{
-        top: -100vh;
-      }
+    }
 
-      &__title{
-        font-family: Mont Heavy,  'Arial Narrow Bold', sans-serif ;
-        font-size: 8.4rem;
-        font-weight: bolder;
-        letter-spacing: 0.4rem;
-        color: #ccc;
+    &__item {
+      position: relative;
+      display: block;
+      padding-bottom: 1.4rem;
+      width: fit-content;
 
-          & div:last-child{
-            text-align: right;
-          }
-      }
+      font-family: "ducine";
+      font-size: 3.6rem;
+      text-decoration: none;
 
-      &__item{
-        position: relative;
-        display: block;
-        padding-bottom: 1.4rem;
-        width: fit-content;
+      color: black;
+      cursor: pointer;
+      transition: all 1s;
 
-        font-family: "ducine";
-        font-size: 3.6rem;
-        text-decoration: none;
-
-        color:black;
-        
-        transition: all 1s;
-
-        &:hover{
-          margin-left: 3.6rem;
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: 5px;
-          width: 0; 
-          height: 1.5px;
-          background-color: black;
-          transition: width 0.5s ease;
-
-        }
-      
-        &:hover::after {
-          width: 100%;
-        }
+      &:hover {
+        margin-left: 3.6rem;
       }
 
-      &__hr {
-        
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        width: 0;
         height: 1.5px;
         background-color: black;
-        border: none;
-        margin-left: 16%;
-        margin-top: 1.8rem;
-        transition: all 1s ease;
-
-        .closed>&{
-          margin-left: 100%;
-        }
+        transition: width 0.5s ease;
       }
-      
 
-
-      &__contact-us {
-        font-family: "ducine";
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 3.8rem;
-        letter-spacing: 1px;
-        margin-top: 1.8rem;
-        
-        transition: all 2s;
-        .closed>&{
-          transform: translateY(200vh);
-          
-        }
+      &:hover::after {
+        width: 100%;
       }
-      
+    }
 
+    &__hr {
+      height: 1.5px;
+      background-color: black;
+      border: none;
+      margin-left: 16%;
+      margin-top: 1.8rem;
+      transition: all 1s ease;
+
+      .closed > & {
+        margin-left: 100%;
+      }
+    }
+
+    &__contact-us {
+      font-family: "ducine";
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 3.8rem;
+      letter-spacing: 1px;
+      margin-top: 1.8rem;
+
+      transition: all 2s;
+      .closed > & {
+        transform: translateY(200vh);
+      }
+    }
   }
-
-
 }

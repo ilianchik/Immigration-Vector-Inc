@@ -76,6 +76,8 @@ $(".slider").slick({
   arrows: false,
   swipe: true,
   infinite: false,
+  swipe: false,
+  speed: 200,
 });
 
 var slide1 = document.querySelector(".slide1");
@@ -87,7 +89,7 @@ var slide1 = document.querySelector(".slide1");
 //   }, 3000);
 // });
 
-$(".box3__btn").click(function () {
+$(".go-to-slide").click(function () {
   var slideIndex = $(this).data("slide");
   $(".slider").slick("slickGoTo", slideIndex);
 });
