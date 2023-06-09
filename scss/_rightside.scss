@@ -135,10 +135,11 @@
 .get_in_touch__opened {
   background-position: bottom !important;
 
-  &.slide2 > .slide2-slider {
-    transform: translateY(-200%);
-    opacity: 0;
-  }
+    &.slide2 >.slide2-slider {
+      transform: translateY(-20%);
+      opacity: 0;
+    }
+  
 }
 
 .slider {
@@ -163,8 +164,8 @@
   align-items: center;
   justify-content: center;
 
-  &-slider {
-    transition: all 3s;
+  &-slider{
+    transition: all 1s;  
   }
 }
 
