@@ -294,6 +294,7 @@ main {
 .main__right .map-icon {
   right: 1.8rem;
   top: 1.2rem;
+  z-index: 1000;
 }
 .main__right .sotial_networks {
   display: flex;
@@ -301,6 +302,7 @@ main {
   gap: 0.8rem;
   bottom: 1.8rem;
   left: 1.2rem;
+  z-index: 1000;
 }
 .main__right__text-slider {
   background-image: url("../sourse/img/textslider.png");
@@ -314,6 +316,7 @@ main {
   left: 50%;
   transform: translate(50%, -50%);
   bottom: -100vh;
+  z-index: 1000;
 }
 .get_in_touch__form {
   text-align: right;

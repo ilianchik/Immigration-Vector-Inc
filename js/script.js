@@ -77,7 +77,9 @@ $(".slider").slick({
   swipe: true,
   infinite: false,
   swipe: false,
-  speed: 200,
+  speed: 500,
+  cssEase: "linear",
+  fade: true,
 });
 
 var slide1 = document.querySelector(".slide1");
