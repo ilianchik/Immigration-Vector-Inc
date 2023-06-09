@@ -137,7 +137,6 @@ function changeContent(newContent) {
 
   const oldContentElement = document.getElementById(`content${currentContent}`);
   const newContentElement = document.getElementById(`content${newContent}`);
-
   oldContentElement.style.transform = "translateX(-100%)";
   newContentElement.style.transform = "translateX(0)";
 
@@ -148,9 +147,9 @@ function changeContent(newContent) {
 
     // Відновлюємо анімацію для наступного разу
     setTimeout(() => {
-      oldContentElement.style.transition = "transform 0.5s";
+      oldContentElement.style.transition = "transform 0.7s";
     }, 50);
-  }, 500);
+  }, 700);
 
   currentContent = newContent;
 }
