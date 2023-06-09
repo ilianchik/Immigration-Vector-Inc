@@ -33,31 +33,58 @@
           <div>Immigration</div>
           <div>Services</div>
         </h1>
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="2"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(3)"
           >PERMANENT RESIDENCE</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="3"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(4)"
           >FAMILY SPONSORSHIP</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="4"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(5)"
           >STUDY PERMITS</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="5"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(6)"
           >WORK PERMITS</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="6"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(7)"
           >VISITOR VISAS</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="7"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(8)"
           >CITIZENSHIP</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="8"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(9)"
           >BUSINESS IMMIGRATION</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="9"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(10)"
           >PROVINCIAL NOMINEE PROGRAMS</btn
         >
-        <btn href="" class="menu__nav__item go-to-slide" data-slide="10"
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(11)"
           >IMMIGRATION REFUSALS</btn
         >
         <hr class="menu__nav__hr" />
@@ -127,7 +154,7 @@
             </div>
           </div>
           <div class="box3__btn-box">
-            <button class="box3__btn go-to-slide" id="nextSlide" data-slide="1">
+            <button class="box3__btn go-to-slide" onclick="changeContent(2)">
               Read more
             </button>
           </div>
@@ -187,8 +214,11 @@
 
       <div class="fixed">
         <div class="slider">
-          <div class="slide1 get_in_touch__reaction"></div>
-          <div class="slide2 get_in_touch__reaction">
+          <div
+            class="slide1 get_in_touch__reaction content"
+            id="content1"
+          ></div>
+          <div class="slide2 get_in_touch__reaction content" id="content2">
             <div class="slide2-slider">
               <div class="slider-inside">
                 <div class="slider__inside-slide">
@@ -262,15 +292,116 @@
               </button>
             </div>
           </div>
-          <div class="slide3 get_in_touch__reaction"></div>
-          <div class="slide4 get_in_touch__reaction"></div>
-          <div class="slide5 get_in_touch__reaction"></div>
-          <div class="slide6 get_in_touch__reaction"></div>
-          <div class="slide7 get_in_touch__reaction"></div>
-          <div class="slide8 get_in_touch__reaction"></div>
-          <div class="slide9 get_in_touch__reaction"></div>
-          <div class="slide10 get_in_touch__reaction"></div>
-          <div class="slide11 get_in_touch__reaction"></div>
+          <div class="slide3 get_in_touch__reaction content" id="content3">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+              </ul>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide4 get_in_touch__reaction content" id="content4">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide5 get_in_touch__reaction content" id="content5">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide6 get_in_touch__reaction content" id="content6">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+              </ul>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+              </ul>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide7 get_in_touch__reaction content" id="content7">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide8 get_in_touch__reaction content" id="content8">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+              </ul>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide9 get_in_touch__reaction content" id="content9">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide10 get_in_touch__reaction content" id="content10">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+              </ul>
+              <p class="slide-text">5</p>
+            </div>
+          </div>
+          <div class="slide11 get_in_touch__reaction content" id="content11">
+            <div class="slide__text-box">
+              <h2 class="slide-tittle">5</h2>
+              <p class="slide-text">5</p>
+              <p class="slide-text">5</p>
+              <ul class="slide-list">
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+                <li class="slide__list-item">5</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="main__right">
           <div class="map-icon icon">

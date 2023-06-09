@@ -72,15 +72,17 @@ window.addEventListener("scroll", function () {
   });
 });
 
-$(".slider").slick({
-  arrows: false,
-  swipe: true,
-  infinite: false,
-  swipe: false,
-  speed: 400,
-  cssEase: "linear",
-  fade: true,
-});
+// $(".slider").slick({
+//   arrows: false,
+//   swipe: true,
+//   infinite: true,
+//   swipe: false,
+//   speed: 400,
+//   ltr: true,
+
+//   // cssEase: "linear",
+//   // fade: true,
+// });
 
 var slide1 = document.querySelector(".slide1");
 
@@ -91,10 +93,10 @@ var slide1 = document.querySelector(".slide1");
 //   }, 3000);
 // });
 
-$(".go-to-slide").click(function () {
-  var slideIndex = $(this).data("slide");
-  $(".slider").slick("slickGoTo", slideIndex);
-});
+// $(".go-to-slide").click(function () {
+//   var slideIndex = $(this).data("slide");
+//   $(".slider").slick("slickGoTo", slideIndex);
+// });
 
 $(".slider-inside").slick({
   arrows: false,
@@ -127,3 +129,28 @@ $(".slider-inside").on(
     }
   }
 );
+
+let currentContent = 1;
+
+function changeContent(newContent) {
+  if (currentContent === newContent) return;
+
+  const oldContentElement = document.getElementById(`content${currentContent}`);
+  const newContentElement = document.getElementById(`content${newContent}`);
+
+  oldContentElement.style.transform = "translateX(-100%)";
+  newContentElement.style.transform = "translateX(0)";
+
+  // Додаємо затримку перед переміщенням старого контенту назад вправо
+  setTimeout(() => {
+    oldContentElement.style.transition = "none";
+    oldContentElement.style.transform = "translateX(100%)";
+
+    // Відновлюємо анімацію для наступного разу
+    setTimeout(() => {
+      oldContentElement.style.transition = "transform 0.5s";
+    }, 50);
+  }, 500);
+
+  currentContent = newContent;
+}

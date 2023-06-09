@@ -2,6 +2,8 @@
   &__left {
     overflow-x: auto;
     overflow-y: auto;
+    background-color: white;
+    z-index: 9999;
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     scrollbar-width: none; /* Firefox */
     &::-webkit-scrollbar {
