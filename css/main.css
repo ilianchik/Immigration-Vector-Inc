@@ -198,6 +198,10 @@ input {
 .menu__nav.closed {
   top: -100vh;
 }
+.menu__nav.closed > .menu__nav__item {
+  position: absolute;
+  top: -100vh;
+}
 .menu__nav__title {
   font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
   font-size: 8.4rem;
@@ -253,7 +257,9 @@ input {
   text-transform: uppercase;
   font-size: 3.8rem;
   letter-spacing: 1px;
-  margin-top: 1.8rem;
+  /*margin-top: 1.8rem;*/
+  position: absolute;
+  bottom: 2.4rem;
   transition: all 2s;
 }
 .closed > .menu__nav__contact-us {
@@ -314,12 +320,14 @@ main {
   z-index: 1;
   text-align: right;
   left: 50%;
-  transform: translate(50%, -50%);
-  bottom: -100vh;
+  transform: translate(50%, 0);
+  bottom: -50%;
   z-index: 1000;
 }
 .get_in_touch__form {
+  transition: all 3s;
   text-align: right;
+  opacity: 0;
 }
 .get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
   display: block;
@@ -350,15 +358,30 @@ main {
   padding: 1rem 4.6rem !important;
 }
 .get_in_touch__btn {
-  transition: all 3s;
-  margin-bottom: 30vh;
-  margin-right: -4.2rem;
+  transition: all 2s;
+  margin-bottom: 15rem;
+  margin-right: -10%;
   cursor: pointer;
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 1000px) and (zoom: 0.75) {
+  .get_in_touch__btn {
+    margin-bottom: 20rem;
+  }
+}
+@media (max-aspect-ratio: 1/1) and (zoom: 1.25) {
+  .get_in_touch__btn {
+    margin-bottom: 20rem;
+  }
 }
 .get_in_touch.opened {
   bottom: 0;
+  transform: translate(50%, -50%);
 }
 .get_in_touch.opened > .get_in_touch__btn {
+  margin-bottom: 2.8rem;
+}
+.get_in_touch.opened > .get_in_touch__form {
+  opacity: 100;
   margin-bottom: 2.8rem;
 }
 

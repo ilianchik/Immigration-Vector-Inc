@@ -69,6 +69,10 @@
     &.closed {
       top: -100vh;
     }
+    &.closed > &__item {
+      position: absolute;
+      top: -100vh;
+    }
 
     &__title {
       font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
@@ -135,7 +139,11 @@
       text-transform: uppercase;
       font-size: 3.8rem;
       letter-spacing: 1px;
-      margin-top: 1.8rem;
+
+      /*margin-top: 1.8rem;*/
+
+      position: absolute;
+      bottom: 2.4rem;
 
       transition: all 2s;
       .closed > & {
