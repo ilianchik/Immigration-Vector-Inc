@@ -1,7 +1,7 @@
 .main {
   &__left {
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
     -ms-overflow-style: none; /* Internet Explorer and Edge */
     scrollbar-width: none; /* Firefox */
     &::-webkit-scrollbar {
@@ -211,8 +211,7 @@
     padding: 1.6rem 14.8rem;
     margin-right: 7.3rem;
     cursor: pointer;
-    & a{
-      
+    & a {
     }
   }
 }
