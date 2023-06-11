@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
   var scrollSpeed = Math.abs(window.scrollY - (this.prevScrollY || 0));
   var duration = 1.0 / scrollSpeed;
 
-  var textContainer = document.querySelector(".hero-text");
+  var textContainer = document.querySelector(".hero__text");
   textContainer.style.transitionDuration = duration + "s";
 
   if (window.scrollY > 0) {
