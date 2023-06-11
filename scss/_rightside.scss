@@ -331,24 +331,23 @@
 }
 
 .slide {
-
   &__text-box {
     color: #fff;
-    font-family: 'Josefin Sans';
+    font-family: "Josefin Sans";
     font-size: 2.2rem;
 
     padding: 13rem 3.6rem;
   }
 
   &-tittle {
-
-    font-size: 6.4rem;
+    font-size: 5.4rem;
     margin-bottom: 2.6rem;
-    font-family: 'Mont';
+    font-family: "Mont";
     position: relative;
 
-    &::after{
-      content: '.'; font-size: 1;
+    &::after {
+      content: ".";
+      font-size: 1;
       color: rgba(255, 255, 255, 0);
       position: absolute;
       left: 0;
@@ -358,7 +357,6 @@
       background-color: rgb(255, 0, 0);
       transition: width 0.5s ease;
     }
-
   }
   &-text {
     margin-bottom: 1.6rem;
@@ -366,15 +364,16 @@
   }
 
   &-list {
-
   }
   &__list-item {
-    margin: 2rem 1.6rem;
+    margin: 0 1.6rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
     position: relative;
-    &::before{
-      content: '*';
+    &::before {
+      content: "*";
       position: absolute;
       transform: translateX(-14px);
     }
-}
+  }
 }
