@@ -53,7 +53,7 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
-  var textContainer = document.querySelector(".main__left-box3");
+  var textContainer = document.querySelector(".services");
   if (window.scrollY > 1350) {
     textContainer.classList.add("scrolled");
   } else {

@@ -916,16 +916,15 @@ html {
   font-weight: 600;
 }
 
-.main__left-box3 {
+.services {
   margin-bottom: 30rem;
   transition: all 0.7s;
 }
-.main__left-box3.scrolled {
+.services.scrolled {
   opacity: 0;
   transform: translateX(100%);
 }
-
-.left__box3-title {
+.services__title {
   font-family: "Mont";
   font-size: 6rem;
   font-weight: 700;
@@ -935,37 +934,36 @@ html {
   text-transform: uppercase;
   margin-bottom: 10rem;
 }
-.left__box3-container {
+.services__content {
   display: flex;
   justify-content: space-around;
   padding-right: 2rem;
   padding-left: 2rem;
 }
-
-.box3__container-box {
+.services__content-box {
   position: relative;
   display: flex;
   justify-content: center;
   margin-bottom: 5.6rem;
   width: 30%;
 }
-.box3__number {
+.services__number {
   font-family: "Mont";
   font-size: 8.6rem;
   font-weight: 700;
   color: #333333;
   transform: translateY(-67%);
 }
-.box3__text {
+.services__text {
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: 1.8rem;
 }
-.box3__btn-box {
+.services__btn-box {
   display: flex;
   justify-content: end;
 }
-.box3__btn {
+.services__btn {
   display: inline;
   text-decoration: none;
   font-family: "Josefin Sans";
@@ -980,10 +978,10 @@ html {
   cursor: pointer;
   transition: background-color 0.5s;
 }
-.box3__btn:hover {
+.services__btn:hover {
   background-color: #ec9393;
 }
-.box3__btn:active {
+.services__btn:active {
   background-color: #d86161;
 }
 
