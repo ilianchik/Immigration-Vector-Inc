@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
   var scrollSpeed = Math.abs(window.scrollY - (this.prevScrollY || 0));
   var duration = 1.0 / scrollSpeed;
 
-  var textContainer = document.querySelector(".main__left-text");
+  var textContainer = document.querySelector(".hero-text");
   textContainer.style.transitionDuration = duration + "s";
 
   if (window.scrollY > 0) {
@@ -27,7 +27,7 @@ window.addEventListener("scroll", function () {
 });
 
 window.addEventListener("scroll", function () {
-  var textContainer = document.querySelector(".left__arrow-button");
+  var textContainer = document.querySelector(".hero__arrow-btn");
   if (window.scrollY > 0) {
     textContainer.classList.add("scrolled");
   } else {
@@ -44,7 +44,7 @@ window.addEventListener("scroll", function () {
   }
 });
 window.addEventListener("scroll", function () {
-  var textContainer = document.querySelector(".main__left-box2");
+  var textContainer = document.querySelector(".testimonial");
   if (window.scrollY > 750) {
     textContainer.classList.add("scrolled");
   } else {

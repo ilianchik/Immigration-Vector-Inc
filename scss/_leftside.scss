@@ -1,60 +1,8 @@
-.main {
-  &__left {
-    overflow-x: auto;
-    overflow-y: auto;
-    background-color: white;
-    z-index: 9999;
-    -ms-overflow-style: none; /* Internet Explorer and Edge */
-    scrollbar-width: none; /* Firefox */
-    &::-webkit-scrollbar {
-      /* Chrome, Safari, and Opera */
-      display: none;
-    }
-  }
-  &__left-box {
-    height: 100vh;
-    position: relative;
-    margin-bottom: 6rem;
-  }
-  &__left-box2 {
-    position: relative;
-    transition: all 0.7s;
-    margin-bottom: 30rem;
-    & .slick-dots {
-      display: flex;
-      justify-content: center;
-      margin-top: 1.5rem;
-    }
-    & .slick-dots li {
-      border-radius: 50%;
-      margin-right: 0.9rem;
-      transition: all 0.4s;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    & .slick-dots li button {
-      background: transparent;
-      border: #ff0506 solid 0.16rem;
-      border-radius: 50%;
-      width: 1.5rem;
-      height: 1.5rem;
-      font-size: 0;
-      cursor: pointer;
-    }
-
-    & .slick-dots li.slick-active {
-      background-color: #ff0506;
-    }
-    &.scrolled {
-      opacity: 0;
-      transform: translateX(100%);
-    }
-  }
-
-  &__left-text {
+.hero {
+  height: 100vh;
+  position: relative;
+  margin-bottom: 6rem;
+  &__text {
     padding-top: 24rem;
     text-align: center;
     font-size: 3.6rem;
@@ -67,10 +15,7 @@
       transform: translateY(-50px);
     }
   }
-}
-
-.left {
-  &__arrow-button {
+  &__arrow-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,35 +37,66 @@
       bottom: 10rem;
     }
   }
-}
-.arrow {
-  &__button-down {
+  &__arrow-img {
     width: 40px;
     height: 40px;
   }
 }
-.left__box2-title {
-  font-family: "Mont";
-  font-size: 6rem;
-  font-weight: 700;
-  color: #7f7f7f;
-  text-align: center;
-  width: 42rem;
-  margin-bottom: 6rem;
-  text-transform: uppercase;
-}
+.testimonial {
+  position: relative;
+  transition: all 0.7s;
+  margin-bottom: 30rem;
+  & .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  & .slick-dots li {
+    border-radius: 50%;
+    margin-right: 0.9rem;
+    transition: all 0.4s;
 
-.left__title-box {
-  display: flex;
-  justify-content: end;
-}
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
-.left {
-  &__testimonial-box {
+  & .slick-dots li button {
+    background: transparent;
+    border: #ff0506 solid 0.16rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0;
+    cursor: pointer;
+  }
+
+  & .slick-dots li.slick-active {
+    background-color: #ff0506;
+  }
+  &.scrolled {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  &__title-box {
+    display: flex;
+    justify-content: end;
+  }
+  &__title {
+    font-family: "Mont";
+    font-size: 6rem;
+    font-weight: 700;
+    color: #7f7f7f;
+    text-align: center;
+    width: 42rem;
+    margin-bottom: 6rem;
+    text-transform: uppercase;
+  }
+  &__slider {
+  }
+  &__slide {
     display: flex;
   }
-}
-.testimonial {
   &__text-box {
     width: 55rem;
     border: 1px solid #7f7f7f;
@@ -130,7 +106,12 @@
     margin-right: 2.2rem;
     position: relative;
   }
-
+  &__text {
+    font-family: "Josefin Sans";
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 3rem;
+  }
   &__quotes {
     font-family: "JournalSans";
     font-weight: 400;
@@ -140,33 +121,22 @@
     top: -25px;
     right: -35px;
   }
-
   &__person-img {
     width: 8.8rem;
     height: 8.8rem;
     align-self: center;
   }
-
   &__person-text {
     align-self: center;
     margin-left: 1rem;
     margin-right: 1rem;
   }
-}
-.testimonial-text {
-  font-family: "Josefin Sans";
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 3rem;
-}
-.person {
-  &__text-name {
+  &__person-name {
     font-family: "Josefin Sans";
     font-size: 2rem;
     font-weight: 300;
   }
-
-  &__text-country {
+  &__person-country {
     font-family: "Josefin Sans";
     font-size: 2rem;
     font-weight: 600;

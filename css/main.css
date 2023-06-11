@@ -109,6 +109,10 @@ input {
   border-radius: 0;
 }
 
+dialog {
+  border: none;
+}
+
 @font-face {
   font-family: "Mont";
   src: url("../fonts/Mont ExtraLight.ttf");
@@ -266,9 +270,21 @@ input {
   transform: translateY(200vh);
 }
 
-main {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.grid__left {
+  overflow-x: auto;
+  overflow-y: auto;
+  background-color: white;
+  z-index: 9999;
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.grid__left::-webkit-scrollbar {
+  /* Chrome, Safari, and Opera */
+  display: none;
 }
 
 .logo {
@@ -760,58 +776,12 @@ html {
   background-color: rgba(0, 0, 0, 0.623);
 }
 
-.main__left {
-  overflow-x: auto;
-  overflow-y: auto;
-  background-color: white;
-  z-index: 9999;
-  -ms-overflow-style: none; /* Internet Explorer and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-.main__left::-webkit-scrollbar {
-  /* Chrome, Safari, and Opera */
-  display: none;
-}
-.main__left-box {
+.hero {
   height: 100vh;
   position: relative;
   margin-bottom: 6rem;
 }
-.main__left-box2 {
-  position: relative;
-  transition: all 0.7s;
-  margin-bottom: 30rem;
-}
-.main__left-box2 .slick-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.5rem;
-}
-.main__left-box2 .slick-dots li {
-  border-radius: 50%;
-  margin-right: 0.9rem;
-  transition: all 0.4s;
-}
-.main__left-box2 .slick-dots li:last-child {
-  margin-right: 0;
-}
-.main__left-box2 .slick-dots li button {
-  background: transparent;
-  border: #ff0506 solid 0.16rem;
-  border-radius: 50%;
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 0;
-  cursor: pointer;
-}
-.main__left-box2 .slick-dots li.slick-active {
-  background-color: #ff0506;
-}
-.main__left-box2.scrolled {
-  opacity: 0;
-  transform: translateX(100%);
-}
-.main__left-text {
+.hero__text {
   padding-top: 24rem;
   text-align: center;
   font-size: 3.6rem;
@@ -820,12 +790,11 @@ html {
   padding-left: 5rem;
   transition: all 1s ease-in-out;
 }
-.main__left-text.scrolled {
+.hero__text.scrolled {
   opacity: 0;
   transform: translateY(-50px);
 }
-
-.left__arrow-button {
+.hero__arrow-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -842,17 +811,54 @@ html {
   transition: all 0.5s ease-in-out;
   animation: jump 0.5s infinite;
 }
-.left__arrow-button.scrolled {
+.hero__arrow-btn.scrolled {
   opacity: 0;
   bottom: 10rem;
 }
-
-.arrow__button-down {
+.hero__arrow-img {
   width: 40px;
   height: 40px;
 }
 
-.left__box2-title {
+.testimonial {
+  position: relative;
+  transition: all 0.7s;
+  margin-bottom: 30rem;
+}
+.testimonial .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.testimonial .slick-dots li {
+  border-radius: 50%;
+  margin-right: 0.9rem;
+  transition: all 0.4s;
+}
+.testimonial .slick-dots li:last-child {
+  margin-right: 0;
+}
+.testimonial .slick-dots li button {
+  background: transparent;
+  border: #ff0506 solid 0.16rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0;
+  cursor: pointer;
+}
+.testimonial .slick-dots li.slick-active {
+  background-color: #ff0506;
+}
+.testimonial.scrolled {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.testimonial__title-box {
+  display: flex;
+  justify-content: end;
+}
+.testimonial__title {
   font-family: "Mont";
   font-size: 6rem;
   font-weight: 700;
@@ -862,16 +868,9 @@ html {
   margin-bottom: 6rem;
   text-transform: uppercase;
 }
-
-.left__title-box {
-  display: flex;
-  justify-content: end;
-}
-
-.left__testimonial-box {
+.testimonial__slide {
   display: flex;
 }
-
 .testimonial__text-box {
   width: 55rem;
   border: 1px solid #7f7f7f;
@@ -880,6 +879,12 @@ html {
   margin-left: 1rem;
   margin-right: 2.2rem;
   position: relative;
+}
+.testimonial__text {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
 }
 .testimonial__quotes {
   font-family: "JournalSans";
@@ -900,20 +905,12 @@ html {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-
-.testimonial-text {
-  font-family: "Josefin Sans";
-  font-size: 2rem;
-  font-weight: 300;
-  line-height: 3rem;
-}
-
-.person__text-name {
+.testimonial__person-name {
   font-family: "Josefin Sans";
   font-size: 2rem;
   font-weight: 300;
 }
-.person__text-country {
+.testimonial__person-country {
   font-family: "Josefin Sans";
   font-size: 2rem;
   font-weight: 600;

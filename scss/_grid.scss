@@ -1,6 +1,18 @@
-main {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  &__left {
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: white;
+    z-index: 9999;
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      /* Chrome, Safari, and Opera */
+      display: none;
+    }
+  }
 }
 .logo {
   z-index: 10000;
@@ -10,7 +22,8 @@ main {
   transform: translateX(-50%);
   transition: all 0.7s ease-in-out;
 
-  &.scrolled, &.moved{
+  &.scrolled,
+  &.moved {
     transform: translateX(10%);
     left: 50%;
   }
@@ -27,9 +40,8 @@ main {
   right: 0;
 }
 
-.massege_was_sent{
-
-  &.opened{
+.massege_was_sent {
+  &.opened {
     display: flex;
   }
 
@@ -41,7 +53,7 @@ main {
 
   text-align: center;
   color: white;
-  font-family: 'ducine';
+  font-family: "ducine";
   font-size: 8.4rem;
 
   display: none;
@@ -52,13 +64,13 @@ main {
 
   row-gap: 1rem;
 
-  &__close_btn{
+  &__close_btn {
     margin-top: 4.2rem;
-    font-size: 3.2rem ;
+    font-size: 3.2rem;
     padding: 0.6rem 5.2rem !important;
   }
 
-  &__text{
+  &__text {
     text-transform: uppercase;
   }
 }
