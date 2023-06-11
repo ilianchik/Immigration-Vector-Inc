@@ -286,6 +286,12 @@ dialog {
   /* Chrome, Safari, and Opera */
   display: none;
 }
+.grid__right {
+  position: fixed;
+  position: fixed;
+  left: 50%;
+  right: 0;
+}
 
 .logo {
   z-index: 10000;
@@ -301,13 +307,6 @@ dialog {
 }
 .logo__img {
   width: 30rem;
-}
-
-.fixed {
-  position: fixed;
-  position: fixed;
-  left: 50%;
-  right: 0;
 }
 
 .massege_was_sent {

@@ -13,6 +13,12 @@
       display: none;
     }
   }
+  &__right {
+    position: fixed;
+    position: fixed;
+    left: 50%;
+    right: 0;
+  }
 }
 .logo {
   z-index: 10000;
@@ -34,10 +40,6 @@
 }
 
 .fixed {
-  position: fixed;
-  position: fixed;
-  left: 50%;
-  right: 0;
 }
 
 .massege_was_sent {
