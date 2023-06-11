@@ -445,6 +445,42 @@ main {
   transform: translateY(-20%);
   opacity: 0;
 }
+.get_in_touch__opened.slide3 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide4 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide5 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide6 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide7 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide8 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide9 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide10 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+.get_in_touch__opened.slide11 > .slide__text-box {
+  transform: translateY(-20%);
+  opacity: 0;
+}
 
 .slider {
   height: 100vh;
@@ -656,12 +692,12 @@ main {
   font-size: 1;
   color: rgba(255, 255, 255, 0);
   position: absolute;
-  left: 0;
+  left: -500%;
   bottom: -6px;
   width: 20%;
   height: 2.4px;
   background-color: rgb(255, 0, 0);
-  transition: width 0.5s ease;
+  transition: width 0.5s ease, left 1s;
 }
 .slide-text {
   margin-bottom: 1.6rem;
@@ -677,6 +713,42 @@ main {
   content: "*";
   position: absolute;
   transform: translateX(-14px);
+}
+
+.slide--active .slider-inside {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.slide--active .slider__inside-prev,
+.slide--active .slider__inside-next {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.slide--active .slide__text-box {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.slide--active .slide-tittle::after {
+  left: 0;
+}
+
+.slider-inside {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 1s, opacity 2s;
+}
+
+.slider__inside-prev,
+.slider__inside-next {
+  opacity: 0;
+  transform: translateY(500%);
+  transition: all 1s, opacity 2s;
+}
+
+.slide__text-box {
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: all 1s, opacity 2s;
 }
 
 html {

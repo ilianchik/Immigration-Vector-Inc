@@ -143,12 +143,12 @@ function changeContent(newContent) {
 
   oldContentElement.style.transform = "translateX(-100%)";
   newContentElement.style.transform = "translateX(0)";
-
-  // Видаляємо клас 'active' зі старого контенту
-  oldContentElement.classList.remove("active");
-
+  setTimeout(() => {
+    // Видаляємо клас 'active' зі старого контенту
+    oldContentElement.classList.remove("slide--active");
+  }, 300);
   // Додаємо клас 'active' до нового контенту
-  newContentElement.classList.add("active");
+  newContentElement.classList.add("slide--active");
 
   // Збільшено затримку перед переміщенням старого контенту назад вправо
   setTimeout(() => {
