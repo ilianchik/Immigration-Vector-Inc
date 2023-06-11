@@ -168,3 +168,12 @@ function changeContent(newContent) {
 
   currentContent = newContent;
 }
+$(".testimonial__slider").slick({
+  arrows: false,
+  swipe: true,
+  infinite: true,
+  speed: 400,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: true,
+});

@@ -20,6 +20,34 @@
     position: relative;
     transition: all 0.7s;
     margin-bottom: 30rem;
+    & .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    & .slick-dots li {
+      border-radius: 50%;
+      margin-right: 0.9rem;
+      transition: all 0.4s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    & .slick-dots li button {
+      background: transparent;
+      border: #ff0506 solid 0.16rem;
+      border-radius: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: 0;
+      cursor: pointer;
+    }
+
+    & .slick-dots li.slick-active {
+      background-color: #ff0506;
+    }
     &.scrolled {
       opacity: 0;
       transform: translateX(100%);
@@ -169,7 +197,7 @@
 
   &__box3-container {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-right: 2rem;
     padding-left: 2rem;
   }

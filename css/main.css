@@ -710,6 +710,31 @@ html {
   transition: all 0.7s;
   margin-bottom: 30rem;
 }
+.main__left-box2 .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.main__left-box2 .slick-dots li {
+  border-radius: 50%;
+  margin-right: 0.9rem;
+  transition: all 0.4s;
+}
+.main__left-box2 .slick-dots li:last-child {
+  margin-right: 0;
+}
+.main__left-box2 .slick-dots li button {
+  background: transparent;
+  border: #ff0506 solid 0.16rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0;
+  cursor: pointer;
+}
+.main__left-box2 .slick-dots li.slick-active {
+  background-color: #ff0506;
+}
 .main__left-box2.scrolled {
   opacity: 0;
   transform: translateX(100%);
