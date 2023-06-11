@@ -985,11 +985,10 @@ html {
   background-color: #d86161;
 }
 
-.main__left-box4 {
+.advantages {
   margin-bottom: 7.5rem;
 }
-
-.left__box4-title {
+.advantages__title {
   font-family: "Mont";
   font-size: 5.2rem;
   font-weight: 700;
@@ -1000,13 +999,12 @@ html {
   margin-bottom: 9.8rem;
   padding-left: 7%;
 }
-.left__box4-container {
+.advantages__content {
   display: flex;
   flex-direction: column;
   padding-right: 8rem;
 }
-
-.box4__container-box {
+.advantages__content-box {
   display: flex;
   padding-left: 13rem;
   margin-bottom: 7rem;
@@ -1014,26 +1012,25 @@ html {
   transform: translateY(50px);
   transition: all 0.5s ease-in-out;
 }
-.box4__container-box.scrolled {
+.advantages__content-box.scrolled {
   opacity: 1;
   transform: translateY(-50px);
 }
-.box4__icon-box {
+.advantages__icon-box {
   padding-right: 4rem;
 }
-.box4__img {
+.advantages__img {
   width: 4.2rem;
   height: 4.2rem;
   transform: translateY(50%);
 }
-.box4-subtitle {
+.advantages__subtitle {
   font-family: "Josefin Sans";
   font-weight: 400;
   font-size: 3.2rem;
   margin-bottom: 2.4rem;
 }
-
-.box4-text {
+.advantages__text {
   font-family: "Josefin Sans";
   font-weight: 400;
   font-size: 2.2rem;

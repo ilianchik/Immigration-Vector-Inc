@@ -61,7 +61,7 @@ window.addEventListener("scroll", function () {
   }
 });
 window.addEventListener("scroll", function () {
-  var textContainers = document.querySelectorAll(".box4__container-box");
+  var textContainers = document.querySelectorAll(".advantages__content-box");
 
   textContainers.forEach(function (textContainer) {
     if (window.scrollY > 1850) {
