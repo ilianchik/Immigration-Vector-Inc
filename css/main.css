@@ -163,7 +163,8 @@ input {
   text-orientation: upright;
   cursor: pointer;
 }
-.menu__btn::before, .menu__btn::after {
+.menu__btn::before,
+.menu__btn::after {
   transition: all 0.5s;
   font-size: 5.2rem;
   color: black;
@@ -279,7 +280,8 @@ main {
   transform: translateX(-50%);
   transition: all 0.7s ease-in-out;
 }
-.logo.scrolled, .logo.moved {
+.logo.scrolled,
+.logo.moved {
   transform: translateX(10%);
   left: 50%;
 }
@@ -359,7 +361,12 @@ main {
   text-align: right;
   opacity: 0;
 }
-.get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
+.get_in_touch__form input,
+.get_in_touch__form select,
+.get_in_touch__form option,
+.get_in_touch__form textarea,
+.get_in_touch__form input::placeholder,
+.get_in_touch__form textarea::placeholder {
   display: block;
   width: 100%;
   background-color: rgba(37, 37, 37, 0.5);
@@ -375,7 +382,8 @@ main {
   font-family: "repeater";
   border-collapse: hidden;
 }
-.get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
+.get_in_touch__form input::placeholder,
+.get_in_touch__form textarea::placeholder {
   position: absolute;
   top: 0px;
   right: 0;
@@ -636,7 +644,7 @@ main {
 
 .content {
   position: absolute;
-  transition: transform 0.6s;
+  transition: transform 0.6s, background 2s;
 }
 
 html {
@@ -918,4 +926,4 @@ html {
     transform: translate(-50%, 0);
     transform: translate();
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

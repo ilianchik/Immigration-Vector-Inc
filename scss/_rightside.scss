@@ -130,7 +130,7 @@
 }
 
 .get_in_touch__reaction {
-  transition: background-position 2s ;
+  transition: background-position 2s;
 }
 .get_in_touch__opened {
   background-position: bottom !important;
@@ -327,5 +327,5 @@
 
 .content {
   position: absolute;
-  transition: transform 0.6s;
+  transition: transform 0.6s, background 2s;
 }
