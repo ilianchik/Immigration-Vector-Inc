@@ -61,7 +61,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".services");
   var windowHeight = window.innerHeight;
-  var percentageOffset = windowHeight * 1.65;
+  var percentageOffset = windowHeight * 1.7;
   if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {
