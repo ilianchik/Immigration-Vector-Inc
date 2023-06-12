@@ -696,7 +696,7 @@ dialog {
 .content {
   position: absolute;
   transition: transform 1s, background-position 2s;
-  margin-left: -0.01px;
+  margin-left: -0.1px;
 }
 
 .slide__text-box {
