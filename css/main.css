@@ -340,6 +340,15 @@ dialog {
   width: 100%;
 }
 
+.main__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+}
 .main__right .icon {
   position: absolute;
   color: #fff;
@@ -365,25 +374,37 @@ dialog {
 .main__right .ph-instagram-logo {
   cursor: pointer;
 }
-.main__right__text-slider {
-  background-image: url("../sourse/img/textslider.png");
-}
 
 .get_in_touch {
+  width: 100%;
   transition: all 3s;
-  text-align: right;
   z-index: 1000;
-  position: absolute;
-  bottom: -10px;
-  right: 5.4rem;
+  position: relative;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.get_in_touch.closed {
-  transform: translateX(-40%) translateY(85%);
+.get_in_touch__btn {
+  transition: all 2s ease;
+  position: fixed;
+  right: 3rem;
+  cursor: pointer;
+}
+.get_in_touch.opened > .get_in_touch__btn {
+  bottom: 70%;
+}
+.get_in_touch.closed > .get_in_touch__btn {
+  bottom: 2.2rem;
 }
 .get_in_touch__form {
-  transition: all 3s;
+  transition: transform 2s, opacity 3s;
   text-align: right;
-  opacity: 0;
+  transform: translateY(15%);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
   display: block;
@@ -397,7 +418,7 @@ dialog {
   border-bottom: 2px solid #fff;
   position: relative;
   border-radius: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "repeater";
   border-collapse: hidden;
 }
@@ -409,25 +430,13 @@ dialog {
 .get_in_touch__form__submit {
   cursor: pointer;
   width: fit-content !important;
-  position: absolute !important;
-  right: 0 !important;
   padding: 1rem 4.6rem !important;
+  margin-left: auto;
+  transform: translateX();
 }
-.get_in_touch__btn {
-  transition: all 2s;
-  margin-bottom: 15rem;
-  margin-right: -49%;
-  cursor: pointer;
-}
-.get_in_touch.opened {
-  transform: translateX(-40%) translateY(-50%);
-}
-.get_in_touch.opened > .get_in_touch__btn {
-  margin-bottom: 5rem;
-  cursor: pointer;
-}
-.get_in_touch.opened > .get_in_touch__form {
-  opacity: 100;
+.get_in_touch.closed > .get_in_touch__form {
+  opacity: 0;
+  transform: translateY(300%);
 }
 
 .black-btn {
@@ -504,7 +513,7 @@ dialog {
 }
 
 .slide1 {
-  background-image: url("../sourse/img/House.png");
+  background-image: url("../sourse/img/photo_2023-06-12_22-31-03.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
