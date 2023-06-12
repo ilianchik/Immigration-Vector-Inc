@@ -4,7 +4,9 @@ fetch('https://restcountries.com/v3.1/all?fields=name')
   .then(response => response.json())
   .then(data => {
     COUNTIES = data.map(country => country.name.common);
-    // Update the select element with the country options
+    COUNTIES.sort(); // Sort the countries alphabetically by name
+
+    // Update the select element with the sorted country options
     const selectElement = document.getElementById('input_usercountry');
     COUNTIES.forEach(country => {
       const option = document.createElement('option');
@@ -16,7 +18,6 @@ fetch('https://restcountries.com/v3.1/all?fields=name')
   .catch(error => {
     console.log('Error fetching countries:', error);
   });
-
 
 function toggleGetInTouch() {
     const getInTouch = document.querySelector('.get_in_touch');
