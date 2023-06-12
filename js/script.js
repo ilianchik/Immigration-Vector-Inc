@@ -174,12 +174,13 @@ function changeContent(newContent) {
 
   // Збільшено затримку перед переміщенням старого контенту назад вправо
   setTimeout(() => {
-    oldContentElement.style.transition = "none";
+    oldContentElement.style.transition = "background-position 2s";
     oldContentElement.style.transform = "translateX(100%)";
 
     // Відновлюємо анімацію для наступного разу
     setTimeout(() => {
-      oldContentElement.style.transition = "transform 0.6s";
+      oldContentElement.style.transition =
+        "transform 0.6s, background-position 2s";
     }, 50);
   }, 600);
 
