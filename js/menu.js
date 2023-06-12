@@ -17,7 +17,7 @@ function toggleMenu() {
     }, 500);
 
     logoContainer.classList.add("moved");
-    logoImg.src = "sourse/img/logo2.png";
+    logoImg.src = "./sourse/img/logo2.png";
 
     document.body.style.overflow = "hidden";
   } else if (menuBtn.classList.contains("opened")) {
@@ -32,7 +32,7 @@ function toggleMenu() {
     setTimeout(function () {
       logoContainer.classList.remove("moved");
       if (!logoContainer.classList.contains("scrolled")) {
-        logoImg.src = "sourse/img/logo.png";
+        logoImg.src = "./sourse/img/logo.png";
       }
     }, 500);
 
