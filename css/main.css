@@ -338,10 +338,6 @@ dialog {
   position: fixed;
   overflow-y: scroll;
   width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .main__right {
@@ -624,6 +620,10 @@ dialog {
   background-size: cover;
   height: 100vh;
   width: 100%;
+  display: flex;
+}
+.slide11 .slide-tittle {
+  margin-top: 8rem;
 }
 
 .slider-inside {
