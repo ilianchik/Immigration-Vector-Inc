@@ -165,6 +165,26 @@ function changeContent(newContent) {
 
   oldContentElement.style.transform = "translateX(-100%)";
   newContentElement.style.transform = "translateX(0)";
+
+  
+  const getInTouch = document.querySelector('.get_in_touch');
+  var elements = document.querySelectorAll('.get_in_touch__reaction');
+  const btn = document.querySelector('.get_in_touch__btn');
+
+  if (getInTouch.classList.contains('opened')) {
+    btn.textContent = 'Get in touch';
+
+    getInTouch.classList.remove('opened');
+    getInTouch.classList.add('closed');
+
+    setTimeout(function () {
+            for (var i = 0; i < elements.length; i++) {
+      elements[i].classList.remove('get_in_touch__opened');
+    }
+    }, 1500);
+
+  }
+
   setTimeout(() => {
     // Видаляємо клас 'active' зі старого контенту
     oldContentElement.classList.remove("slide--active");

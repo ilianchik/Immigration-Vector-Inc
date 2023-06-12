@@ -375,10 +375,10 @@ dialog {
   z-index: 1000;
   position: absolute;
   bottom: -10px;
-  right: 2.4rem;
+  right: 5.4rem;
 }
 .get_in_touch.closed {
-  transform: translateX(-40%) translateY(80%);
+  transform: translateX(-40%) translateY(85%);
 }
 .get_in_touch__form {
   transition: all 3s;
@@ -416,7 +416,7 @@ dialog {
 .get_in_touch__btn {
   transition: all 2s;
   margin-bottom: 15rem;
-  margin-right: -10%;
+  margin-right: -49%;
   cursor: pointer;
 }
 .get_in_touch.opened {
@@ -424,7 +424,6 @@ dialog {
 }
 .get_in_touch.opened > .get_in_touch__btn {
   margin-bottom: 5rem;
-  margin-right: -10%;
   cursor: pointer;
 }
 .get_in_touch.opened > .get_in_touch__form {

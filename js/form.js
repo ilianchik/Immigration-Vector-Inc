@@ -4,7 +4,9 @@ fetch('https://restcountries.com/v3.1/all?fields=name')
   .then(response => response.json())
   .then(data => {
     COUNTIES = data.map(country => country.name.common);
-    // Update the select element with the country options
+    COUNTIES.sort(); // Sort the countries alphabetically by name
+
+    // Update the select element with the sorted country options
     const selectElement = document.getElementById('input_usercountry');
     COUNTIES.forEach(country => {
       const option = document.createElement('option');
@@ -17,12 +19,14 @@ fetch('https://restcountries.com/v3.1/all?fields=name')
     console.log('Error fetching countries:', error);
   });
 
-
 function toggleGetInTouch() {
     const getInTouch = document.querySelector('.get_in_touch');
     var elements = document.querySelectorAll('.get_in_touch__reaction');
+    const btn = document.querySelector('.get_in_touch__btn');
 
     if (getInTouch.classList.contains('opened')) {
+      btn.textContent = 'Get in touch';
+
       getInTouch.classList.remove('opened');
       getInTouch.classList.add('closed');
 
@@ -34,6 +38,7 @@ function toggleGetInTouch() {
 
     } else {
 
+      btn.textContent = 'Close';
       getInTouch.classList.remove('closed');
       getInTouch.classList.add('opened');
       for (var i = 0; i < elements.length; i++) {

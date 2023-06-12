@@ -106,7 +106,7 @@
     </menu>
     <main>
       <a href="#" class="logo"
-        ><img class="logo__img" src="sourse/img/logo.svg" alt=""
+        ><img class="logo__img" src="sourse/img/logo.svg" alt="" onclick="changeContent(1)"
       /></a>
       <div class="grid">
         <div class="grid__left">
@@ -655,7 +655,7 @@
                 <input type="text" id="input_userphone" placeholder="Phone" />
                 <input type="email" id="input_useremail" placeholder="Email" />
                 <select name="" id="input_usercountry">
-                  <option value="0" disabled>Your Country</option>
+                  <option value="0" disabled selected>Your Country</option>
                 </select>
                 <textarea
                   name=""
@@ -663,6 +663,7 @@
                   cols="40"
                   rows="5"
                   placeholder="Message"
+                  style="resize: none;"
                 ></textarea>
                 <input
                   type="submit"
