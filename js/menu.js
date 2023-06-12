@@ -10,7 +10,7 @@ function toggleMenu() {
     setTimeout(function () {
       menuBtn.classList.remove("closed");
       menuBtn.classList.add("opened");
-
+      menuBody.style.opacity = "1";
       menuBody.classList.remove("closed");
       menuBody.classList.add("opened");
     }, 500);
@@ -22,7 +22,9 @@ function toggleMenu() {
   } else if (menuBtn.classList.contains("opened")) {
     menuBtn.classList.remove("opened");
     menuBtn.classList.add("closed");
-
+    setTimeout(function () {
+      menuBody.style.opacity = "0";
+    }, 2000);
     menuBody.classList.remove("opened");
     menuBody.classList.add("closed");
 

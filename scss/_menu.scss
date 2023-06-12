@@ -2,6 +2,7 @@
   position: fixed;
   z-index: 10000;
   top: 45%;
+
   transition: all 0.7s;
   &.scrolled {
     opacity: 1;
@@ -52,7 +53,7 @@
   }
 
   &__nav {
-    transition: all 2s;
+    transition: top 2s;
     position: fixed;
     left: 0;
     width: 50%;
@@ -62,7 +63,7 @@
     padding: 2.4rem 2.4rem 0 10rem;
 
     background-color: white;
-
+    opacity: 0;
     &.opened {
       top: 0;
     }
