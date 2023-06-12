@@ -37,15 +37,21 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".menu");
-  if (window.scrollY > 450) {
+  var windowHeight = window.innerHeight;
+  var percentageOffset = windowHeight * 0.55;
+
+  if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
   }
 });
+
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".testimonial");
-  if (window.scrollY > 750) {
+  var windowHeight = window.innerHeight;
+  var percentageOffset = windowHeight * 0.95;
+  if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
@@ -54,7 +60,9 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".services");
-  if (window.scrollY > 1350) {
+  var windowHeight = window.innerHeight;
+  var percentageOffset = windowHeight * 1.65;
+  if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
@@ -62,9 +70,10 @@ window.addEventListener("scroll", function () {
 });
 window.addEventListener("scroll", function () {
   var textContainers = document.querySelectorAll(".advantages__content-box");
-
+  var windowHeight = window.innerHeight;
+  var percentageOffset = windowHeight * 2.2;
   textContainers.forEach(function (textContainer) {
-    if (window.scrollY > 1850) {
+    if (window.scrollY > percentageOffset) {
       textContainer.classList.add("scrolled");
     } else {
       textContainer.classList.remove("scrolled");
@@ -176,4 +185,32 @@ $(".testimonial__slider").slick({
   autoplay: true,
   autoplaySpeed: 3000,
   dots: true,
+});
+
+const allLinks = document.querySelectorAll("a");
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll back to top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    // Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      const rect = sectionEl.getBoundingClientRect();
+      const yOffset = window.pageYOffset;
+      const windowHeight = window.innerHeight;
+      const percentageOffset = windowHeight * 0.42; // Замініть 0.1 на потрібний відсоток
+      const desiredOffset = yOffset + rect.top - percentageOffset;
+
+      window.scrollTo({ top: desiredOffset, behavior: "smooth" });
+    }
+  });
 });
