@@ -11,6 +11,7 @@ function toggleMenu() {
       menuBtn.classList.remove("closed");
       menuBtn.classList.add("opened");
       menuBody.style.opacity = "1";
+
       menuBody.classList.remove("closed");
       menuBody.classList.add("opened");
     }, 500);
