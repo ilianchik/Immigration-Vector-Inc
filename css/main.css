@@ -342,6 +342,7 @@ dialog {
   right: 1.8rem;
   top: 1.2rem;
   z-index: 1000;
+  cursor: pointer;
 }
 .main__right .sotial_networks {
   display: flex;
@@ -350,6 +351,12 @@ dialog {
   bottom: 1.8rem;
   left: 1.2rem;
   z-index: 1000;
+}
+.main__right .ph-facebook-logo {
+  cursor: pointer;
+}
+.main__right .ph-instagram-logo {
+  cursor: pointer;
 }
 .main__right__text-slider {
   background-image: url("../sourse/img/textslider.png");
@@ -1018,6 +1025,11 @@ html {
   width: 4.2rem;
   height: 4.2rem;
   transform: translateY(50%);
+  opacity: 0;
+  transition: opacity 3s;
+}
+.advantages__img--open {
+  opacity: 1;
 }
 .advantages__subtitle {
   font-family: "Josefin Sans";

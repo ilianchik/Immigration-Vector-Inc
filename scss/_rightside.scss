@@ -8,6 +8,7 @@
     right: 1.8rem;
     top: 1.2rem;
     z-index: 1000;
+    cursor: pointer;
   }
   .sotial_networks {
     display: flex;
@@ -17,6 +18,12 @@
     bottom: 1.8rem;
     left: 1.2rem;
     z-index: 1000;
+  }
+  .ph-facebook-logo {
+    cursor: pointer;
+  }
+  .ph-instagram-logo {
+    cursor: pointer;
   }
 
   &__text-slider {
