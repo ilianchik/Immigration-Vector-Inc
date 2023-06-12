@@ -195,6 +195,7 @@ dialog {
   z-index: 2;
   padding: 2.4rem 2.4rem 0 10rem;
   background-color: white;
+  opacity: 0;
 }
 .menu__nav.opened {
   top: 0;
