@@ -1,4 +1,5 @@
 var SCROLL = 0;
+let scrollPosition;
 
 function toggleMenu() {
   const menuBtn = document.querySelector(".menu__btn");
@@ -35,6 +36,7 @@ function toggleMenu() {
 
     setTimeout(function () {
       document.body.classList.add("noscroll");
+      logoImg.src = "./sourse/img/logo2.png";
     }, 2000);
   } else if (menuBtn.classList.contains("opened")) {
     menuBtn.classList.remove("opened");
