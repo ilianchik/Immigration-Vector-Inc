@@ -202,10 +202,6 @@ dialog {
 .menu__nav.closed {
   top: -100vh;
 }
-.menu__nav.closed > .menu__nav__item {
-  position: absolute;
-  top: -100vh;
-}
 .menu__nav__title {
   font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
   font-size: 8.4rem;
@@ -970,18 +966,18 @@ html {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border: 1px solid red;
-  background-color: #f0b4b4;
+  border: 1px solid #e80d0d;
+  background-color: rgba(232, 13, 13, 0.2);
   padding: 1.6rem 10.8rem;
   margin-right: 7.3rem;
   cursor: pointer;
   transition: background-color 0.5s;
 }
 .services__btn:hover {
-  background-color: #ec9393;
+  background-color: rgba(232, 13, 13, 0.3);
 }
 .services__btn:active {
-  background-color: #d86161;
+  background-color: rgba(232, 13, 13, 0.4);
 }
 
 .advantages {

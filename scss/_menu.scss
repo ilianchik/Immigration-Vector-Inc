@@ -69,10 +69,6 @@
     &.closed {
       top: -100vh;
     }
-    &.closed > &__item {
-      position: absolute;
-      top: -100vh;
-    }
 
     &__title {
       font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;

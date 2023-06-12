@@ -25,9 +25,13 @@ function toggleGetInTouch() {
     if (getInTouch.classList.contains('opened')) {
       getInTouch.classList.remove('opened');
       getInTouch.classList.add('closed');
-      for (var i = 0; i < elements.length; i++) {
+
+      setTimeout(function () {
+              for (var i = 0; i < elements.length; i++) {
         elements[i].classList.remove('get_in_touch__opened');
       }
+      }, 1500);
+
     } else {
 
       getInTouch.classList.remove('closed');
