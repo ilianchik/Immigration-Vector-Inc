@@ -19,7 +19,7 @@ function toggleMenu() {
     logoContainer.classList.add("moved");
     logoImg.src = "./sourse/img/logo2.png";
 
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("noscroll");
   } else if (menuBtn.classList.contains("opened")) {
     menuBtn.classList.remove("opened");
     menuBtn.classList.add("closed");
@@ -36,6 +36,6 @@ function toggleMenu() {
       }
     }, 500);
 
-    document.body.style.overflow = "auto";
+    document.body.classList.remove("noscroll");
   }
 }

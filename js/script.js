@@ -180,14 +180,14 @@ function changeContent(newContent) {
     // Відновлюємо анімацію для наступного разу
     setTimeout(() => {
       oldContentElement.style.transition =
-        "transform 0.8s, background-position 2s";
+        "transform 0.6s, background-position 2s";
     }, 50);
-  }, 800);
+  }, 600);
 
   // Встановлюємо стан анімації в false після завершення анімації
   setTimeout(() => {
     isAnimating = false;
-  }, 800);
+  }, 600);
 
   currentContent = newContent;
 }
