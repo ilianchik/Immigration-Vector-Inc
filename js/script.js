@@ -61,7 +61,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".services");
   var windowHeight = window.innerHeight;
-  var percentageOffset = windowHeight * 1.7;
+  var percentageOffset = windowHeight * 1.8;
   if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {
@@ -77,6 +77,19 @@ window.addEventListener("scroll", function () {
       textContainer.classList.add("scrolled");
     } else {
       textContainer.classList.remove("scrolled");
+    }
+  });
+});
+
+window.addEventListener("scroll", function () {
+  var icons = document.querySelectorAll(".advantages__img");
+  var windowHeight = window.innerHeight;
+  var percentageOffset = windowHeight * 2.2;
+  icons.forEach(function (icon) {
+    if (window.scrollY > percentageOffset) {
+      icon.classList.add("advantages__img--open");
+    } else {
+      icon.classList.remove("advantages__img--open");
     }
   });
 });
@@ -161,12 +174,13 @@ function changeContent(newContent) {
 
   // Збільшено затримку перед переміщенням старого контенту назад вправо
   setTimeout(() => {
-    oldContentElement.style.transition = "none";
+    oldContentElement.style.transition = "background-position 2s";
     oldContentElement.style.transform = "translateX(100%)";
 
     // Відновлюємо анімацію для наступного разу
     setTimeout(() => {
-      oldContentElement.style.transition = "transform 0.6s";
+      oldContentElement.style.transition =
+        "transform 0.6s, background-position 2s";
     }, 50);
   }, 600);
 
@@ -207,7 +221,7 @@ allLinks.forEach(function (link) {
       const rect = sectionEl.getBoundingClientRect();
       const yOffset = window.pageYOffset;
       const windowHeight = window.innerHeight;
-      const percentageOffset = windowHeight * 0.42; // Замініть 0.1 на потрібний відсоток
+      const percentageOffset = windowHeight * 0.33; // Замініть 0.1 на потрібний відсоток
       const desiredOffset = yOffset + rect.top - percentageOffset;
 
       window.scrollTo({ top: desiredOffset, behavior: "smooth" });

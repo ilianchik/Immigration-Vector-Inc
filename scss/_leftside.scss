@@ -246,6 +246,11 @@
     width: 4.2rem;
     height: 4.2rem;
     transform: translateY(50%);
+    opacity: 0;
+    transition: opacity 3s;
+    &--open {
+      opacity: 1;
+    }
   }
 
   &__subtitle {
