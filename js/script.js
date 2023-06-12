@@ -3,10 +3,10 @@ window.addEventListener("scroll", function () {
   var logoImg = document.querySelector(".logo__img");
   if (window.scrollY > 0) {
     logoContainer.classList.add("scrolled");
-    logoImg.src = "../sourse/img/logo2.png";
+    logoImg.src = "sourse/img/logo2.png";
   } else {
     logoContainer.classList.remove("scrolled");
-    logoImg.src = "../sourse/img/logo.png";
+    logoImg.src = "sourse/img/logo.png";
   }
 });
 
