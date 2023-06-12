@@ -42,8 +42,7 @@
   &.closed {
     transform: translateX(-40%) translateY(85%);
   }
-  &.closed > &__btn{
-
+  &.closed > &__btn {
   }
 
   &__form {
@@ -372,7 +371,8 @@
 
 .content {
   position: absolute;
-  transition: transform 0.6s, background-position 2s;
+  transition: transform 1s, background-position 2s;
+  margin-left: -0.01px;
 }
 
 .slide {
