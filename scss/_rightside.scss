@@ -37,10 +37,13 @@
   z-index: 1000;
   position: absolute;
   bottom: -10px;
-  right: 2.4rem;
+  right: 5.4rem;
 
   &.closed {
-    transform: translateX(-40%) translateY(80%);
+    transform: translateX(-40%) translateY(85%);
+  }
+  &.closed > &__btn{
+
   }
 
   &__form {
@@ -88,7 +91,7 @@
   &__btn {
     transition: all 2s;
     margin-bottom: 15rem;
-    margin-right: -10%;
+    margin-right: -49%;
     cursor: pointer;
   }
 
@@ -97,7 +100,7 @@
   }
   &.opened > &__btn {
     margin-bottom: 5rem;
-    margin-right: -10%;
+    //margin-right: -10%;
     cursor: pointer;
   }
   &.opened > &__form {

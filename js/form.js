@@ -21,8 +21,11 @@ fetch('https://restcountries.com/v3.1/all?fields=name')
 function toggleGetInTouch() {
     const getInTouch = document.querySelector('.get_in_touch');
     var elements = document.querySelectorAll('.get_in_touch__reaction');
+    const btn = document.querySelector('.get_in_touch__btn');
 
     if (getInTouch.classList.contains('opened')) {
+      btn.textContent = 'Get in touch';
+
       getInTouch.classList.remove('opened');
       getInTouch.classList.add('closed');
 
@@ -34,6 +37,7 @@ function toggleGetInTouch() {
 
     } else {
 
+      btn.textContent = 'Close';
       getInTouch.classList.remove('closed');
       getInTouch.classList.add('opened');
       for (var i = 0; i < elements.length; i++) {
