@@ -34,15 +34,14 @@
 .get_in_touch {
   transition: all 3s;
   text-align: right;
-  z-index: 1000; 
-  position: absolute; 
+  z-index: 1000;
+  position: absolute;
   bottom: -10px;
   right: 2.4rem;
 
-  &.closed{
-      transform: translateX(-40%) translateY(80%);
+  &.closed {
+    transform: translateX(-40%) translateY(80%);
   }
-
 
   &__form {
     transition: all 3s;
@@ -104,7 +103,6 @@
   &.opened > &__form {
     opacity: 100;
   }
-
 }
 
 .black-btn {
@@ -363,7 +361,7 @@
 
 .content {
   position: absolute;
-  transition: transform 0.6s, background-position 2s;
+  transition: transform 0.8s, background-position 2s;
 }
 
 .slide {

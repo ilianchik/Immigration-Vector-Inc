@@ -682,7 +682,7 @@ dialog {
 
 .content {
   position: absolute;
-  transition: transform 0.6s, background-position 2s;
+  transition: transform 0.8s, background-position 2s;
 }
 
 .slide__text-box {
