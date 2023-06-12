@@ -166,23 +166,21 @@ function changeContent(newContent) {
   oldContentElement.style.transform = "translateX(-100%)";
   newContentElement.style.transform = "translateX(0)";
 
-  
-  const getInTouch = document.querySelector('.get_in_touch');
-  var elements = document.querySelectorAll('.get_in_touch__reaction');
-  const btn = document.querySelector('.get_in_touch__btn');
+  const getInTouch = document.querySelector(".get_in_touch");
+  var elements = document.querySelectorAll(".get_in_touch__reaction");
+  const btn = document.querySelector(".get_in_touch__btn");
 
-  if (getInTouch.classList.contains('opened')) {
-    btn.textContent = 'Get in touch';
+  if (getInTouch.classList.contains("opened")) {
+    btn.textContent = "Get in touch";
 
-    getInTouch.classList.remove('opened');
-    getInTouch.classList.add('closed');
+    getInTouch.classList.remove("opened");
+    getInTouch.classList.add("closed");
 
     setTimeout(function () {
-            for (var i = 0; i < elements.length; i++) {
-      elements[i].classList.remove('get_in_touch__opened');
-    }
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].classList.remove("get_in_touch__opened");
+      }
     }, 1500);
-
   }
 
   setTimeout(() => {
@@ -200,14 +198,14 @@ function changeContent(newContent) {
     // Відновлюємо анімацію для наступного разу
     setTimeout(() => {
       oldContentElement.style.transition =
-        "transform 0.6s, background-position 2s";
+        "transform 1s, background-position 2s";
     }, 50);
-  }, 600);
+  }, 1000);
 
   // Встановлюємо стан анімації в false після завершення анімації
   setTimeout(() => {
     isAnimating = false;
-  }, 600);
+  }, 1000);
 
   currentContent = newContent;
 }

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   &__left {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
     background-color: white;
     z-index: 9999;
@@ -81,4 +81,8 @@
   position: fixed;
   overflow-y: scroll;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

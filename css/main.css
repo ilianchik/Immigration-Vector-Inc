@@ -272,7 +272,7 @@ dialog {
   grid-template-columns: 1fr 1fr;
 }
 .grid__left {
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: auto;
   background-color: white;
   z-index: 9999;
@@ -338,6 +338,10 @@ dialog {
   position: fixed;
   overflow-y: scroll;
   width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .main__right {
@@ -704,7 +708,8 @@ dialog {
 
 .content {
   position: absolute;
-  transition: transform 0.6s, background-position 2s;
+  transition: transform 1s, background-position 2s;
+  margin-left: -0.1px;
 }
 
 .slide__text-box {
