@@ -365,13 +365,14 @@ dialog {
 
 .get_in_touch {
   transition: all 3s;
-  position: fixed;
-  z-index: 1;
   text-align: right;
-  left: 50%;
-  transform: translate(50%, 0);
-  bottom: -55%;
   z-index: 1000;
+  position: absolute;
+  bottom: -10px;
+  right: 2.4rem;
+}
+.get_in_touch.closed {
+  transform: translateX(-40%) translateY(80%);
 }
 .get_in_touch__form {
   transition: all 3s;
@@ -412,26 +413,16 @@ dialog {
   margin-right: -10%;
   cursor: pointer;
 }
-@media (max-aspect-ratio: 1/1) and (max-width: 1000px) and (zoom: 0.75) {
-  .get_in_touch__btn {
-    margin-bottom: 20rem;
-  }
-}
-@media (max-aspect-ratio: 1/1) and (zoom: 1.25) {
-  .get_in_touch__btn {
-    margin-bottom: 20rem;
-  }
-}
 .get_in_touch.opened {
-  bottom: 0;
-  transform: translate(50%, -50%);
+  transform: translateX(-40%) translateY(-50%);
 }
 .get_in_touch.opened > .get_in_touch__btn {
-  margin-bottom: 2.8rem;
+  margin-bottom: 5rem;
+  margin-right: -10%;
+  cursor: pointer;
 }
 .get_in_touch.opened > .get_in_touch__form {
   opacity: 100;
-  margin-bottom: 2.8rem;
 }
 
 .black-btn {

@@ -33,13 +33,17 @@
 
 .get_in_touch {
   transition: all 3s;
-  position: fixed;
-  z-index: 1;
   text-align: right;
-  left: 50%;
-  transform: translate(50%, 0);
-  bottom: -55%;
-  z-index: 1000;
+  z-index: 1000; 
+  position: absolute; 
+  bottom: -10px;
+  right: 2.4rem;
+
+  &.closed{
+      transform: translateX(-40%) translateY(80%);
+  }
+
+
   &__form {
     transition: all 3s;
     text-align: right;
@@ -89,29 +93,18 @@
     cursor: pointer;
   }
 
-  @media (max-aspect-ratio: 1/1) and (max-width: 1000px) and (zoom: 0.75) {
-    &__btn {
-      margin-bottom: 20rem;
-    }
-  }
-
-  @media (max-aspect-ratio: 1/1) and (zoom: 1.25) {
-    &__btn {
-      margin-bottom: 20rem;
-    }
-  }
-
   &.opened {
-    bottom: 0;
-    transform: translate(50%, -50%);
+    transform: translateX(-40%) translateY(-50%);
   }
   &.opened > &__btn {
-    margin-bottom: 2.8rem;
+    margin-bottom: 5rem;
+    margin-right: -10%;
+    cursor: pointer;
   }
   &.opened > &__form {
     opacity: 100;
-    margin-bottom: 2.8rem;
   }
+
 }
 
 .black-btn {
