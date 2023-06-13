@@ -2,13 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  z-index: 1;
   position: fixed;
   top: 0;
 
   width: 50%;
   height: 100vh;
-  
+
   .icon {
     position: absolute;
     color: #fff;
@@ -37,7 +37,6 @@
   }
 }
 
-
 .get_in_touch {
   width: 100%;
   transition: all 3s;
@@ -47,8 +46,10 @@
   flex-direction: column;
   align-items: center;
 
- z-index: 1000;
+  z-index: 1000;
   &__btn {
+    font-family: "Ducine";
+    font-weight: 400;
     transition: all 2s ease;
     position: fixed;
     right: 3rem;
@@ -56,70 +57,67 @@
   }
   &.opened > &__btn {
     bottom: 75%;
-  }  
+  }
   &.closed > &__btn {
     bottom: 2.2rem;
   }
 
   &__form {
-     transition: transform 2s, opacity 3s;
-     text-align: right;
-     // opacity: 0;
+    transition: transform 2s, opacity 3s;
+    text-align: right;
+    // opacity: 0;
 
-     transform: translateY(15%);
-    
-     width: 70%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+    transform: translateY(15%);
 
-     & input,
-     & select,
-     & option,
-     & textarea,
-     & input::placeholder,
-     & textarea::placeholder {
-       display: block;
-       width: 100%;
-       background-color: rgba(37, 37, 37, 0.5);
-       color: #fff;
-       text-align: right;
-       padding: 1rem;
-       overflow: hidden;
-       border: none;
-       border-bottom: 2px solid #fff;
-       position: relative;
-       border-radius: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-       font-size: 2.2rem;
-       font-family: "repeater";
+    & input,
+    & select,
+    & option,
+    & textarea,
+    & input::placeholder,
+    & textarea::placeholder {
+      display: block;
+      width: 100%;
+      background-color: rgba(37, 37, 37, 0.5);
+      color: #fff;
+      text-align: right;
+      padding: 1rem;
+      overflow: hidden;
+      border: none;
+      border-bottom: 2px solid #fff;
+      position: relative;
+      border-radius: 0;
 
-       border-collapse: hidden;
-     }
+      font-size: 2.2rem;
+      font-family: "repeater";
 
-     & input::placeholder,
-     & textarea::placeholder {
-       position: absolute;
-       bottom: 0px;
-       right: 0;
-     }
-     &__submit {
-       cursor: pointer;
-       width: fit-content !important;
-       padding: 1rem 1rem 1rem 5.6rem !important;
-       margin-left: auto;
-       transform: translateX();
-      
-     }
+      border-collapse: hidden;
     }
 
-  &.closed > &__form{
+    & input::placeholder,
+    & textarea::placeholder {
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+    }
+    &__submit {
+      cursor: pointer;
+      width: fit-content !important;
+      padding: 1rem 1rem 1rem 5.6rem !important;
+      margin-left: auto;
+      transform: translateX();
+    }
+  }
+
+  &.closed > &__form {
     opacity: 0;
     transform: translateY(300%);
   }
-
 }
-
 
 .black-btn {
   color: #fff;
@@ -127,9 +125,9 @@
   border: 2px solid white;
   background-color: rgba(60, 60, 60, 0.5);
 
-  font-family: "ducine";
+  font-family: "Ducine";
   font-size: 3.2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
 
@@ -143,16 +141,14 @@
   }
 }
 
-.bg-bottom{
-   background-position: bottom !important;
+.bg-bottom {
+  background-position: bottom !important;
 }
 
 .get_in_touch__reaction {
   transition: background-position 2s;
 }
 .get_in_touch__opened {
- 
-
   &.slide2 > .slide2-slider {
     transform: translateY(-20%);
     opacity: 0;
@@ -450,7 +446,6 @@
   .slider-inside {
     opacity: 1;
     transform: translateY(0%);
-
   }
   .slider__inside-prev,
   .slider__inside-next {
