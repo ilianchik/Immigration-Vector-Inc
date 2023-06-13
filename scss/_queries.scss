@@ -13,8 +13,17 @@
       width: 75%;
     }
   }
-  .menu__nav__item {
-    padding-bottom: 0.8rem;
+  .menu__nav {
+    &__title{
+      margin-bottom: 3.6rem;
+    }
+    &__item{
+      padding-bottom: 0.8rem;
+    }
+    &__contact-us{
+      font-size: 4.2rem;
+      bottom: 6.4rem;
+    }
   }
   .slide__text-box {
     padding: 13rem 1.6rem;
@@ -65,8 +74,13 @@
     padding: 2rem;
     margin-right: 1rem;
   }
-  .menu__nav__title {
-    font-size: 6.4rem;
+  .menu__nav {
+    &__item{
+      font-size: 4.4rem;
+    }
+    &__title{
+    font-size: 6.4rem;      
+    }
   }
   .testimonial__slide {
     flex-direction: column;
@@ -140,5 +154,9 @@
     img {
       width: 50%;
     }
+  }
+
+  .logo__img{
+    width: 25rem;
   }
 }

@@ -204,9 +204,9 @@ dialog {
   top: -100vh;
 }
 .menu__nav__title {
-  font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
+  font-family: "Mont", "Arial Narrow Bold", sans-serif;
   font-size: 8.4rem;
-  font-weight: bolder;
+  font-weight: 900;
   letter-spacing: 0.4rem;
   color: #ccc;
 }
@@ -240,6 +240,19 @@ dialog {
 }
 .menu__nav__item:hover::after {
   width: 100%;
+}
+.menu__nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: height 3s;
+}
+.opened > .menu__nav__item::before {
+  height: 0;
 }
 .menu__nav__hr {
   height: 1.5px;
@@ -1090,8 +1103,15 @@ html {
   .slider__inside-prev img {
     width: 75%;
   }
+  .menu__nav__title {
+    margin-bottom: 3.6rem;
+  }
   .menu__nav__item {
     padding-bottom: 0.8rem;
+  }
+  .menu__nav__contact-us {
+    font-size: 4.2rem;
+    bottom: 6.4rem;
   }
   .slide__text-box {
     padding: 13rem 1.6rem;
@@ -1140,6 +1160,9 @@ html {
   .testimonial__text-box {
     padding: 2rem;
     margin-right: 1rem;
+  }
+  .menu__nav__item {
+    font-size: 4.4rem;
   }
   .menu__nav__title {
     font-size: 6.4rem;
@@ -1205,5 +1228,8 @@ html {
   }
   .slider__inside-prev img {
     width: 50%;
+  }
+  .logo__img {
+    width: 25rem;
   }
 }/*# sourceMappingURL=main.css.map */
