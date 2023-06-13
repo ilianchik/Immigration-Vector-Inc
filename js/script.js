@@ -196,10 +196,12 @@ function changeContent(newContent) {
   setTimeout(() => {
     // Видаляємо клас 'active' зі старого контенту
     oldContentElement.classList.remove("slide--active");
-  }, 300);
-  // Додаємо клас 'active' до нового контенту
-  newContentElement.classList.add("slide--active");
+  }, 650);
 
+  setTimeout(() => {
+    // Додаємо клас 'active' до нового контенту
+    newContentElement.classList.add("slide--active");
+  }, 750);
   // Збільшено затримку перед переміщенням старого контенту назад вправо
   setTimeout(() => {
     oldContentElement.style.transition = "background-position 2s";
