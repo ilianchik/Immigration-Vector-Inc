@@ -1,11 +1,13 @@
 var SCROLL = 0;
 let scrollPosition;
+let isAnimatingggg = false; // Додайте цю змінну
 
 function toggleMenu() {
+  if (isAnimatingggg) return; // Перевірте, чи відбувається анімація
+
+  isAnimatingggg = true; // Встановіть анімацію в true перед початком анімації
   const menuBtn = document.querySelector(".menu__btn");
-
   const menuBody = document.querySelector(".menu__nav");
-
   var logoContainer = document.querySelector(".logo");
   var logoImg = document.querySelector(".logo__img");
 
@@ -41,6 +43,7 @@ function toggleMenu() {
 
     setTimeout(function () {
       document.body.classList.add("noscroll");
+      isAnimatingggg = false; // Встановіть анімацію в false після закінчення анімації
     }, 2000);
   } else if (menuBtn.classList.contains("opened")) {
     //close menu
@@ -67,5 +70,9 @@ function toggleMenu() {
     //scroll to
     document.body.classList.remove("noscroll");
     window.scrollTo(0, SCROLL);
+
+    setTimeout(function () {
+      isAnimatingggg = false; // Встановіть анімацію в false після закінчення анімації
+    }, 2000);
   }
 }
