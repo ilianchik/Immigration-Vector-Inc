@@ -1087,6 +1087,25 @@ html {
   .slider__inside-prev img {
     width: 75%;
   }
+  .menu__nav__item {
+    padding-bottom: 0.8rem;
+  }
+  .slide__text-box {
+    padding: 13rem 1.6rem;
+  }
+  .slide__list-item {
+    margin-left: 6rem;
+  }
+  .slide11 .slide-tittle {
+    margin-top: 8rem;
+    margin-bottom: 1.6rem;
+  }
+  .slide-text {
+    margin-bottom: 0.6rem;
+  }
+  .slide__text-box {
+    font-size: 1.9rem;
+  }
 }
 /**************************/
 /* BELOW 1300px */
@@ -1097,9 +1116,6 @@ html {
   }
   .menu {
     top: 1.5%;
-  }
-  .menu__nav__item {
-    padding-bottom: 1rem;
   }
   .slider__inside-next {
     right: 0;
@@ -1112,12 +1128,6 @@ html {
   .slider__inside-slide {
     padding-right: 9rem;
     padding-left: 9rem;
-  }
-  .slide__text-box {
-    padding: 13rem 1.6rem;
-  }
-  .slide__list-item {
-    margin-left: 7rem;
   }
 }
 /**************************/
@@ -1165,6 +1175,15 @@ html {
   }
   .slider__inside-prev img {
     width: 60%;
+  }
+  .slide-tittle {
+    font-size: 5rem;
+  }
+  .menu__nav__item {
+    padding-bottom: 0.5rem;
+  }
+  .slide-tittle {
+    font-size: 4.4rem;
   }
 }
 /**************************/
