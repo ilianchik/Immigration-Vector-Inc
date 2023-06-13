@@ -71,9 +71,9 @@
     }
 
     &__title {
-      font-family: Mont Heavy, "Arial Narrow Bold", sans-serif;
+      font-family: "Mont", "Arial Narrow Bold", sans-serif;
       font-size: 8.4rem;
-      font-weight: bolder;
+      font-weight: 900;
       letter-spacing: 0.4rem;
       color: #ccc;
 
@@ -114,6 +114,24 @@
       &:hover::after {
         width: 100%;
       }
+      
+       &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        transition: height 3s;
+
+        .opened > &{
+          height: 0;
+        }
+      }
+
+
+
     }
 
     &__hr {
