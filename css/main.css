@@ -969,7 +969,6 @@ html {
   display: flex;
   justify-content: center;
   margin-bottom: 5.6rem;
-  width: 30%;
 }
 .services__number {
   font-family: "Mont";
@@ -982,6 +981,7 @@ html {
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: 1.8rem;
+  width: 14rem;
 }
 .services__btn-box {
   display: flex;

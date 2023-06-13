@@ -169,7 +169,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5.6rem;
-    width: 30%;
   }
   &__number {
     font-family: "Mont";
@@ -182,6 +181,7 @@
     font-family: "Josefin Sans";
     font-weight: 500;
     font-size: 1.8rem;
+    width: 14rem;
   }
   &__btn-box {
     display: flex;
