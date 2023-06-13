@@ -955,6 +955,7 @@ html {
 
 .services {
   margin-bottom: 30rem;
+  padding: 2.6rem;
   transition: all 0.7s;
 }
 .services.scrolled {
@@ -966,21 +967,19 @@ html {
   font-size: 6rem;
   font-weight: 700;
   color: #7f7f7f;
-  text-align: center;
+  text-align: right;
   margin-bottom: 6rem;
   text-transform: uppercase;
   margin-bottom: 10rem;
 }
 .services__content {
   display: flex;
-  justify-content: space-around;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  justify-content: space-between;
 }
 .services__content-box {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   margin-bottom: 5.6rem;
 }
 .services__number {
@@ -1011,7 +1010,6 @@ html {
   border: 1px solid #e80d0d;
   background-color: rgba(232, 13, 13, 0.2);
   padding: 1.6rem 10.8rem;
-  margin-right: 8.3rem;
   cursor: pointer;
   transition: background-color 0.5s;
 }
