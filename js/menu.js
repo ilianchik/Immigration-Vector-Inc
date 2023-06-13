@@ -10,7 +10,6 @@ function toggleMenu() {
   var logoImg = document.querySelector(".logo__img");
 
   if (menuBtn.classList.contains("closed")) {
-    // open menu
     //set scroll var
     SCROLL = window.scrollY;
     console.log(SCROLL);
@@ -37,7 +36,7 @@ function toggleMenu() {
 
     //change logo
     logoContainer.classList.add("moved");
-    logoImg.src = "./sourse/img/logo2.png";
+    if (lo) logoImg.src = "./sourse/img/logo2.png";
 
     setTimeout(function () {
       document.body.classList.add("noscroll");
@@ -59,6 +58,7 @@ function toggleMenu() {
     //logo change
     setTimeout(function () {
       logoContainer.classList.remove("moved");
+
       if (!logoContainer.classList.contains("scrolled")) {
         logoImg.src = "./sourse/img/logo.png";
       }
