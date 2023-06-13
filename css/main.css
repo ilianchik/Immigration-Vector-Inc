@@ -1078,10 +1078,110 @@ html {
   }
 }
 /**************************/
+/* BELOW 1500px */
+/**************************/
+@media (max-width: 93.75em) {
+  .slider__inside-next img {
+    width: 75%;
+  }
+  .slider__inside-prev img {
+    width: 75%;
+  }
+}
+/**************************/
 /* BELOW 1300px */
 /**************************/
 @media (max-width: 81.25em) {
   html {
     font-size: 56.25%;
+  }
+  .menu {
+    top: 1.5%;
+  }
+  .menu__nav__item {
+    padding-bottom: 1rem;
+  }
+  .slider__inside-next {
+    right: 0;
+    bottom: -12%;
+  }
+  .slider__inside-prev {
+    left: 0;
+    bottom: -12%;
+  }
+  .slider__inside-slide {
+    padding-right: 9rem;
+    padding-left: 9rem;
+  }
+  .slide__text-box {
+    padding: 13rem 1.6rem;
+  }
+  .slide__list-item {
+    margin-left: 7rem;
+  }
+}
+/**************************/
+/* BELOW 1150px */
+/**************************/
+@media (max-width: 71.875em) {
+  .testimonial__text-box {
+    padding: 2rem;
+    margin-right: 1rem;
+  }
+  .menu__nav__title {
+    font-size: 6.4rem;
+  }
+  .testimonial__slide {
+    flex-direction: column;
+  }
+  .testimonial__text-box {
+    order: 2;
+  }
+  .testimonial__person-img {
+    align-self: flex-start;
+    margin-left: 3rem;
+    transform: translateY(30%);
+  }
+  .testimonial__person-text {
+    align-self: flex-start;
+    margin-left: 13rem;
+    transform: translateY(-50%);
+  }
+  .advantages__title {
+    margin-bottom: 12.8rem;
+    padding-left: 30%;
+  }
+  html {
+    font-size: 50%;
+  }
+  .services__btn {
+    margin: 0 auto;
+  }
+  .advantages__content-box {
+    padding-left: 10rem;
+  }
+  .slider__inside-next img {
+    width: 60%;
+  }
+  .slider__inside-prev img {
+    width: 60%;
+  }
+}
+/**************************/
+/* BELOW 1000px */
+/**************************/
+@media (max-width: 62.5em) {
+  .testimonial__text-box {
+    width: 48rem;
+  }
+  .services__content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .slider__inside-next img {
+    width: 50%;
+  }
+  .slider__inside-prev img {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
