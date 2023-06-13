@@ -357,6 +357,7 @@ dialog {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 50%;
@@ -399,6 +400,8 @@ dialog {
   z-index: 1000;
 }
 .get_in_touch__btn {
+  font-family: "Ducine";
+  font-weight: 400;
   transition: all 2s ease;
   position: fixed;
   right: 3rem;
@@ -457,9 +460,9 @@ dialog {
   border-radius: 0;
   border: 2px solid white;
   background-color: rgba(60, 60, 60, 0.5);
-  font-family: "ducine";
+  font-family: "Ducine";
   font-size: 3.2rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding: 0.2rem 2.2rem 0.6rem;
