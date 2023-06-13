@@ -41,13 +41,13 @@
 .get_in_touch {
   width: 100%;
   transition: all 3s;
-  z-index: 1000;
   position: relative;
   text-align: right;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+ z-index: 1000;
   &__btn {
     transition: all 2s ease;
     position: fixed;
@@ -55,7 +55,7 @@
     cursor: pointer;
   }
   &.opened > &__btn {
-    bottom: 70%;
+    bottom: 75%;
   }  
   &.closed > &__btn {
     bottom: 2.2rem;
@@ -91,7 +91,7 @@
        position: relative;
        border-radius: 0;
 
-       font-size: 1.8rem;
+       font-size: 2.2rem;
        font-family: "repeater";
 
        border-collapse: hidden;
@@ -100,15 +100,16 @@
      & input::placeholder,
      & textarea::placeholder {
        position: absolute;
-       top: 0px;
+       bottom: 0px;
        right: 0;
      }
      &__submit {
        cursor: pointer;
        width: fit-content !important;
-       padding: 1rem 4.6rem !important;
+       padding: 1rem 1rem 1rem 5.6rem !important;
        margin-left: auto;
        transform: translateX();
+      
      }
     }
 
@@ -127,7 +128,7 @@
   background-color: rgba(60, 60, 60, 0.5);
 
   font-family: "ducine";
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
