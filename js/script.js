@@ -47,11 +47,16 @@ window.addEventListener("scroll", function () {
   var windowHeight = window.innerHeight;
   var percentageOffset = windowHeight * 0.55;
 
-  if (window.scrollY > percentageOffset) {
-    textContainer.classList.add("scrolled");
-  } else {
-    textContainer.classList.remove("scrolled");
+  const menuBtn = document.querySelector(".menu__btn");
+
+  if (!menuBtn.classList.contains("opened")){
+      if (window.scrollY > percentageOffset) {
+        textContainer.classList.add("scrolled");
+      } else {
+        textContainer.classList.remove("scrolled");
+      }
   }
+
 });
 
 window.addEventListener("scroll", function () {
