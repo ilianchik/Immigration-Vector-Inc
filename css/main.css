@@ -378,12 +378,12 @@ dialog {
 .get_in_touch {
   width: 100%;
   transition: all 3s;
-  z-index: 1000;
   position: relative;
   text-align: right;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1000;
 }
 .get_in_touch__btn {
   transition: all 2s ease;
@@ -392,7 +392,7 @@ dialog {
   cursor: pointer;
 }
 .get_in_touch.opened > .get_in_touch__btn {
-  bottom: 70%;
+  bottom: 75%;
 }
 .get_in_touch.closed > .get_in_touch__btn {
   bottom: 2.2rem;
@@ -418,19 +418,19 @@ dialog {
   border-bottom: 2px solid #fff;
   position: relative;
   border-radius: 0;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-family: "repeater";
   border-collapse: hidden;
 }
 .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
   position: absolute;
-  top: 0px;
+  bottom: 0px;
   right: 0;
 }
 .get_in_touch__form__submit {
   cursor: pointer;
   width: fit-content !important;
-  padding: 1rem 4.6rem !important;
+  padding: 1rem 1rem 1rem 5.6rem !important;
   margin-left: auto;
   transform: translateX();
 }
@@ -445,7 +445,7 @@ dialog {
   border: 2px solid white;
   background-color: rgba(60, 60, 60, 0.5);
   font-family: "ducine";
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
