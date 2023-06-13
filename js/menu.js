@@ -36,8 +36,8 @@ function toggleMenu() {
 
     setTimeout(function () {
       document.body.classList.add("noscroll");
-      logoImg.src = "./sourse/img/logo2.png";
     }, 2000);
+    logoImg.src = "./sourse/img/logo2.png";
   } else if (menuBtn.classList.contains("opened")) {
     menuBtn.classList.remove("opened");
     menuBtn.classList.add("closed");
@@ -58,3 +58,8 @@ function toggleMenu() {
     window.scrollTo(0, SCROLL);
   }
 }
+const button = document.getElementById("toggleFixed");
+button.addEventListener("click", () => {
+  document.body.classList.toggle("noscroll");
+  button.style.position = "fixed";
+});
