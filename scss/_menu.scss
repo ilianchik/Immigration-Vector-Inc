@@ -125,11 +125,11 @@
         background-color: rgb(255, 255, 255);
         transition: height 3s;
 
-        .opened > &{
-          height: 0;
-        }
       }
 
+      &.opened::before{
+        height: 0;
+      }
 
 
     }

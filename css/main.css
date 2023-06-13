@@ -251,7 +251,7 @@ dialog {
   background-color: rgb(255, 255, 255);
   transition: height 3s;
 }
-.opened > .menu__nav__item::before {
+.menu__nav__item.opened::before {
   height: 0;
 }
 .menu__nav__hr {
