@@ -215,8 +215,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  z-index: 10000;
+  z-index: 1;
 
   &-slider {
     transition: all 1s;
@@ -450,6 +449,7 @@
   .slider-inside {
     opacity: 1;
     transform: translateY(0%);
+
   }
   .slider__inside-prev,
   .slider__inside-next {
