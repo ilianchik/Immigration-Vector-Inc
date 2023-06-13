@@ -119,88 +119,6 @@
 
 }
 
-// .get_in_touch {
-//   // 
-//   // text-align: right;
-//   // z-index: 1000;
-//   // position: absolute;
-//   // bottom: -10px;
-//   // right: 5.4rem;
-
-//   position: relative;
-
-//   background-color: rebeccapurple;
-//   width: 100%; height: 100vh;
-
-//   &.closed {
-//     // transform: translateX(-40%) translateY(85%);
-//   }
-//   &.closed > &__btn{
-
-//   }
-
-//   &__form {
-//     transition: all 3s;
-//     text-align: right;
-//     // opacity: 0;
-
-//     & input,
-//     & select,
-//     & option,
-//     & textarea,
-//     & input::placeholder,
-//     & textarea::placeholder {
-//       display: block;
-//       width: 100%;
-//       background-color: rgba(37, 37, 37, 0.5);
-//       color: #fff;
-//       text-align: right;
-//       padding: 1rem;
-//       overflow: hidden;
-//       border: none;
-//       border-bottom: 2px solid #fff;
-//       position: relative;
-//       border-radius: 0;
-
-//       font-size: 1.8rem;
-//       font-family: "repeater";
-
-//       border-collapse: hidden;
-//     }
-
-//     & input::placeholder,
-//     & textarea::placeholder {
-//       position: absolute;
-//       top: 0px;
-//       right: 0;
-//     }
-//     &__submit {
-//       cursor: pointer;
-//       width: fit-content !important;
-//       position: absolute !important;
-//       right: 0 !important;
-//       padding: 1rem 4.6rem !important;
-//     }
-//   }
-//   &__btn {
-//     transition: all 2s;
-//     // margin-bottom: 15rem;
-//     // margin-right: -49%;
-//     cursor: pointer;
-//   }
-
-//   &.opened {
-//     // transform: translateX(-40%) translateY(-50%);
-//   }
-//   &.opened > &__btn {
-//     // margin-bottom: 5rem;
-//     //margin-right: -10%;
-//     cursor: pointer;
-//   }
-//   &.opened > &__form {
-//     // opacity: 100;
-//   }
-// }
 
 .black-btn {
   color: #fff;
@@ -224,11 +142,15 @@
   }
 }
 
+.bg-bottom{
+   background-position: bottom !important;
+}
+
 .get_in_touch__reaction {
   transition: background-position 2s;
 }
 .get_in_touch__opened {
-  background-position: bottom !important;
+ 
 
   &.slide2 > .slide2-slider {
     transform: translateY(-20%);
