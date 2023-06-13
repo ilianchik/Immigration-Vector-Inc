@@ -1,26 +1,28 @@
 .main__right {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-  position: fixed;
   top: 0;
-
+  z-index: 1;
   width: 50%;
   height: 100vh;
-
+  pointer-events: none;
   .icon {
     position: absolute;
     color: #fff;
     font-size: 4.2rem;
   }
   .map-icon {
+    position: fixed;
     right: 1.8rem;
     top: 1.2rem;
     z-index: 1000;
     cursor: pointer;
+    pointer-events: auto;
   }
   .sotial_networks {
+    pointer-events: auto;
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
@@ -38,6 +40,7 @@
 }
 
 .get_in_touch {
+  pointer-events: auto;
   width: 100%;
   transition: all 3s;
   position: relative;
