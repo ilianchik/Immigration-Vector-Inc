@@ -9,11 +9,10 @@ window.addEventListener("scroll", function () {
     logoImg.src = "sourse/img/logo2.png";
   } else {
     logoContainer.classList.remove("scrolled");
-    
-    if (!menuBtn.classList.contains("opened")){
+
+    if (!menuBtn.classList.contains("opened")) {
       logoImg.src = "sourse/img/logo.png";
     }
-    
   }
 });
 
@@ -49,14 +48,13 @@ window.addEventListener("scroll", function () {
 
   const menuBtn = document.querySelector(".menu__btn");
 
-  if (!menuBtn.classList.contains("opened")){
-      if (window.scrollY > percentageOffset) {
-        textContainer.classList.add("scrolled");
-      } else {
-        textContainer.classList.remove("scrolled");
-      }
+  if (!menuBtn.classList.contains("opened")) {
+    if (window.scrollY > percentageOffset) {
+      textContainer.classList.add("scrolled");
+    } else {
+      textContainer.classList.remove("scrolled");
+    }
   }
-
 });
 
 window.addEventListener("scroll", function () {
@@ -226,7 +224,7 @@ $(".testimonial__slider").slick({
   swipe: true,
   infinite: true,
   speed: 400,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 3000,
   dots: true,
 });
