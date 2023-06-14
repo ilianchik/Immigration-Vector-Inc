@@ -114,8 +114,8 @@
       &:hover::after {
         width: 100%;
       }
-      
-       &::before {
+
+      &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -124,14 +124,11 @@
         height: 100%;
         background-color: rgb(255, 255, 255);
         transition: height 3s;
-
       }
 
-      &.opened::before{
+      &.opened::before {
         height: 0;
       }
-
-
     }
 
     &__hr {
