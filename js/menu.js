@@ -50,7 +50,6 @@ function toggleMenu() {
     setTimeout(function () {
       document.body.classList.add("noscroll");
     }, 2000);
-
   } else if (menuBtn.classList.contains("opened")) {
     //close menu
 
@@ -58,11 +57,9 @@ function toggleMenu() {
     menuBtn.classList.remove("opened");
     menuBtn.classList.add("closed");
 
-    
-      menuItems.forEach(function (menuItem) {
-        menuItem.classList.remove("opened");
-      });
-
+    menuItems.forEach(function (menuItem) {
+      menuItem.classList.remove("opened");
+    });
 
     setTimeout(function () {
       menuBody.style.opacity = "0";
@@ -70,8 +67,6 @@ function toggleMenu() {
 
     menuBody.classList.remove("opened");
     menuBody.classList.add("closed");
-
-
 
     //logo change
     setTimeout(function () {
