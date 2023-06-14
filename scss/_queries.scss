@@ -42,6 +42,10 @@
   .slide__text-box {
     font-size: 1.9rem;
   }
+  .menu__nav__title {
+    font-size: 6.4rem;
+    margin-bottom: -1rem;
+  }
 }
 
 /**************************/
@@ -57,15 +61,25 @@
 
   .slider__inside-next {
     right: 0;
-    bottom: -12%;
+    bottom: -9%;
   }
   .slider__inside-prev {
     left: 0;
-    bottom: -12%;
+    bottom: -9%;
   }
   .slider__inside-slide {
-    padding-right: 9rem;
-    padding-left: 9rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+  .slider__inside-next {
+    img {
+      width: 70%;
+    }
+  }
+  .slider__inside-prev {
+    img {
+      width: 70%;
+    }
   }
 }
 
@@ -78,9 +92,6 @@
     margin-right: 1rem;
   }
   .menu__nav {
-    &__item {
-      font-size: 4.4rem;
-    }
     &__title {
       font-size: 6.4rem;
     }
@@ -134,6 +145,9 @@
   }
   .slide-tittle {
     font-size: 4.4rem;
+  }
+  .slider__inside-title {
+    font-size: 2.5rem;
   }
 }
 

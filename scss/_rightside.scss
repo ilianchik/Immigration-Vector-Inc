@@ -326,7 +326,7 @@
     color: white;
     max-width: 50rem;
     padding-top: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     letter-spacing: 0.3rem;
   }
 
@@ -364,7 +364,7 @@
   &__inside-prev {
     position: absolute;
     left: 10%;
-    bottom: -8%;
+    bottom: -7%;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -374,7 +374,7 @@
   &__inside-next {
     position: absolute;
     right: 10%;
-    bottom: -8%;
+    bottom: -7%;
     display: block;
     background: transparent;
     border: none;
