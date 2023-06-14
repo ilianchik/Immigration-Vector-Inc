@@ -23,7 +23,7 @@
     }
     &__contact-us {
       font-size: 4.2rem;
-      bottom: 6.4rem;
+      bottom: 3.4rem;
     }
   }
   .slide__text-box {
@@ -44,7 +44,7 @@
   }
   .menu__nav__title {
     font-size: 6.4rem;
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -156,7 +156,7 @@
 /**************************/
 @media (max-width: 62.5em) {
   .testimonial__text-box {
-    width: 48rem;
+    width: 45rem;
   }
   .services__content {
     padding-left: 0;
@@ -164,17 +164,98 @@
   }
   .slider__inside-next {
     img {
-      width: 50%;
+      width: 40%;
     }
   }
 
   .slider__inside-prev {
     img {
-      width: 50%;
+      width: 40%;
     }
   }
 
   .logo__img {
     width: 25rem;
+  }
+  .services__number {
+    font-size: 7.6rem;
+  }
+  .services__text {
+    font-size: 1.5rem;
+  }
+  .services {
+    padding-left: 1rem;
+  }
+  .slider__inside-slide {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+  .menu__nav__title {
+    font-size: 6rem;
+  }
+}
+/**************************/
+/* BELOW 850px */
+/**************************/
+@media (max-width: 53.125em) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    &__right {
+      position: static;
+
+      left: auto;
+      right: auto;
+      grid-row: 1;
+      overflow-x: hidden;
+    }
+  }
+  .main__right {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+  }
+  .logo__img {
+    width: 30rem;
+  }
+  .main__right .map-icon {
+    position: absolute;
+    right: auto;
+    left: 1.8rem;
+    height: 100vh;
+  }
+  .menu {
+    position: absolute;
+    right: 1.8rem;
+    top: 1.2rem;
+  }
+  .get_in_touch__btn {
+    position: absolute;
+    transform: rotate(90deg);
+    right: -5%;
+    bottom: -10%;
+  }
+  .get_in_touch {
+    position: static;
+  }
+  .get_in_touch.closed > .get_in_touch__btn {
+    bottom: 10%;
+  }
+  .hero {
+    height: 90vh;
+    position: absolute;
+    top: 10%;
+    &__text {
+      color: white;
+    }
+  }
+  .hero__arrow-btn {
+    border-color: white;
   }
 }
