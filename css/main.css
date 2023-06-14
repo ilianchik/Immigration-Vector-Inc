@@ -963,7 +963,7 @@ html {
 
 .services {
   margin-bottom: 30rem;
-  padding: 2.6rem;
+  padding: 2.6rem 2.6rem 2.6rem 6.4rem;
   transition: all 0.7s;
 }
 .services.scrolled {
