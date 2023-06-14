@@ -915,6 +915,7 @@ html {
 }
 .testimonial__slide {
   display: flex;
+  justify-content: center;
 }
 .testimonial__text-box {
   width: 55rem;
@@ -924,6 +925,8 @@ html {
   margin-left: 1rem;
   margin-right: 2.2rem;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 .testimonial__text {
   font-family: "Josefin Sans";
@@ -963,7 +966,7 @@ html {
 
 .services {
   margin-bottom: 30rem;
-  padding: 2.6rem 2.6rem 2.6rem 6.4rem;
+  padding: 2.6rem;
   transition: all 0.7s;
 }
 .services.scrolled {

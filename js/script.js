@@ -60,7 +60,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".testimonial");
   var windowHeight = window.innerHeight;
-  var percentageOffset = windowHeight * 0.95;
+  var percentageOffset = windowHeight * 1;
   if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {
@@ -71,7 +71,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".services");
   var windowHeight = window.innerHeight;
-  var percentageOffset = windowHeight * 1.8;
+  var percentageOffset = windowHeight * 1.9;
   if (window.scrollY > percentageOffset) {
     textContainer.classList.add("scrolled");
   } else {

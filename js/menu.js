@@ -1,14 +1,16 @@
 var SCROLL = 0;
 let scrollPosition;
+let isAnimatingMenu = false; // Add this variable to track the animation state
 
 function toggleMenu() {
+  if (isAnimatingMenu) return; // If the menu is animating, don't run the function
+
+  isAnimatingMenu = true; // Set the animation state to true when the function starts
+
   const menuBtn = document.querySelector(".menu__btn");
-
   const menuBody = document.querySelector(".menu__nav");
-
   var logoContainer = document.querySelector(".logo");
   var logoImg = document.querySelector(".logo__img");
-
   var menuItems = document.querySelectorAll(".menu__nav__item");
 
   if (menuBtn.classList.contains("closed")) {
@@ -49,7 +51,8 @@ function toggleMenu() {
 
     setTimeout(function () {
       document.body.classList.add("noscroll");
-    }, 2000);
+      isAnimatingMenu = false; // Set the animation state to false when the animation is complete
+    }, 2500);
   } else if (menuBtn.classList.contains("opened")) {
     //close menu
 
@@ -79,5 +82,8 @@ function toggleMenu() {
     //scroll to
     document.body.classList.remove("noscroll");
     window.scrollTo(0, SCROLL);
+    setTimeout(function () {
+      isAnimatingMenu = false; // Set the animation state to false when the animation is complete
+    }, 1500);
   }
 }

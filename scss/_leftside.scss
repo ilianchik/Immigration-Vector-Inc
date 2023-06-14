@@ -95,6 +95,7 @@
 
   &__slide {
     display: flex;
+    justify-content: center;
   }
   &__text-box {
     width: 55rem;
@@ -104,6 +105,8 @@
     margin-left: 1rem;
     margin-right: 2.2rem;
     position: relative;
+    display: flex;
+    align-items: center;
   }
   &__text {
     font-family: "Josefin Sans";
@@ -163,7 +166,6 @@
   &__content {
     display: flex;
     justify-content: space-between;
-
   }
   &__content-box {
     position: relative;
