@@ -251,11 +251,23 @@
     height: 90vh;
     position: absolute;
     top: 10%;
+    pointer-events: none;
     &__text {
       color: white;
     }
   }
   .hero__arrow-btn {
     border-color: white;
+    pointer-events: auto;
+  }
+  .menu__btn::before,
+  .menu__btn::after {
+    color: white;
+  }
+  .menu__btn {
+    color: white;
+  }
+  .hero__arrow-img {
+    width: auto;
   }
 }
