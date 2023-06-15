@@ -280,10 +280,23 @@ dialog {
   transform: translateY(200vh);
 }
 
+@keyframes menuMobileBtnOpenning {
+  10% {
+    transform: rotate(90deg) translateX(35%);
+  }
+  20% {
+    letter-spacing: -5px;
+    top: 15%;
+    right: -45%;
+  }
+  50% {
+    font-size: 0px;
+  }
+}
 .menu__mobile {
   position: fixed;
   z-index: 10000;
-  right: 1.8rem;
+  right: 5.8rem;
   top: 1.2rem;
   transition: all 0.7s;
 }
@@ -300,27 +313,26 @@ dialog {
   margin: 0;
   padding: 0;
   font-family: "ducine";
-  font-size: 1.8rem;
+  font-size: 2.4rem;
+  line-height: 10px;
   position: relative;
   cursor: pointer;
 }
 .menu__mobile__btn::after {
   transition: all 0.5s;
-  font-size: 5.2rem;
+  font-size: 4.6rem;
   color: #fff;
-  content: "|";
-  left: -50%; /* Position from the left center */
-  top: 50%; /* Position from the top center */
-  transform: translate(-50%, -50%); /* Rotate and center the pseudo-elements */
-}
-.menu__mobile__btn.closed::before {
-  left: -75%;
+  content: "|||";
+  display: block;
+  position: absolute;
+  right: -50%;
+  top: 2px;
+  letter-spacing: 1px;
 }
 .menu__mobile__btn.opened::after {
-  transform: translate(-59%, -50%) rotate(-45deg);
-}
-.menu__mobile__btn.opened::before {
-  transform: translate(-41%, -50%) rotate(45deg);
+  animation-name: menuMobileBtnOpenning;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
 }
 .menu__mobile__nav {
   transition: top 2s;

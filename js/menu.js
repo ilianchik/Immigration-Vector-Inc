@@ -87,3 +87,21 @@ function toggleMenu() {
     }, 1500);
   }
 }
+
+
+function toggleMenuMobile() {
+  if (isAnimatingMenu) return;
+  
+  const menuBtn = document.querySelector(".menu__mobile__btn");
+
+  if (menuBtn.classList.contains("closed")){
+    menuBtn.classList.remove("closed");
+    menuBtn.classList.add("opened");
+    
+  }else{
+    menuBtn.classList.remove("opened");
+    menuBtn.classList.add("closed");
+
+  }
+
+}
