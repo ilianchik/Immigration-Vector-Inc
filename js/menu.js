@@ -46,9 +46,10 @@ function toggleMenu() {
     }, 1000);
 
     //change logo
-    logoContainer.classList.add("moved");
-    logoImg.src = "./sourse/img/logo2.png";
-
+    if (window.innerWidth >= 848) {
+      logoContainer.classList.add("moved");
+      logoImg.src = "./sourse/img/logo2.png";
+    }
     setTimeout(function () {
       document.body.classList.add("noscroll");
       isAnimatingMenu = false; // Set the animation state to false when the animation is complete
@@ -72,12 +73,14 @@ function toggleMenu() {
     menuBody.classList.add("closed");
 
     //logo change
-    setTimeout(function () {
-      logoContainer.classList.remove("moved");
-      if (!logoContainer.classList.contains("scrolled")) {
-        logoImg.src = "./sourse/img/logo.png";
-      }
-    }, 500);
+    if (window.innerWidth >= 848) {
+      setTimeout(function () {
+        logoContainer.classList.remove("moved");
+        if (!logoContainer.classList.contains("scrolled")) {
+          logoImg.src = "./sourse/img/logo.png";
+        }
+      }, 500);
+    }
 
     //scroll to
     document.body.classList.remove("noscroll");

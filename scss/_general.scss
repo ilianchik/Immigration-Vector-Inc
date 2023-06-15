@@ -2,6 +2,11 @@ html {
   font-size: 62.5%;
 }
 
+*::-moz-selection {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+
 *::selection {
   color: #ccc;
   background-color: rgba(0, 0, 0, 0.623);

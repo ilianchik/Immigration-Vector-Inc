@@ -2,7 +2,8 @@
   position: fixed;
   z-index: 10000;
   top: 45%;
-
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s;
   &.scrolled {
     opacity: 1;
@@ -22,13 +23,18 @@
     font-family: "ducine";
     font-size: 1.8rem;
     position: relative;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    cursor: pointer;
 
     cursor: pointer;
 
     &::before,
     &::after {
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s;
       font-size: 5.2rem;
       color: black;
@@ -36,6 +42,8 @@
       position: absolute;
       left: -50%; /* Position from the left center */
       top: 50%; /* Position from the top center */
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(
         -50%,
         -50%
@@ -45,14 +53,20 @@
       left: -75%;
     }
     &.opened::after {
+      -webkit-transform: translate(-59%, -50%) rotate(-45deg);
+      -ms-transform: translate(-59%, -50%) rotate(-45deg);
       transform: translate(-59%, -50%) rotate(-45deg);
     }
     &.opened::before {
+      -webkit-transform: translate(-41%, -50%) rotate(45deg);
+      -ms-transform: translate(-41%, -50%) rotate(45deg);
       transform: translate(-41%, -50%) rotate(45deg);
     }
   }
 
   &__nav {
+    -webkit-transition: top 2s;
+    -o-transition: top 2s;
     transition: top 2s;
     position: fixed;
     left: 0;
@@ -60,7 +74,6 @@
     height: 100vh;
     z-index: 2;
     padding: 2.4rem 2.4rem 0 10rem;
-
     background-color: white;
     opacity: 0;
     &.opened {
@@ -86,14 +99,16 @@
       position: relative;
       display: block;
       padding-bottom: 1.4rem;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
       width: fit-content;
-
       font-family: "ducine";
       font-size: 3.6rem;
       text-decoration: none;
-
       color: black;
       cursor: pointer;
+      -webkit-transition: all 1s;
+      -o-transition: all 1s;
       transition: all 1s;
 
       &:hover {
@@ -108,6 +123,8 @@
         width: 0;
         height: 1.5px;
         background-color: black;
+        -webkit-transition: width 0.5s ease;
+        -o-transition: width 0.5s ease;
         transition: width 0.5s ease;
       }
 
@@ -123,6 +140,8 @@
         width: 100%;
         height: 100%;
         background-color: rgb(255, 255, 255);
+        -webkit-transition: height 3s;
+        -o-transition: height 3s;
         transition: height 3s;
       }
 
@@ -137,6 +156,8 @@
       border: none;
       margin-left: 16%;
       margin-top: 1.8rem;
+      -webkit-transition: all 1s ease;
+      -o-transition: all 1s ease;
       transition: all 1s ease;
 
       .closed > & {
@@ -150,14 +171,15 @@
       text-transform: uppercase;
       font-size: 3.8rem;
       letter-spacing: 1px;
-
       /*margin-top: 1.8rem;*/
-
       position: absolute;
       bottom: 2.4rem;
-
+      -webkit-transition: all 2s;
+      -o-transition: all 2s;
       transition: all 2s;
       .closed > & {
+        -webkit-transform: translateY(200vh);
+        -ms-transform: translateY(200vh);
         transform: translateY(200vh);
       }
     }
