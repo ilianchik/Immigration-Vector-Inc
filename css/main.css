@@ -1887,6 +1887,11 @@ html {
   html {
     overflow-x: hidden;
   }
+  .hero__text {
+    -webkit-transition-duration: 0.625s;
+    -o-transition-duration: 0.625s;
+    transition-duration: 0.625s;
+  }
   /*menu mobile*/
   .menu {
     display: none;
