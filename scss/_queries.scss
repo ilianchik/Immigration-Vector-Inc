@@ -207,6 +207,7 @@
 }
 /**************************/
 /* BELOW 850px */
+/*MOBILE*/
 /**************************/
 @media (max-width: 53.125em) {
   .grid {
@@ -244,11 +245,6 @@
     left: 1.8rem;
     height: 100vh;
   }
-  .menu {
-    position: absolute;
-    right: 1.8rem;
-    top: 1.2rem;
-  }
   .get_in_touch__btn {
     position: absolute;
     -webkit-transform: rotate(90deg);
@@ -276,16 +272,10 @@
     border-color: white;
     pointer-events: auto;
   }
-  .menu__btn::before,
-  .menu__btn::after {
-    color: white;
-  }
-  .menu__btn {
-    color: white;
-  }
-  .hero__arrow-img {
+   .hero__arrow-img {
     width: auto;
   }
+<<<<<<< HEAD
   .advantages__content-box {
     opacity: 1;
   }
@@ -323,4 +313,17 @@
   html {
     overflow-x: hidden;
   }
+=======
+
+  /*menu mobile*/
+
+  .menu {
+    display: none;
+    // position: absolute;
+  }
+  .menu__mobile{
+    display: block;
+  }
+ 
+>>>>>>> 6f80e81397930c90be86f58b7724ec54f962403c
 }
