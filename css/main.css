@@ -1854,6 +1854,7 @@ html {
   }
   .hero__text {
     color: white;
+    opacity: 1;
   }
   .hero__arrow-btn {
     border-color: white;
