@@ -1,12 +1,33 @@
-@keyframes jump {
+@-webkit-keyframes jump {
   0% {
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
   }
   50% {
+    -webkit-transform: translate(-50%, -10px);
     transform: translate(-50%, -10px);
   }
   100% {
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+    -webkit-transform: translate();
+    transform: translate();
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -10px);
+    transform: translate(-50%, -10px);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-transform: translate();
     transform: translate();
   }
 }

@@ -97,19 +97,30 @@
     }
   }
   .testimonial__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .testimonial__text-box {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
   .testimonial__person-img {
+    -ms-flex-item-align: start;
     align-self: flex-start;
     margin-left: 3rem;
+    -webkit-transform: translateY(30%);
+    -ms-transform: translateY(30%);
     transform: translateY(30%);
   }
   .testimonial__person-text {
+    -ms-flex-item-align: start;
     align-self: flex-start;
     margin-left: 13rem;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
   .advantages__title {
@@ -199,13 +210,16 @@
 /**************************/
 @media (max-width: 53.125em) {
   .grid {
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     &__right {
       position: static;
 
       left: auto;
       right: auto;
+      -ms-grid-row: 1;
       grid-row: 1;
       overflow-x: hidden;
     }
@@ -237,8 +251,10 @@
   }
   .get_in_touch__btn {
     position: absolute;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    right: -5%;
+    right: -5.5rem;
     bottom: -10%;
   }
   .get_in_touch {
@@ -269,5 +285,42 @@
   }
   .hero__arrow-img {
     width: auto;
+  }
+  .advantages__content-box {
+    opacity: 1;
+  }
+  .advantages__img {
+    opacity: 1;
+  }
+  .testimonial {
+    margin-top: 30rem;
+  }
+  .testimonial__person-img {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-transform: translate(-11rem, 30%);
+    -ms-transform: translate(-11rem, 30%);
+    transform: translate(-11rem, 30%);
+  }
+  .testimonial__person-text {
+    margin: 0 auto;
+  }
+  .testimonial__slide {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .testimonial__text-box {
+    margin-left: -6rem;
+  }
+  .services__content {
+    padding-left: 3rem;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    overflow-x: hidden;
   }
 }

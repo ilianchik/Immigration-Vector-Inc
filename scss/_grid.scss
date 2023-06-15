@@ -1,5 +1,7 @@
 .grid {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   &__left {
     overflow-x: hidden;
@@ -25,11 +27,17 @@
   position: fixed;
   top: 2.6rem;
   left: 25%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
 
   &.scrolled,
   &.moved {
+    -webkit-transform: translateX(10%);
+    -ms-transform: translateX(10%);
     transform: translateX(10%);
     left: 50%;
   }
@@ -44,6 +52,8 @@
 
 .massege_was_sent {
   &.opened {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -52,18 +62,21 @@
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-
   text-align: center;
   color: white;
   font-family: "ducine";
   font-size: 8.4rem;
-
   display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-
   row-gap: 1rem;
 
   &__close_btn {
