@@ -40,8 +40,9 @@ window.addEventListener("scroll", function () {
   var duration = 1.0 / scrollSpeed;
 
   var textContainer = document.querySelector(".hero__text");
-  textContainer.style.transitionDuration = duration + "s";
-
+  if (window.innerWidth >= 848) {
+    textContainer.style.transitionDuration = duration + "s";
+  }
   if (window.scrollY > 0) {
     textContainer.classList.add("scrolled");
   } else {
