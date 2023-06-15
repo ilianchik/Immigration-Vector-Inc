@@ -1243,14 +1243,7 @@ html {
 }
 .hero__text {
   padding-top: 24rem;
-  text-align: center;
   font-size: 3.6rem;
-  font-family: "Ducine";
-  padding-right: 5rem;
-  padding-left: 5rem;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
 .hero__text.scrolled {
   opacity: 0;
@@ -1898,9 +1891,6 @@ html {
   }
   html {
     overflow-x: hidden;
-  }
-  .hero__text.scrolled {
-    opacity: 1;
   }
   /*menu mobile*/
   .menu {
