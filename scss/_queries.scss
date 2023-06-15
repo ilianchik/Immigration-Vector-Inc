@@ -250,14 +250,23 @@
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    right: -5.5rem;
-    bottom: -10%;
+    // right: -5.5rem;
+    // bottom: -10%;
+    padding: 0.2rem 2rem 0.5rem;
   }
   .get_in_touch {
     position: static;
   }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
+    right: -5rem;
+  }
+  .get_in_touch.opened > .get_in_touch__btn {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    bottom: 10%;
+    right: 2rem;
   }
   .hero {
     height: 90vh;
@@ -272,10 +281,9 @@
     border-color: white;
     pointer-events: auto;
   }
-   .hero__arrow-img {
+  .hero__arrow-img {
     width: auto;
   }
-<<<<<<< HEAD
   .advantages__content-box {
     opacity: 1;
   }
@@ -313,7 +321,6 @@
   html {
     overflow-x: hidden;
   }
-=======
 
   /*menu mobile*/
 
@@ -321,9 +328,16 @@
     display: none;
     // position: absolute;
   }
-  .menu__mobile{
-    display: block;
+  .menu__mobile {
+    display: none;
   }
- 
->>>>>>> 6f80e81397930c90be86f58b7724ec54f962403c
+  .get_in_touch__form {
+    // position: absolute;
+    // right: 2rem;
+    // left: 2rem;
+    // top: 35%;
+    // width: auto;
+    // border: 5px black solid;
+    // padding-bottom: 22rem;
+  }
 }

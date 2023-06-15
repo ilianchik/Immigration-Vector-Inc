@@ -23,11 +23,13 @@ function toggleGetInTouch() {
   const getInTouch = document.querySelector(".get_in_touch");
   var elements = document.querySelectorAll(".get_in_touch__reaction");
   const btn = document.querySelector(".get_in_touch__btn");
-
+  var textContainer = document.querySelector(".hero__text");
+  var arrowDown = document.querySelector(".hero__arrow-btn");
   if (getInTouch.classList.contains("opened")) {
     //close
     btn.textContent = "Get in touch";
-
+    textContainer.classList.remove("scrolled");
+    arrowDown.classList.remove("scrolled");
     getInTouch.classList.remove("opened");
     getInTouch.classList.add("closed");
 
@@ -46,7 +48,8 @@ function toggleGetInTouch() {
     btn.textContent = "Close";
     getInTouch.classList.remove("closed");
     getInTouch.classList.add("opened");
-
+    arrowDown.classList.add("scrolled");
+    textContainer.classList.add("scrolled");
     for (var i = 0; i < elements.length; i++) {
       elements[i].classList.add("get_in_touch__opened");
     }

@@ -1818,14 +1818,21 @@ html {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
-    right: -5.5rem;
-    bottom: -10%;
+    padding: 0.2rem 2rem 0.5rem;
   }
   .get_in_touch {
     position: static;
   }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
+    right: -5rem;
+  }
+  .get_in_touch.opened > .get_in_touch__btn {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    bottom: 10%;
+    right: 2rem;
   }
   .hero {
     height: 90vh;
@@ -1843,7 +1850,6 @@ html {
   .hero__arrow-img {
     width: auto;
   }
-<<<<<<< HEAD
   .advantages__content-box {
     opacity: 1;
   }
@@ -1880,13 +1886,12 @@ html {
   }
   html {
     overflow-x: hidden;
-=======
+  }
   /*menu mobile*/
   .menu {
     display: none;
   }
   .menu__mobile {
-    display: block;
->>>>>>> 6f80e81397930c90be86f58b7724ec54f962403c
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
