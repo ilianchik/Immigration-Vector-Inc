@@ -46,9 +46,10 @@
         CLOSE
       </button>
     </dialog>
+
     <menu class="menu">
       <button class="menu__btn closed" id="toggleFixed" onclick="toggleMenu()">
-        SERVICES<br />IMMIGRATION
+        SERVICES<br/>IMMIGRATION
       </button>
       <nav class="menu__nav closed">
         <h1 class="menu__nav__title">
@@ -113,6 +114,70 @@
         <h3 class="menu__nav__contact-us">contact us</h3>
       </nav>
     </menu>
+    <menu class="menu__mobile" id="menu_mobile">
+      <button class="menu__mobile__btn closed" id="toggleFixed" onclick="toggleMenu()">
+        IMMIGRATION<br />SERVICES 
+      </button>
+      <nav class="menu__nav closed">
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(3)"
+          >PERMANENT RESIDENCE</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(4)"
+          >FAMILY SPONSORSHIP</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(5)"
+          >STUDY PERMITS</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(6)"
+          >WORK PERMITS</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(7)"
+          >VISITOR VISAS</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(8)"
+          >CITIZENSHIP</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(9)"
+          >BUSINESS IMMIGRATION</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(10)"
+          >PROVINCIAL NOMINEE PROGRAMS</btn
+        >
+        <btn
+          href=""
+          class="menu__nav__item go-to-slide"
+          onclick="changeContent(11)"
+          >IMMIGRATION REFUSALS</btn
+        >
+        <hr class="menu__nav__hr" />
+        <h3 class="menu__nav__contact-us">contact us</h3>
+      </nav>
+    </menu>
+
     <main>
       <a href="#" class="logo"
         ><img

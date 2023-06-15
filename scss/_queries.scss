@@ -196,6 +196,7 @@
 }
 /**************************/
 /* BELOW 850px */
+/*MOBILE*/
 /**************************/
 @media (max-width: 53.125em) {
   .grid {
@@ -230,11 +231,6 @@
     left: 1.8rem;
     height: 100vh;
   }
-  .menu {
-    position: absolute;
-    right: 1.8rem;
-    top: 1.2rem;
-  }
   .get_in_touch__btn {
     position: absolute;
     transform: rotate(90deg);
@@ -260,14 +256,18 @@
     border-color: white;
     pointer-events: auto;
   }
-  .menu__btn::before,
-  .menu__btn::after {
-    color: white;
-  }
-  .menu__btn {
-    color: white;
-  }
-  .hero__arrow-img {
+   .hero__arrow-img {
     width: auto;
   }
+
+  /*menu mobile*/
+
+  .menu {
+    display: none;
+    // position: absolute;
+  }
+  .menu__mobile{
+    display: block;
+  }
+ 
 }

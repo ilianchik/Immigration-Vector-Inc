@@ -280,6 +280,142 @@ dialog {
   transform: translateY(200vh);
 }
 
+.menu__mobile {
+  position: fixed;
+  z-index: 10000;
+  right: 1.8rem;
+  top: 1.2rem;
+  transition: all 0.7s;
+}
+.menu__mobile.scrolled {
+  opacity: 1;
+  top: 1rem;
+}
+.menu__mobile__btn {
+  color: #fff;
+  z-index: 3;
+  display: block;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: "ducine";
+  font-size: 1.8rem;
+  position: relative;
+  cursor: pointer;
+}
+.menu__mobile__btn::after {
+  transition: all 0.5s;
+  font-size: 5.2rem;
+  color: #fff;
+  content: "|";
+  left: -50%; /* Position from the left center */
+  top: 50%; /* Position from the top center */
+  transform: translate(-50%, -50%); /* Rotate and center the pseudo-elements */
+}
+.menu__mobile__btn.closed::before {
+  left: -75%;
+}
+.menu__mobile__btn.opened::after {
+  transform: translate(-59%, -50%) rotate(-45deg);
+}
+.menu__mobile__btn.opened::before {
+  transform: translate(-41%, -50%) rotate(45deg);
+}
+.menu__mobile__nav {
+  transition: top 2s;
+  position: fixed;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: 2;
+  padding: 2.4rem 2.4rem 0 10rem;
+  background-color: white;
+  opacity: 0;
+}
+.menu__mobile__nav.opened {
+  top: 0;
+}
+.menu__mobile__nav.closed {
+  top: -100vh;
+}
+.menu__mobile__nav__title {
+  font-family: "Mont", "Arial Narrow Bold", sans-serif;
+  font-size: 8.4rem;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  color: #ccc;
+}
+.menu__mobile__nav__title div:last-child {
+  text-align: right;
+}
+.menu__mobile__nav__item {
+  position: relative;
+  display: block;
+  padding-bottom: 1.4rem;
+  width: fit-content;
+  font-family: "ducine";
+  font-size: 3.6rem;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 1s;
+}
+.menu__mobile__nav__item:hover {
+  margin-left: 3.6rem;
+}
+.menu__mobile__nav__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 0;
+  height: 1.5px;
+  background-color: black;
+  transition: width 0.5s ease;
+}
+.menu__mobile__nav__item:hover::after {
+  width: 100%;
+}
+.menu__mobile__nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: height 3s;
+}
+.menu__mobile__nav__item.opened::before {
+  height: 0;
+}
+.menu__mobile__nav__hr {
+  height: 1.5px;
+  background-color: black;
+  border: none;
+  margin-left: 16%;
+  margin-top: 1.8rem;
+  transition: all 1s ease;
+}
+.closed > .menu__mobile__nav__hr {
+  margin-left: 100%;
+}
+.menu__mobile__nav__contact-us {
+  font-family: "ducine";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  /*margin-top: 1.8rem;*/
+  position: absolute;
+  bottom: 2.4rem;
+  transition: all 2s;
+}
+.closed > .menu__mobile__nav__contact-us {
+  transform: translateY(200vh);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1267,6 +1403,7 @@ html {
 }
 /**************************/
 /* BELOW 850px */
+/*MOBILE*/
 /**************************/
 @media (max-width: 53.125em) {
   .grid {
@@ -1299,11 +1436,6 @@ html {
     left: 1.8rem;
     height: 100vh;
   }
-  .menu {
-    position: absolute;
-    right: 1.8rem;
-    top: 1.2rem;
-  }
   .get_in_touch__btn {
     position: absolute;
     transform: rotate(90deg);
@@ -1329,14 +1461,14 @@ html {
     border-color: white;
     pointer-events: auto;
   }
-  .menu__btn::before,
-  .menu__btn::after {
-    color: white;
-  }
-  .menu__btn {
-    color: white;
-  }
   .hero__arrow-img {
     width: auto;
+  }
+  /*menu mobile*/
+  .menu {
+    display: none;
+  }
+  .menu__mobile {
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
