@@ -321,7 +321,8 @@
   html {
     overflow-x: hidden;
   }
-  .hero__text {
+  .hero__text.scrolled {
+    opacity: 1;
   }
 
   /*menu mobile*/
