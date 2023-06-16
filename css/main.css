@@ -444,6 +444,11 @@ dialog {
   opacity: 0;
   top: -100vh;
 }
+.menu__mobile__nav.rolled-up {
+  opacity: 1;
+  left: -90%;
+  top: 0px;
+}
 .menu__mobile__nav__item {
   position: relative;
   display: block;

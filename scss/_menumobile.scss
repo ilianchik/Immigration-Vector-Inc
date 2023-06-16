@@ -161,6 +161,11 @@
         opacity: 0;
         top: -100vh;
       }
+      &.rolled-up{
+        opacity: 1;
+        left: -90%;
+        top: 0px;
+      }
   
       &__item {
         position: relative;
