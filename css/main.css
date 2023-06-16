@@ -407,10 +407,20 @@ dialog {
   animation-name: menuMobileBtnOpenningLines;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 1;
+}
+.menu__mobile__btn.opened.closed {
+  opacity: 0;
+  top: -100vh;
+}
+.menu__mobile__btn.opened.rolled-up {
+  opacity: 1;
+  left: -90%;
+  top: 0px;
+}
+.menu__mobile__btn.opened__item {
   position: relative;
 }
-.menu__mobile__btn.opened .menu__mobile__btn__lines .btn__line:nth-child(even) {
+.menu__mobile__btn.opened__item .btn__line:nth-child(even) {
   animation-name: menuMobileBtnOpenningLine;
   animation-duration: 5s;
   animation-iteration-count: 1;
@@ -443,11 +453,6 @@ dialog {
 .menu__mobile__nav.closed {
   opacity: 0;
   top: -100vh;
-}
-.menu__mobile__nav.rolled-up {
-  opacity: 1;
-  left: -90%;
-  top: 0px;
 }
 .menu__mobile__nav__item {
   position: relative;
