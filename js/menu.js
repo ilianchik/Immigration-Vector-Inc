@@ -97,7 +97,8 @@ function toggleMenuMobile() {
   
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuBody = document.querySelector(".menu__mobile__nav");
-  var menuItems = document.querySelectorAll(".menu__nav__item");
+  var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
+  const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
 
 
   if (menuBtn.classList.contains("closed")){
@@ -107,10 +108,15 @@ function toggleMenuMobile() {
     //nav opening
     menuBody.classList.remove("closed");
     menuBody.classList.add("opened");
-
-    menuItems.forEach(function (menuItem) {
-      menuItem.classList.add("opened");
-    });
+    //items opening with waiting
+    setTimeout(function () {
+      menuItems.forEach(function (menuItem) {
+        menuItem.classList.add("opened");
+      });
+      menuContact.classList.toggle("closed");
+      menuContact.classList.toggle("opened");
+    }, 3000);
+    
   }else{
     //btn closing
     menuBtn.classList.toggle("closed");
@@ -122,6 +128,8 @@ function toggleMenuMobile() {
     menuItems.forEach(function (menuItem) {
       menuItem.classList.remove("opened");
     });
+    menuContact.classList.toggle("closed");
+    menuContact.classList.toggle("opened");
   }
 
 }
