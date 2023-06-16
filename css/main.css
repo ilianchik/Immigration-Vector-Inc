@@ -1864,11 +1864,11 @@ html {
     -ms-grid-row: 1;
     grid-row: 1;
     overflow-x: hidden;
-    height: 95vh;
+    height: 100vh;
   }
   .main__right {
     position: absolute;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
   }
   .logo {
@@ -1994,7 +1994,6 @@ html {
   .hero__arrow-btn--mobile {
     display: flex;
     opacity: 1;
-    bottom: 5%;
   }
 }
 /**************************/
