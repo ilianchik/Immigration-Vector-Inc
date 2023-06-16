@@ -1973,6 +1973,10 @@ html {
     border: none;
     padding-left: 5rem;
   }
+  .testimonial {
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+  }
   .testimonial .slick-arrow.slick-prev {
     position: absolute;
     bottom: 10%;
@@ -2000,14 +2004,29 @@ html {
     justify-content: center;
     align-items: center;
   }
+  .services__content-box {
+    justify-content: center;
+  }
   .services__number {
-    transform: translateY(-11%);
+    transform: translateY(-5%);
+    font-size: 12rem;
+    margin-right: 1rem;
   }
   .services__btn {
     width: 70%;
     padding: 1.6rem 0;
   }
   .services__text {
-    font-size: 2rem;
+    font-size: 3.5rem;
+    width: 60%;
+  }
+  .advantages__title {
+    margin-bottom: 8rem;
+  }
+  .advantages__content-box {
+    padding-left: 4rem;
+  }
+  .services {
+    margin-bottom: 15rem;
   }
 }/*# sourceMappingURL=main.css.map */
