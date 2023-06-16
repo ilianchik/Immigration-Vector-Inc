@@ -447,6 +447,8 @@ dialog {
   opacity: 1;
   left: -90%;
   top: 0px;
+  text-align: right;
+  color: black;
 }
 .menu__mobile__nav__item {
   position: relative;
