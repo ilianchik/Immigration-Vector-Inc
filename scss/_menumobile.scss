@@ -109,26 +109,13 @@
         animation-duration: 5s;
         animation-fill-mode: forwards;
       }
-      &.closed {
-        opacity: 0;
-        top: -100vh;
-      }
-      &.rolled-up {
-        opacity: 1;
-        left: -90%;
-        top: 0px;
-      }
-
-      &__item {
-        position: relative;
-
-        .btn__line:nth-child(even) {
-          animation-name: menuMobileBtnOpenningLine;
-          animation-duration: 5s;
-          animation-iteration-count: 1;
-          animation-delay: 0.5s;
-          animation-fill-mode: forwards;
-        }
+      
+      .btn__line:nth-child(even) {
+        animation-name: menuMobileBtnOpenningLine;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
       }
     }
   }
@@ -165,6 +152,14 @@
     &.closed {
       opacity: 0;
       top: -100vh;
+    }
+
+    &.rolled-up {
+      opacity: 1;
+      left: -90%;
+      top: 0px;
+      text-align: right;
+      color: black;
     }
 
     &__item {
