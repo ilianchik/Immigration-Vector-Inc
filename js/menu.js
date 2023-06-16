@@ -96,15 +96,23 @@ function toggleMenuMobile() {
   if (isAnimatingMenu) return;
   
   const menuBtn = document.querySelector(".menu__mobile__btn");
+  const menuBody = document.querySelector(".menu__mobile__nav");
+
 
   if (menuBtn.classList.contains("closed")){
-    menuBtn.classList.remove("closed");
-    menuBtn.classList.add("opened");
+    //bnt opening
+    menuBtn.classList.toggle("closed");
+    menuBtn.classList.toggle("opened");
     
+    menuBody.classList.remove("closed");
+    menuBody.classList.add("open");
   }else{
-    menuBtn.classList.remove("opened");
-    menuBtn.classList.add("closed");
+    //btn closing
+    menuBtn.classList.toggle("closed");
+    menuBtn.classList.toggle("opened");
 
+    menuBody.classList.remove("open");
+    menuBody.classList.add("closed");
   }
 
 }

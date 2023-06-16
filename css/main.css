@@ -314,17 +314,51 @@ dialog {
   transform: translateY(200vh);
 }
 
-@keyframes menuMobileBtnOpenning {
+@keyframes menuMobileBtnOpenningLines {
   10% {
-    transform: rotate(90deg) translateX(35%);
-  }
-  20% {
-    letter-spacing: -5px;
-    top: 15%;
-    right: -45%;
+    transform: rotate(0deg);
   }
   50% {
-    font-size: 0px;
+    gap: 0px;
+  }
+  100% {
+    gap: 0px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes menuMobileBtnOpenningLine {
+  10% {
+    position: fixed;
+    height: 3px;
+    width: 1000px;
+  }
+  30% {
+    position: fixed;
+    left: -850px;
+    height: 3px;
+    width: 1000px;
+  }
+  50% {
+    position: fixed;
+    left: -850px;
+    height: 40px;
+    top: -10px;
+    width: 1000px;
+  }
+  100% {
+    position: fixed;
+    left: -850px;
+    height: 120px;
+    top: -50px;
+    width: 1000px;
+  }
+}
+@keyframes menuMobileBtnOpenningNav {
+  0% {
+    top: -100vh;
+  }
+  100% {
+    top: 0;
   }
 }
 .menu__mobile {
@@ -332,6 +366,7 @@ dialog {
   z-index: 10000;
   right: 5.8rem;
   top: 1.2rem;
+  display: none;
   transition: all 0.7s;
 }
 .menu__mobile.scrolled {
@@ -341,7 +376,9 @@ dialog {
 .menu__mobile__btn {
   color: #fff;
   z-index: 3;
-  display: block;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
   border: none;
   background: transparent;
   margin: 0;
@@ -352,48 +389,55 @@ dialog {
   position: relative;
   cursor: pointer;
 }
-.menu__mobile__btn::after {
-  transition: all 0.5s;
-  font-size: 4.6rem;
-  color: #fff;
-  content: "|||";
-  display: block;
-  position: absolute;
-  right: -50%;
-  top: 2px;
-  letter-spacing: 1px;
+.menu__mobile__btn__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  transform: rotate(90deg);
 }
-.menu__mobile__btn.opened::after {
-  animation-name: menuMobileBtnOpenning;
+.menu__mobile__btn__lines .btn__line {
+  height: 2px;
+  width: 24px;
+  background-color: #fff;
+}
+.menu__mobile__btn.opened .menu__mobile__btn__lines {
+  transition: transform 1s;
+  animation-name: menuMobileBtnOpenningLines;
   animation-duration: 5s;
+  animation-fill-mode: forwards;
   animation-iteration-count: 1;
+  position: relative;
+}
+.menu__mobile__btn.opened .menu__mobile__btn__lines .btn__line:nth-child(even) {
+  animation-name: menuMobileBtnOpenningLine;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 .menu__mobile__nav {
-  transition: top 2s;
   position: fixed;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 100vh;
   z-index: 2;
   padding: 2.4rem 2.4rem 0 10rem;
   background-color: white;
+  transition: top 2s;
   opacity: 0;
-}
-.menu__mobile__nav.opened {
-  top: 0;
-}
-.menu__mobile__nav.closed {
   top: -100vh;
 }
-.menu__mobile__nav__title {
-  font-family: "Mont", "Arial Narrow Bold", sans-serif;
-  font-size: 8.4rem;
-  font-weight: 900;
-  letter-spacing: 0.4rem;
-  color: #ccc;
+.menu__mobile__nav.open {
+  opacity: 1;
+  animation-name: menuMobileBtnOpenningNav;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
 }
-.menu__mobile__nav__title div:last-child {
-  text-align: right;
+.menu__mobile__nav.closed {
+  opacity: 0;
+  top: -100vh;
 }
 .menu__mobile__nav__item {
   position: relative;
@@ -435,17 +479,6 @@ dialog {
 }
 .menu__mobile__nav__item.opened::before {
   height: 0;
-}
-.menu__mobile__nav__hr {
-  height: 1.5px;
-  background-color: black;
-  border: none;
-  margin-left: 16%;
-  margin-top: 1.8rem;
-  transition: all 1s ease;
-}
-.closed > .menu__mobile__nav__hr {
-  margin-left: 100%;
 }
 .menu__mobile__nav__contact-us {
   font-family: "ducine";
@@ -1907,6 +1940,6 @@ html {
     display: none;
   }
   .menu__mobile {
-    display: none;
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */
