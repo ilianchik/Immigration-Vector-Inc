@@ -275,6 +275,7 @@
     pointer-events: none;
     &__text {
       color: white;
+      opacity: 1;
     }
   }
   .hero__arrow-btn {
@@ -320,9 +321,6 @@
   }
   html {
     overflow-x: hidden;
-  }
-  .hero__text.scrolled {
-    opacity: 1;
   }
 
   /*menu mobile*/
