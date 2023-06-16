@@ -28,8 +28,11 @@ function toggleGetInTouch() {
   if (getInTouch.classList.contains("opened")) {
     //close
     btn.textContent = "Get in touch";
-    textContainer.classList.remove("scrolled");
-    arrowDown.classList.remove("scrolled");
+    if (window.innerWidth <= 848) {
+      textContainer.classList.remove("scrolled");
+      arrowDown.classList.remove("scrolled");
+    }
+
     getInTouch.classList.remove("opened");
     getInTouch.classList.add("closed");
 
@@ -44,12 +47,14 @@ function toggleGetInTouch() {
     }, 1500);
   } else {
     //open
-
+    if (window.innerWidth <= 848) {
+      textContainer.classList.add("scrolled");
+      arrowDown.classList.add("scrolled");
+    }
     btn.textContent = "Close";
     getInTouch.classList.remove("closed");
     getInTouch.classList.add("opened");
-    arrowDown.classList.add("scrolled");
-    textContainer.classList.add("scrolled");
+
     for (var i = 0; i < elements.length; i++) {
       elements[i].classList.add("get_in_touch__opened");
     }

@@ -342,4 +342,102 @@
     // border: 5px black solid;
     // padding-bottom: 22rem;
   }
+  .testimonial__title {
+    width: 100%;
+  }
+  .services__title {
+    text-align: center;
+  }
+  .advantages__title {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+/**************************/
+/* BELOW 600px */
+/*MOBILE*/
+/**************************/
+@media (max-width: 37.5em) {
+  .testimonial__slide {
+    flex-direction: column-reverse;
+  }
+  .testimonial__person-img {
+    transform: translate(-11rem, -30%);
+    margin-left: -15rem;
+  }
+  .testimonial__person-text {
+    transform: translateY(90%);
+    margin: 0;
+    margin-left: 32%;
+  }
+  .testimonial__text-box {
+    border: none;
+    padding-left: 5rem;
+  }
+  .testimonial {
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+    .slick-arrow {
+    }
+
+    .slick-arrow.slick-prev {
+      position: absolute;
+      bottom: 10%;
+      right: 35%;
+      z-index: 1;
+      background: url("../sourse/img/arrow-left.svg") 0 0 / 100% no-repeat;
+      font-size: 0;
+      width: 5rem;
+      height: 5rem;
+
+      // font-size: 0;
+      // background: transparent;
+      border: none;
+    }
+
+    .slick-arrow.slick-next {
+      position: absolute;
+      bottom: 10%;
+      right: 18%;
+      z-index: 1;
+      background: url("../sourse/img/arrow-right.svg") 0 0 / 100% no-repeat;
+      font-size: 0;
+      width: 5rem;
+      height: 5rem;
+      border: none;
+    }
+
+    .slick-arrow.slick-disabled {
+    }
+  }
+  .services__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services__content-box {
+    justify-content: center;
+  }
+  .services__number {
+    transform: translateY(-5%);
+    font-size: 12rem;
+    margin-right: 1rem;
+  }
+  .services__btn {
+    width: 70%;
+    padding: 1.6rem 0;
+  }
+  .services__text {
+    font-size: 3.5rem;
+    width: 60%;
+  }
+  .advantages__title {
+    margin-bottom: 8rem;
+  }
+  .advantages__content-box {
+    padding-left: 4rem;
+  }
+  .services {
+    margin-bottom: 15rem;
+  }
 }

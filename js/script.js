@@ -255,6 +255,15 @@ $(".testimonial__slider").slick({
   autoplay: false,
   autoplaySpeed: 3000,
   dots: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        dots: false,
+        arrows: true,
+      },
+    },
+  ],
 });
 
 const allLinks = document.querySelectorAll("a");
