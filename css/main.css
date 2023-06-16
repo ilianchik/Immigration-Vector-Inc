@@ -2032,6 +2032,12 @@ html {
     top: 1.2rem;
     left: 6.2rem;
   }
+  .grid__left {
+    transition: all 0.5s ease-in-out;
+  }
+  .get_in_touch__form {
+    width: 85%;
+  }
 }
 /**************************/
 /* BELOW 600px */

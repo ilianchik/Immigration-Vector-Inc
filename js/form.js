@@ -27,12 +27,15 @@ function toggleGetInTouch() {
   var arrowDown = document.querySelector(".hero__arrow-btn");
   var heroTextMobile = document.querySelector(".hero__text--mobile");
   var heroArrowMobile = document.querySelector(".hero__arrow-btn--mobile");
+  const leftSide = document.querySelector(".grid__left");
   if (getInTouch.classList.contains("opened")) {
     //close
     btn.textContent = "Get in touch";
     if (window.innerWidth <= 848) {
       heroTextMobile.classList.remove("scrolled");
       heroArrowMobile.classList.remove("scrolled");
+      leftSide.style.transform = "translateX(0%)";
+      document.documentElement.style.overflowY = "auto";
     }
 
     getInTouch.classList.remove("opened");
@@ -52,6 +55,8 @@ function toggleGetInTouch() {
     if (window.innerWidth <= 848) {
       heroTextMobile.classList.add("scrolled");
       heroArrowMobile.classList.add("scrolled");
+      leftSide.style.transform = "translateX(100%)";
+      document.documentElement.style.overflowY = "hidden";
     }
     btn.textContent = "Close";
     getInTouch.classList.remove("closed");
