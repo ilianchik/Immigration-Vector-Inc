@@ -482,7 +482,7 @@
 
     .slick-arrow.slick-prev {
       position: absolute;
-      bottom: 10%;
+      bottom: -2%;
       right: 35%;
       z-index: 1;
       background: url("../sourse/img/arrow-left.svg") 0 0 / 100% no-repeat;
@@ -497,7 +497,7 @@
 
     .slick-arrow.slick-next {
       position: absolute;
-      bottom: 10%;
+      bottom: -2%;
       right: 18%;
       z-index: 1;
       background: url("../sourse/img/arrow-right.svg") 0 0 / 100% no-repeat;
