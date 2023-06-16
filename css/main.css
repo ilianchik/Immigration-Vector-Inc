@@ -366,7 +366,7 @@ dialog {
 .menu__mobile {
   position: fixed;
   z-index: 10000;
-  right: 5.8rem;
+  right: 2rem;
   top: 1.2rem;
   display: none;
   transition: all 0.7s;
@@ -379,7 +379,7 @@ dialog {
   color: #fff;
   z-index: 3;
   display: flex;
-  gap: 2.4rem;
+  gap: 1.5rem;
   align-items: center;
   border: none;
   background: transparent;
