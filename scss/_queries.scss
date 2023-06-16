@@ -407,6 +407,7 @@
     flex-direction: row;
     top: 1.2rem;
     left: 6.2rem;
+    height: fit-content;
   }
   .grid__left {
     transition: all 0.5s ease-in-out;
@@ -425,7 +426,23 @@
       color: black;
     }
     .slider__inside-title {
-      padding-top: 10rem;
+      padding-top: 15rem;
+    }
+    .accordion-prev {
+      background: transparent;
+      border: none;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .accordion-next {
+      background: transparent;
+      border: none;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
     }
   }
   .services__btn {
