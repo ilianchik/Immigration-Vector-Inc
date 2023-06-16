@@ -97,22 +97,31 @@ function toggleMenuMobile() {
   
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuBody = document.querySelector(".menu__mobile__nav");
+  var menuItems = document.querySelectorAll(".menu__nav__item");
 
 
   if (menuBtn.classList.contains("closed")){
     //bnt opening
     menuBtn.classList.toggle("closed");
     menuBtn.classList.toggle("opened");
-    
+    //nav opening
     menuBody.classList.remove("closed");
-    menuBody.classList.add("open");
+    menuBody.classList.add("opened");
+
+    menuItems.forEach(function (menuItem) {
+      menuItem.classList.add("opened");
+    });
   }else{
     //btn closing
     menuBtn.classList.toggle("closed");
     menuBtn.classList.toggle("opened");
-
-    menuBody.classList.remove("open");
+    //nav closing
+    menuBody.classList.remove("opened");
     menuBody.classList.add("closed");
+
+    menuItems.forEach(function (menuItem) {
+      menuItem.classList.remove("opened");
+    });
   }
 
 }
