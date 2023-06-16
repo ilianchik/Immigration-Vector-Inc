@@ -364,4 +364,27 @@ for (var i = 0; i < accordionItems.length; i++) {
       content.style.maxHeight = "0px";
     }
   });
+  // Встановіть початкове значення `maxHeight` для вмісту акордеону
+  var content = accordionItems[i].querySelector(".accordion-content");
+  content.style.maxHeight = "0px";
 }
+$(document).ready(function () {
+  $(".accordion-prev").click(function () {
+    $(".slider-inside").slick("slickPrev");
+  });
+
+  $(".accordion-next").click(function () {
+    $(".slider-inside").slick("slickNext");
+  });
+});
+
+$(document).ready(function () {
+  $(".accordion-prev").click(function (event) {
+    event.stopPropagation();
+  });
+});
+$(document).ready(function () {
+  $(".accordion-next").click(function (event) {
+    event.stopPropagation();
+  });
+});
