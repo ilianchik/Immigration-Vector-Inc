@@ -217,17 +217,17 @@
     grid-template-rows: auto auto;
     &__right {
       position: static;
-
       left: auto;
       right: auto;
       -ms-grid-row: 1;
       grid-row: 1;
       overflow-x: hidden;
+      height: 95vh;
     }
   }
   .main__right {
     position: absolute;
-    height: 100vh;
+    height: 95vh;
     width: 100%;
   }
 
@@ -370,6 +370,7 @@
   .hero__arrow-btn--mobile {
     display: flex;
     opacity: 1;
+    bottom: 5%;
   }
 }
 /**************************/
