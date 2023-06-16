@@ -91,69 +91,27 @@ function toggleMenu() {
   }
 }
 
-
-function toggleMenuMobile() {
-  if (isAnimatingMenu) return;
-  
+function changeMenuMobileClasses(type = "close") {
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuBody = document.querySelector(".menu__mobile__nav");
   var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
   const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
 
-
-  if (menuBtn.classList.contains("closed")){
-    //bnt opening
-    menuBtn.classList.toggle("closed");
-    menuBtn.classList.toggle("opened");
-    //nav opening
-    menuBody.classList.remove("closed");
-    menuBody.classList.add("opened");
-    //items opening with waiting
-    setTimeout(function () {
-      menuItems.forEach(function (menuItem) {
-        menuItem.classList.add("opened");
-      });
-      menuContact.classList.toggle("closed");
-      menuContact.classList.toggle("opened");
-    }, 3000);
-
-  }else{
-
-    //btn closing
-    menuBtn.classList.toggle("closed");
-    menuBtn.classList.toggle("opened");
-    //nav closing
-    menuBody.classList.remove("opened");
-    menuBody.classList.add("closed");
-
-    menuItems.forEach(function (menuItem) {
-      menuItem.classList.remove("opened");
-    });
-    menuContact.classList.toggle("closed");
-    menuContact.classList.toggle("opened");
-  }
-
-}
-
-function changeMenuMobileClasses (){
-
-  const menuBtn = document.querySelector(".menu__mobile__btn");
-  const menuBody = document.querySelector(".menu__mobile__nav");
-  var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
-  const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
-  
-  menuBtn.classList.toggle("closed");
-  menuBtn.classList.toggle("opened");
-  //nav opening
-  menuBody.classList.remove("closed");
-  menuBody.classList.add("opened");
-  //items opening with waiting
+  // btn
+  menuBtn.classList.remove("closed", "rolled-up", "opened");
+  menuBtn.classList.add(type);
+  // nav
+  menuBody.classList.remove("closed", "rolled-up", "opened");
+  menuBody.classList.add(type);
+  // items with waiting
   setTimeout(function () {
     menuItems.forEach(function (menuItem) {
-      menuItem.classList.add("opened");
+      menuItem.classList.remove("closed", "rolled-up", "opened");
+      menuItem.classList.add(type);
     });
-    menuContact.classList.toggle("closed");
-    menuContact.classList.toggle("opened");
+    //contact us
+    menuContact.classList.remove("closed", "rolled-up", "opened");
+    menuContact.classList.add(type);
   }, 3000);
 
 }
