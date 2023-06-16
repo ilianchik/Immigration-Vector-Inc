@@ -2122,7 +2122,7 @@ html {
   }
   .testimonial .slick-arrow.slick-prev {
     position: absolute;
-    bottom: -2%;
+    bottom: -3%;
     right: 35%;
     z-index: 1;
     background: url("../sourse/img/arrow-left.svg") 0 0/100% no-repeat;
@@ -2133,7 +2133,7 @@ html {
   }
   .testimonial .slick-arrow.slick-next {
     position: absolute;
-    bottom: -2%;
+    bottom: -3%;
     right: 18%;
     z-index: 1;
     background: url("../sourse/img/arrow-right.svg") 0 0/100% no-repeat;
