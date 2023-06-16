@@ -346,3 +346,21 @@ if (window.innerWidth <= 848) {
   );
   obs.observe(sectionHeroEl);
 }
+
+var accordionItems = document.getElementsByClassName("accordion-item");
+
+// Додайте обробник події для кожного елемента акордеону
+for (var i = 0; i < accordionItems.length; i++) {
+  accordionItems[i].addEventListener("click", function () {
+    // Перевірте, чи вміст акордеону прихований або видимий
+    var content = this.querySelector(".accordion-content");
+    var isHidden = content.style.maxHeight === "0px";
+
+    // Змініть висоту вмісту акордеону в залежності від його поточного стану
+    if (isHidden) {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      content.style.maxHeight = "0px";
+    }
+  });
+}

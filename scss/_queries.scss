@@ -414,6 +414,24 @@
   .get_in_touch__form {
     width: 85%;
   }
+  .accordion {
+    .slider-inside {
+      opacity: 1;
+    }
+    .slider__inside-title,
+    .slider__inside-text,
+    .slider__inside-list,
+    .slider__inside-item {
+      color: black;
+    }
+    .slider__inside-title {
+      padding-top: 10rem;
+    }
+  }
+  .services__btn {
+    display: none;
+    opacity: 0;
+  }
 }
 /**************************/
 /* BELOW 600px */

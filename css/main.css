@@ -1638,6 +1638,30 @@ html {
   font-size: 2.2rem;
 }
 
+.accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+.accordion-header {
+  background-color: transparent;
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
 @-webkit-keyframes jump {
   0% {
     -webkit-transform: translate(-50%, 0);
@@ -2037,6 +2061,22 @@ html {
   }
   .get_in_touch__form {
     width: 85%;
+  }
+  .accordion .slider-inside {
+    opacity: 1;
+  }
+  .accordion .slider__inside-title,
+  .accordion .slider__inside-text,
+  .accordion .slider__inside-list,
+  .accordion .slider__inside-item {
+    color: black;
+  }
+  .accordion .slider__inside-title {
+    padding-top: 10rem;
+  }
+  .services__btn {
+    display: none;
+    opacity: 0;
   }
 }
 /**************************/
