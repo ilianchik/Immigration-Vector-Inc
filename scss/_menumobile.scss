@@ -1,24 +1,24 @@
 @keyframes menuMobileBtnOpenningLines {
-  10%{
+  10% {
     transform: rotate(0deg);
   }
-  50%{
+  50% {
     gap: 0px;
   }
-  100%{ 
+  100% {
     gap: 0px;
     transform: rotate(0deg);
   }
 }
-@keyframes menuMobileBtnOpenningLine{
-  5%{
+@keyframes menuMobileBtnOpenningLine {
+  5% {
     position: fixed;
     height: 5px;
     width: 1000px;
     top: 50%;
     transform: translateY(-50%);
   }
-  10%{    
+  10% {
     position: fixed;
     left: -850px;
     height: 3px;
@@ -27,9 +27,9 @@
     transform: translateY(-50%);
   }
 
-  90%{
+  90% {
     display: none;
-    
+
     position: fixed;
     left: -850px;
     height: 200vh;
@@ -37,7 +37,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  100%{
+  100% {
     display: none;
   }
 }
@@ -52,109 +52,61 @@
   }
 }
 
-
 .menu__mobile {
-    position: fixed;
-    z-index: 10000;
-    right: 5.8rem;
-    top: 1.2rem;
-  
-    display: none;
-    
-    transition: all 0.7s;
+  position: fixed;
+  z-index: 10000;
+  right: 2rem;
+  top: 1.2rem;
 
-    &.scrolled {
-      opacity: 1;
-      top: 1rem;
-    }
-  
-    &__btn {
-      color: #fff;
+  display: none;
 
-      z-index: 3;
+  transition: all 0.7s;
+
+  &.scrolled {
+    opacity: 1;
+    top: 1rem;
+  }
+
+  &__btn {
+    color: #fff;
+
+    z-index: 3;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    border: none;
+    background: transparent;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: "ducine";
+    font-size: 2.4rem;
+    line-height: 10px;
+
+    position: relative;
+
+    cursor: pointer;
+
+    &__lines {
       display: flex;
-      gap: 2.4rem;
-      align-items: center;
-  
-      border: none;
-      background: transparent;
-  
-      margin: 0;
-      padding: 0;
-  
-      font-family: "ducine";
-      font-size: 2.4rem;
-      line-height: 10px;
+      flex-direction: column;
+      gap: 3px;
+      transform: rotate(90deg);
 
-      position: relative;
-  
-      cursor: pointer;
-
-      &__lines{
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        transform: rotate(90deg);
-        
-        .btn__line{
+      .btn__line {
         height: 2px;
         width: 24px;
         background-color: #fff;
-        }
-    
       }
-
-      &.opened{
-       
-        .menu__mobile__btn__lines{
-          transition: transform 1s;
-          animation-name: menuMobileBtnOpenningLines;
-          animation-duration: 5s;
-          animation-fill-mode: forwards; 
-          animation-iteration-count: 1;
-          position: relative;
-          
-            .btn__line:nth-child(even){
-            animation-name: menuMobileBtnOpenningLine;
-            animation-duration: 5s;
-            animation-iteration-count: 1;
-            animation-delay: 0.5s;
-            animation-fill-mode: forwards; 
-
-            }
-          }
-        }
-
     }
-  
-    &__nav {
 
-      position: fixed;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      z-index: 3;
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      padding: 2.4rem 2.4rem 0 10rem;
-
-      background-color: white;
-
-      transition: top 2s;
-
-      opacity: 0;
-      top: -100vh;
-     
-      &.opened {
-        opacity: 1;
-
-        animation-name: menuMobileBtnOpenningNav;
-        animation-duration: 1s;
-        animation-delay: 3s;
-        animation-iteration-count: 1;
+    &.opened {
+      .menu__mobile__btn__lines {
+        transition: transform 1s;
+        animation-name: menuMobileBtnOpenningLines;
+        animation-duration: 5s;
         animation-fill-mode: forwards;
       }
       &.closed {
@@ -169,72 +121,117 @@
   
       &__item {
         position: relative;
-        display: block;
-        padding-bottom: 1.4rem;
-        width: fit-content;
-  
-        font-family: "ducine";
-        font-size: 4.2rem;
-        text-decoration: none;
-  
-        color: black;
-        cursor: pointer;
-        transition: all 1s;
-  
-        &:hover {
-          margin-left: 3.6rem;
-        }
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgb(255, 255, 255);
-          -webkit-transition: height 3s;
-          -o-transition: height 3s;
-          transition: height 3s;
-        }
-  
-        &.opened::before {
-          height: 0;
-        }
-      }
-  
-  
-      &__contact-us {
-        font-family: "ducine";
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 3.8rem;
-        letter-spacing: 1px;
-  
-        /*margin-top: 1.8rem;*/
-  
-        position: absolute;
-        bottom: 2.4rem;
-  
-        transition: all 2s;
 
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgb(255, 255, 255);
-          -webkit-transition: height 3s;
-          -o-transition: height 3s;
-          transition: height 3s;
-        }
-  
-        &.opened::before {
-          height: 0;
+        .btn__line:nth-child(even) {
+          animation-name: menuMobileBtnOpenningLine;
+          animation-duration: 5s;
+          animation-iteration-count: 1;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
         }
       }
     }
   }
-  
 
+  &__nav {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2.4rem 2.4rem 0 10rem;
+
+    background-color: white;
+
+    transition: top 2s;
+
+    opacity: 0;
+    top: -100vh;
+
+    &.opened {
+      opacity: 1;
+
+      animation-name: menuMobileBtnOpenningNav;
+      animation-duration: 1s;
+      animation-delay: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+    &.closed {
+      opacity: 0;
+      top: -100vh;
+    }
+
+    &__item {
+      position: relative;
+      display: block;
+      padding-bottom: 1.4rem;
+      width: fit-content;
+
+      font-family: "ducine";
+      font-size: 4.2rem;
+      text-decoration: none;
+
+      color: black;
+      cursor: pointer;
+      transition: all 1s;
+
+      &:hover {
+        margin-left: 3.6rem;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        -webkit-transition: height 3s;
+        -o-transition: height 3s;
+        transition: height 3s;
+      }
+
+      &.opened::before {
+        height: 0;
+      }
+    }
+
+    &__contact-us {
+      font-family: "ducine";
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 3.8rem;
+      letter-spacing: 1px;
+
+      /*margin-top: 1.8rem;*/
+
+      position: absolute;
+      bottom: 2.4rem;
+
+      transition: all 2s;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        -webkit-transition: height 3s;
+        -o-transition: height 3s;
+        transition: height 3s;
+      }
+
+      &.opened::before {
+        height: 0;
+      }
+    }
+  }
+}

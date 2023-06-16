@@ -352,6 +352,25 @@
     padding-left: 0;
     text-align: center;
   }
+  .hero {
+    .hero__text {
+      display: none;
+      opacity: 0;
+    }
+    .hero__arrow-btn {
+      display: none;
+      opacity: 0;
+    }
+  }
+  .hero__text--mobile {
+    display: block;
+    opacity: 1;
+    padding-top: 35rem;
+  }
+  .hero__arrow-btn--mobile {
+    display: flex;
+    opacity: 1;
+  }
 }
 /**************************/
 /* BELOW 600px */

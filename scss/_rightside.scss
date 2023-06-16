@@ -690,3 +690,11 @@
   -o-transition: all 1s, opacity 2s;
   transition: all 1s, opacity 2s;
 }
+.hero__text--mobile {
+  display: none;
+  opacity: 0;
+}
+.hero__arrow-btn--mobile {
+  display: none;
+  opacity: 0;
+}

@@ -40,13 +40,16 @@ window.addEventListener("scroll", function () {
   var duration = 1.0 / scrollSpeed;
 
   var textContainer = document.querySelector(".hero__text");
+  var heroTextMobile = document.querySelector(".hero__text--mobile");
 
   textContainer.style.transitionDuration = duration + "s";
 
-  if (window.scrollY > 0) {
+  if (window.scrollY > 50) {
     textContainer.classList.add("scrolled");
+    heroTextMobile.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
+    heroTextMobile.classList.remove("scrolled");
   }
 
   this.prevScrollY = window.scrollY;
@@ -54,10 +57,13 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   var textContainer = document.querySelector(".hero__arrow-btn");
-  if (window.scrollY > 0) {
+  var heroArrowMobile = document.querySelector(".hero__arrow-btn--mobile");
+  if (window.scrollY > 50) {
     textContainer.classList.add("scrolled");
+    heroArrowMobile.classList.add("scrolled");
   } else {
     textContainer.classList.remove("scrolled");
+    heroArrowMobile.classList.remove("scrolled");
   }
 });
 if (window.innerWidth >= 848) {
