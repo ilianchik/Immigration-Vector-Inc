@@ -97,21 +97,40 @@ function changeMenuMobileClasses(type = "closed") {
   var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
   const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
 
+  if (type === "rolled-up") {
+    document.body.style.marginLeft = '10%';
+    window.scrollTo({top: 0,});
+    document.body.style.overflowY = 'hidden';
+    document.documentElement.style.overflowY = 'hidden';
+  
+  }else{
+    document.body.style.overflowY = '';
+    document.documentElement.style.overflowY = '';
+  
+    document.body.style.marginLeft = '';
+  }
+
   // btn
-  menuBtn.classList.remove("closed", "rolled-up", "opened");
+  menuBtn.classList.remove("closed", "rolled-up", "rolled-down", "opened");
   menuBtn.classList.add(type);
   // nav
-  menuBody.classList.remove("closed", "rolled-up", "opened");
+  menuBody.classList.remove("closed", "rolled-up", "rolled-down", "opened");
   menuBody.classList.add(type);
   // items with waiting
+
   setTimeout(function () {
     menuItems.forEach(function (menuItem) {
-      menuItem.classList.remove("closed", "rolled-up", "opened");
-      menuItem.classList.add(type);
+      menuItem.classList.remove("closed", "rolled-up", "rolled-down", "opened");
+      if (type === "rolled-up" || type ==="opened") {
+          menuItem.classList.add("opened");
+      }
+
     });
     //contact us
-    menuContact.classList.remove("closed", "rolled-up", "opened");
-    menuContact.classList.add(type);
+    menuContact.classList.remove("closed", "rolled-up", "rolled-down", "opened");
+    if (type === "rolled-up" || type ==="opened") {
+      menuContact.classList.add("opened");
+    }
   }, 3000);
 
 }
