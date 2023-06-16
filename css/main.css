@@ -342,19 +342,11 @@ dialog {
     top: 50%;
     transform: translateY(-50%);
   }
-  30% {
-    position: fixed;
-    left: -850px;
-    height: 40vh;
-    width: 1000px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  40% {
+  90% {
     display: none;
     position: fixed;
     left: -850px;
-    height: 40vh;
+    height: 200vh;
     width: 1000px;
     top: 50%;
     transform: translateY(-50%);
@@ -420,7 +412,7 @@ dialog {
 }
 .menu__mobile__btn.opened .menu__mobile__btn__lines .btn__line:nth-child(even) {
   animation-name: menuMobileBtnOpenningLine;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
@@ -467,18 +459,17 @@ dialog {
 .menu__mobile__nav__item:hover {
   margin-left: 3.6rem;
 }
-.menu__mobile__nav__item::after {
+.menu__mobile__nav__item::before {
   content: "";
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: 5px;
-  width: 0;
-  height: 1.5px;
-  background-color: black;
-  transition: width 0.5s ease;
-}
-.menu__mobile__nav__item:hover::after {
   width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: height 3s;
+  -o-transition: height 3s;
+  transition: height 3s;
 }
 .menu__mobile__nav__item.opened::before {
   height: 0;
@@ -493,6 +484,21 @@ dialog {
   position: absolute;
   bottom: 2.4rem;
   transition: all 2s;
+}
+.menu__mobile__nav__contact-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  -webkit-transition: height 3s;
+  -o-transition: height 3s;
+  transition: height 3s;
+}
+.menu__mobile__nav__contact-us.opened::before {
+  height: 0;
 }
 
 .grid {
