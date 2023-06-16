@@ -365,6 +365,19 @@ dialog {
     top: 0;
   }
 }
+@keyframes menuMobileBtnClosingNav {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: -100vh;
+  }
+}
 .menu__mobile {
   position: fixed;
   z-index: 10000;
@@ -442,8 +455,10 @@ dialog {
   animation-fill-mode: forwards;
 }
 .menu__mobile__nav.closed {
-  opacity: 0;
-  top: -100vh;
+  animation-name: menuMobileBtnClosingNav;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 .menu__mobile__nav.rolled-up {
   opacity: 1;
