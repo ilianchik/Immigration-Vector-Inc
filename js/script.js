@@ -363,6 +363,9 @@ for (var i = 0; i < accordionItems.length; i++) {
       content.style.maxHeight = "0px";
     }
   });
+  // Встановіть початкове значення `maxHeight` для вмісту акордеону
+  var content = accordionItems[i].querySelector(".accordion-content");
+  content.style.maxHeight = "0px";
 }
 $(document).ready(function () {
   $(".accordion-prev").click(function () {

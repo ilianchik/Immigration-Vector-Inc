@@ -2067,9 +2067,12 @@ html {
   .accordion .slider__inside-list,
   .accordion .slider__inside-item {
     color: black;
+    text-align: justify;
   }
   .accordion .slider__inside-title {
     padding-top: 15rem;
+    text-align: center;
+    margin-bottom: 4rem;
   }
   .accordion .accordion-prev {
     background: transparent;
