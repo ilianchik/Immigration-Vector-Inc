@@ -368,6 +368,7 @@ dialog {
   z-index: 10000;
   right: 2rem;
   top: 1.2rem;
+  z-index: 10002;
   display: none;
   transition: all 0.7s;
 }
@@ -1994,6 +1995,42 @@ html {
   .hero__arrow-btn--mobile {
     display: flex;
     opacity: 1;
+  }
+  .logo {
+    z-index: 10001;
+  }
+  .grid__right {
+    z-index: 10000;
+  }
+  .get_in_touch__btn {
+    position: fixed;
+  }
+  .get_in_touch__form {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main__right .map-icon {
+    height: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.8rem;
+    width: 100vw;
+  }
+  .main__right .sotial_networks {
+    position: fixed;
+  }
+  .header {
+    background-color: rgba(255, 255, 255, 0.818);
+  }
+  .main__right .sotial_networks.social_network--header {
+    flex-direction: row;
+    top: 1.2rem;
+    left: 6.2rem;
   }
 }
 /**************************/

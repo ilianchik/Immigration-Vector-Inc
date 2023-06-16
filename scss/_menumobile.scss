@@ -57,7 +57,7 @@
   z-index: 10000;
   right: 2rem;
   top: 1.2rem;
-
+  z-index: 10002;
   display: none;
 
   transition: all 0.7s;
@@ -113,12 +113,12 @@
         opacity: 0;
         top: -100vh;
       }
-      &.rolled-up{
+      &.rolled-up {
         opacity: 1;
         left: -90%;
         top: 0px;
       }
-  
+
       &__item {
         position: relative;
 
