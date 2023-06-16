@@ -198,7 +198,8 @@ let currentContent = 1;
 let isAnimating = false; // Додаємо змінну для відстеження стану анімації
 
 function changeContent(newContent) {
-  changeMenuMobileClasses("close");
+
+  changeMenuMobileClasses("rolled-up");
 
   if (currentContent === newContent || isAnimating) return; // Перевіряємо, чи триває анімація
 

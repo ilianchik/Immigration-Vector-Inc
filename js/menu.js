@@ -91,7 +91,7 @@ function toggleMenu() {
   }
 }
 
-function changeMenuMobileClasses(type = "close") {
+function changeMenuMobileClasses(type = "closed") {
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuBody = document.querySelector(".menu__mobile__nav");
   var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
