@@ -343,7 +343,10 @@
     font-size: 2.2rem;
   }
 }
-
+.accordion {
+  display: none;
+  opacity: 0;
+}
 .accordion-item {
   border: none;
   margin-bottom: 10px;
