@@ -1830,6 +1830,7 @@ html {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
+  color: #ff0506;
   padding: 10px;
   cursor: pointer;
 }
@@ -2242,6 +2243,13 @@ html {
   .get_in_touch__form {
     width: 85%;
   }
+  .accordion .slider__inside-slide {
+    padding-right: 14rem;
+    padding-left: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .accordion .slider-inside {
     opacity: 1;
   }
@@ -2251,6 +2259,10 @@ html {
   .accordion .slider__inside-item {
     color: black;
     text-align: justify;
+    font-size: 2.2rem;
+  }
+  .accordion .slider__inside-title {
+    font-size: 3rem;
   }
   .accordion .slider__inside-title {
     padding-top: 15rem;
@@ -2281,6 +2293,52 @@ html {
     display: block;
     opacity: 1;
   }
+  .testimonial {
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+  }
+  .testimonial .slick-arrow.slick-prev {
+    position: absolute;
+    bottom: -3%;
+    right: 35%;
+    z-index: 1;
+    background: url("../sourse/img/arrow-left.svg") 0 0/100% no-repeat;
+    font-size: 0;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+  }
+  .testimonial .slick-arrow.slick-next {
+    position: absolute;
+    bottom: -3%;
+    right: 18%;
+    z-index: 1;
+    background: url("../sourse/img/arrow-right.svg") 0 0/100% no-repeat;
+    font-size: 0;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+  }
+  .testimonial__slide {
+    flex-direction: column-reverse;
+  }
+  .testimonial__person-img {
+    transform: translate(-11rem, -30%);
+    margin-left: -25%;
+  }
+  .testimonial__person-text {
+    transform: translateY(90%);
+    margin: 0;
+    margin-left: 32%;
+  }
+  .testimonial__text-box {
+    border: none;
+    padding-left: 5rem;
+    width: 60%;
+  }
+  .services {
+    margin-bottom: 15rem;
+  }
 }
 /**************************/
 /* BELOW 600px */
@@ -2302,6 +2360,7 @@ html {
   .testimonial__text-box {
     border: none;
     padding-left: 5rem;
+    width: 45rem;
   }
   .testimonial {
     margin-bottom: 15rem;
@@ -2358,5 +2417,9 @@ html {
   }
   .services {
     margin-bottom: 15rem;
+  }
+  .accordion .slider__inside-slide {
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }/*# sourceMappingURL=main.css.map */

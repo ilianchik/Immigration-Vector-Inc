@@ -416,6 +416,13 @@
     width: 85%;
   }
   .accordion {
+    .slider__inside-slide {
+      padding-right: 14rem;
+      padding-left: 14rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     .slider-inside {
       opacity: 1;
     }
@@ -425,6 +432,10 @@
     .slider__inside-item {
       color: black;
       text-align: justify;
+      font-size: 2.2rem;
+    }
+    .slider__inside-title {
+      font-size: 3rem;
     }
     .slider__inside-title {
       padding-top: 15rem;
@@ -457,6 +468,59 @@
     display: block;
     opacity: 1;
   }
+  .testimonial {
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+    .slick-arrow {
+    }
+
+    .slick-arrow.slick-prev {
+      position: absolute;
+      bottom: -3%;
+      right: 35%;
+      z-index: 1;
+      background: url("../sourse/img/arrow-left.svg") 0 0 / 100% no-repeat;
+      font-size: 0;
+      width: 5rem;
+      height: 5rem;
+      border: none;
+    }
+
+    .slick-arrow.slick-next {
+      position: absolute;
+      bottom: -3%;
+      right: 18%;
+      z-index: 1;
+      background: url("../sourse/img/arrow-right.svg") 0 0 / 100% no-repeat;
+      font-size: 0;
+      width: 5rem;
+      height: 5rem;
+      border: none;
+    }
+
+    .slick-arrow.slick-disabled {
+    }
+  }
+  .testimonial__slide {
+    flex-direction: column-reverse;
+  }
+  .testimonial__person-img {
+    transform: translate(-11rem, -30%);
+    margin-left: -25%;
+  }
+  .testimonial__person-text {
+    transform: translateY(90%);
+    margin: 0;
+    margin-left: 32%;
+  }
+  .testimonial__text-box {
+    border: none;
+    padding-left: 5rem;
+    width: 60%;
+  }
+  .services {
+    margin-bottom: 15rem;
+  }
 }
 /**************************/
 /* BELOW 600px */
@@ -478,6 +542,7 @@
   .testimonial__text-box {
     border: none;
     padding-left: 5rem;
+    width: 45rem;
   }
   .testimonial {
     margin-bottom: 15rem;
@@ -541,5 +606,11 @@
   }
   .services {
     margin-bottom: 15rem;
+  }
+  .accordion {
+    .slider__inside-slide {
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
   }
 }
