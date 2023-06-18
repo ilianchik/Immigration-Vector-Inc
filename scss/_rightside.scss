@@ -241,10 +241,11 @@
   }
 
   &.closed > &__form {
+    z-index: -1;
     opacity: 0;
-    -webkit-transform: translateY(300%);
-    -ms-transform: translateY(300%);
-    transform: translateY(300%);
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
 

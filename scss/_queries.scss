@@ -219,6 +219,7 @@
 /* BELOW 850px */
 /*MOBILE*/
 /**************************/
+
 @media (max-width: 53.125em) {
   .grid {
     -ms-grid-columns: 1fr;
@@ -257,6 +258,11 @@
     left: 1.8rem;
     height: 100vh;
   }
+
+  //GET IN TOUCH
+
+  
+
   .get_in_touch__btn {
     position: absolute;
     -webkit-transform: rotate(90deg);
@@ -279,7 +285,11 @@
     transform: rotate(0deg);
     bottom: 10%;
     right: 2rem;
+    margin-right: 6.5%;
+
   }
+
+  //
   .hero {
     height: 90vh;
     position: absolute;
