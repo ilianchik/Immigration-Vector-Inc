@@ -1142,7 +1142,7 @@ dialog {
 }
 
 .slide1 {
-  background-image: url("../sourse/img/city.png");
+  background-image: url("../sourse/img/city.webp");
   background-position: top;
   background-size: cover;
   height: 100vh;
@@ -1150,7 +1150,7 @@ dialog {
 }
 
 .slide2 {
-  background-image: url("../sourse/img/Right-background.jpg");
+  background-image: url("../sourse/img/textslider.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1183,7 +1183,7 @@ dialog {
 }
 
 .slide3 {
-  background-image: url("../sourse/img/Permanent-Residence.jpg");
+  background-image: url("../sourse/img/Permanent-Residence.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1194,7 +1194,7 @@ dialog {
 }
 
 .slide4 {
-  background-image: url("../sourse/img/Family-Sponsorrship.jpg");
+  background-image: url("../sourse/img/Family-Sponsorrship.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1205,7 +1205,7 @@ dialog {
 }
 
 .slide5 {
-  background-image: url("../sourse/img/Study-Permits.jpg");
+  background-image: url("../sourse/img/Study-Permits.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1216,7 +1216,7 @@ dialog {
 }
 
 .slide6 {
-  background-image: url("../sourse/img/Work-Permits.jpg");
+  background-image: url("../sourse/img/Work-Permits.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1227,7 +1227,7 @@ dialog {
 }
 
 .slide7 {
-  background-image: url("../sourse/img/Visitor-Visas.jpg");
+  background-image: url("../sourse/img/Visitor-Visas.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1238,7 +1238,7 @@ dialog {
 }
 
 .slide8 {
-  background-image: url("../sourse/img/Citizenship-1.jpg");
+  background-image: url("../sourse/img/Citizenship-1.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1249,7 +1249,7 @@ dialog {
 }
 
 .slide9 {
-  background-image: url("../sourse/img/Business-Immigration.jpg");
+  background-image: url("../sourse/img/Business-Immigration.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1260,7 +1260,7 @@ dialog {
 }
 
 .slide10 {
-  background-image: url("../sourse/img/PNP-1.jpg");
+  background-image: url("../sourse/img/PNP-1.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1271,7 +1271,7 @@ dialog {
 }
 
 .slide11 {
-  background-image: url("../sourse/img/Immigration-Refusals.jpg");
+  background-image: url("../sourse/img/Immigration-Refusals.webp");
   background-position: center;
   background-size: cover;
   height: 100vh;
