@@ -317,15 +317,13 @@
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes menuMobileBtnOpenningLine {
+@-webkit-keyframes menuMobileBtnOpenningFirstLine {
   5% {
     background-color: #fff !important;
     position: fixed;
-    height: 5px;
     width: 1000px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    height: 3px;
   }
   10% {
     background-color: #fff !important;
@@ -334,42 +332,6 @@
     height: 3px;
     width: 1000px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  90% {
-    display: none;
-    position: fixed;
-    left: -850px;
-    height: 200vh;
-    width: 1000px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  100% {
-    display: none;
-  }
-}
-@keyframes menuMobileBtnOpenningLine {
-  5% {
-    background-color: #fff !important;
-    position: fixed;
-    height: 5px;
-    width: 1000px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  10% {
-    background-color: #fff !important;
-    position: fixed;
-    left: -850px;
-    height: 3px;
-    width: 1000px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
    90% {
     display: none;
@@ -378,25 +340,95 @@
     height: 200vh;
     width: 1000px;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
   }
   100% {
     display: none;
   }
 }
-
-.menuMobileBtnOpenningLine {
-  -webkit-animation-name: menuMobileBtnOpenningLine;
-  animation-name: menuMobileBtnOpenningLine;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+@keyframes menuMobileBtnOpenningFirstLine {
+  5% {
+    background-color: #fff !important;
+    position: fixed;
+    width: 1000px;
+    top: 50%;
+    height: 3px;
+  }
+  10% {
+    background-color: #fff !important;
+    position: fixed;
+    left: -850px;
+    height: 3px;
+    width: 1000px;
+    top: 50%;
+  }
+   90% {
+    display: none;
+    position: fixed;
+    left: -850px;
+    height: 200vh;
+    width: 1000px;
+    top: 50%;
+  }
+  100% {
+    display: none;
+  }
 }
-
+@-webkit-keyframes menuMobileBtnOpenningLastLine {
+  5% {
+    background-color: #fff !important;
+    position: fixed;
+    width: 1000px;
+    bottom: 50%;
+    height: 3px;
+  }
+  10% {
+    background-color: #fff !important;
+    position: fixed;
+    left: -850px;
+    height: 3px;
+    width: 1000px;
+    bottom: 50%;
+  }
+   90% {
+    display: none;
+    position: fixed;
+    left: -850px;
+    height: 100vh;
+    width: 1000px;
+    bottom: 50%;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes menuMobileBtnOpenningLastLine {
+  5% {
+    background-color: #fff !important;
+    position: fixed;
+    width: 1000px;
+    bottom: 50%;
+    height: 3px;
+  }
+  10% {
+    background-color: #fff !important;
+    position: fixed;
+    left: -850px;
+    height: 3px;
+    width: 1000px;
+    bottom: 50%;
+  }
+   90% {
+    display: none;
+    position: fixed;
+    left: -850px;
+    height: 100vh;
+    width: 1000px;
+    bottom: 50%;
+  }
+  100% {
+    display: none;
+  }
+}
 @-webkit-keyframes menuMobileBtnOpenningNav {
   0% {
     top: -100vh;
@@ -523,9 +555,9 @@
         animation-fill-mode: forwards;
       }
 
-      .btn__line:nth-child(even) {
-        -webkit-animation-name: menuMobileBtnOpenningLine;
-        animation-name: menuMobileBtnOpenningLine;
+      .btn__line:first-child {
+        -webkit-animation-name: menuMobileBtnOpenningFirstLine;
+        animation-name: menuMobileBtnOpenningFirstLine;
         -webkit-animation-duration: 5s;
         animation-duration: 5s;
         -webkit-animation-iteration-count: 1;
@@ -535,6 +567,19 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
+      .btn__line:last-child {
+        -webkit-animation-name: menuMobileBtnOpenningLastLine;
+        animation-name: menuMobileBtnOpenningLastLine;
+        -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        -webkit-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+
     }
   }
 
@@ -621,6 +666,22 @@
       }
       
 }
+.menu__mobile__nav__rolled-txt::after {
+  position: absolute;
+  right: -120%;
+  top: -20%;
+
+  color: #fff;
+  content: "< back";
+
+  font-size: 2.4rem;
+
+  text-transform: uppercase;
+  -webkit-writing-mode: horizontal-tb;
+  -ms-writing-mode: lr-tb;
+  writing-mode: horizontal-tb;
+  text-orientation: upright;
+}
 
 &.rolled-up {
   opacity: 1;
@@ -633,23 +694,7 @@
     right: 5%;
     opacity: 1;
   }
-
-  .menu__mobile__nav__rolled-txt::after {
-    position: absolute;
-    right: -300%;
-    top: -20%;
-
-    color: #fff;
-    content: "< back";
-
-    font-size: 2.4rem;
-
-    text-transform: uppercase;
-    -webkit-writing-mode: horizontal-tb;
-    -ms-writing-mode: lr-tb;
-    writing-mode: horizontal-tb;
-    text-orientation: upright;
-  }
+ 
 }
 
 &.rolled-down {
