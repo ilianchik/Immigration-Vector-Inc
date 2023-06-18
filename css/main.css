@@ -314,11 +314,6 @@ dialog {
   transform: translateY(200vh);
 }
 
-@-moz-document url-prefix() {
-  .menu__btn::after {
-    transform: translate(-63%, -50%) rotate(-45deg);
-  }
-}
 @-webkit-keyframes menuMobileBtnOpenningLines {
   10% {
     -webkit-transform: rotate(0deg);
