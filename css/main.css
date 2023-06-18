@@ -320,10 +320,10 @@ dialog {
     transform: rotate(0deg);
   }
   50% {
-    gap: 0px;
+    gap: -1px;
   }
   100% {
-    gap: 0px;
+    gap: -1px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -334,10 +334,10 @@ dialog {
     transform: rotate(0deg);
   }
   50% {
-    gap: 0px;
+    gap: -1px;
   }
   100% {
-    gap: 0px;
+    gap: -1px;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -2189,11 +2189,12 @@ html {
     border-bottom: 1px solid white;
   }
   .get_in_touch.closed > .get_in_touch__form {
-    z-index: -1;
     opacity: 0;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+    display: none;
+    z-index: -1;
   }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
