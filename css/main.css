@@ -557,7 +557,7 @@ dialog {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 2.4rem 5.4rem 0 10rem;
+  padding: 2.4rem 2.4rem 0 10rem;
   background-color: white;
   -webkit-transition: top 2s, left 1s;
   -o-transition: top 2s, left 1s;
