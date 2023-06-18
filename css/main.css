@@ -2631,10 +2631,10 @@ html {
     padding-left: 4rem;
   }
   .accordion .accordion-prev {
-    left: -5%;
+    left: -4%;
   }
   .accordion .accordion-next {
-    right: -5%;
+    right: -4%;
   }
   .advantages__content {
     padding-right: 4.8rem;
