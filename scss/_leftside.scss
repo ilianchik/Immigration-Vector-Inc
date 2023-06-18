@@ -303,9 +303,9 @@
     -webkit-transform: translateY(50px);
     -ms-transform: translateY(50px);
     transform: translateY(50px);
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
     &.scrolled {
       opacity: 1;
       -webkit-transform: translateY(-50px);
@@ -372,4 +372,72 @@
   overflow: hidden;
   transition: max-height 0.3s ease-out;
   position: relative;
+}
+
+.about {
+  margin-bottom: 5rem;
+  &__title {
+    font-family: "Mont";
+    font-size: 6rem;
+    font-weight: 700;
+    color: #7f7f7f;
+    text-align: center;
+    max-width: 42rem;
+
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-50%);
+  }
+
+  &__item {
+    margin-top: 8rem;
+    display: flex;
+    margin-left: 8rem;
+    border-bottom: 1px black solid;
+    margin-right: 2rem;
+
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    &.scrolled {
+      opacity: 1;
+      -webkit-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+      transform: translateY(-50px);
+    }
+    &:first-child {
+      margin-top: 20rem;
+    }
+  }
+
+  &__img-box {
+  }
+
+  &__img {
+    width: 25rem;
+  }
+
+  &__text-box {
+    margin-left: 5rem;
+  }
+
+  &__subtitle {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__text {
+    font-family: "Josefin Sans";
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: black;
+  }
 }
