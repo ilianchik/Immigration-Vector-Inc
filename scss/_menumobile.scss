@@ -597,28 +597,29 @@
       top: 0px;
       text-align: right;
       color: black;
-
+    
       & .menu__mobile__nav__rolled-txt {
         right: 5%;
         opacity: 1;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
       }
-
+    
       .menu__mobile__nav__rolled-txt::after {
         position: absolute;
-        right: -300%;
-        top: -20%;
-
+        right: 100%;
+        top: 50%;
+    
         color: #fff;
         content: "< back";
-
+    
         font-size: 2.4rem;
-
-        text-transform: uppercase;
-        -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
+    
         writing-mode: horizontal-tb;
         text-orientation: upright;
       }
+    }
+    
     }
 
     &.rolled-down {
@@ -667,9 +668,6 @@
       -o-transition: all 1s;
       transition: all 1s;
 
-      &:hover {
-        margin-left: 3.6rem;
-      }
       &::before {
         content: "";
         position: absolute;

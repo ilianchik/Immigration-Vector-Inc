@@ -638,9 +638,6 @@ dialog {
   -o-transition: all 1s;
   transition: all 1s;
 }
-.menu__mobile__nav__item:hover {
-  margin-left: 3.6rem;
-}
 .menu__mobile__nav__item::before {
   content: "";
   position: absolute;
