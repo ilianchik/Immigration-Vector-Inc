@@ -612,13 +612,13 @@
     
       background: none;
       border: none;
-    
-      -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: vertical-rl;
-      writing-mode: vertical-rl;
-      -webkit-text-orientation: upright;
-      -moz-text-orientation: upright;
-      text-orientation: upright;
+
+      
+      &>img{
+        max-height: 90vh;
+        width: 80%;
+        margin-right: 10%;
+      }
       
 }
 
