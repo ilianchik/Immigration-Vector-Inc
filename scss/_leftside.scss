@@ -343,7 +343,10 @@
     font-size: 2.2rem;
   }
 }
-
+.accordion {
+  display: none;
+  opacity: 0;
+}
 .accordion-item {
   border: none;
   margin-bottom: 10px;
@@ -358,6 +361,7 @@
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
+  color: #ff0506;
 
   padding: 10px;
   cursor: pointer;

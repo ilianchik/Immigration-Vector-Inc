@@ -198,7 +198,6 @@ let currentContent = 1;
 let isAnimating = false; // Додаємо змінну для відстеження стану анімації
 
 function changeContent(newContent) {
-
   changeMenuMobileClasses("rolled-up");
 
   if (currentContent === newContent || isAnimating) return; // Перевіряємо, чи триває анімація
@@ -266,7 +265,7 @@ $(".testimonial__slider").slick({
   dots: true,
   responsive: [
     {
-      breakpoint: 600,
+      breakpoint: 850,
       settings: {
         dots: false,
         arrows: true,
