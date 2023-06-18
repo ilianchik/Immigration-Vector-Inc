@@ -92,12 +92,14 @@ function toggleMenu() {
 }
 
 function changeMenuMobileClasses(type = "closed") {
+
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuBody = document.querySelector(".menu__mobile__nav");
   var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
   const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
   const map = document.querySelector(".map-icon");
   const social = document.querySelector(".sotial_networks");
+
   if (window.innerWidth <= 850) {
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
@@ -110,6 +112,7 @@ function changeMenuMobileClasses(type = "closed") {
       document.body.style.overflowY = "";
       document.documentElement.style.overflowY = "";
 
+      document.body.style.transition = "margin-left 2s";
       document.body.style.marginLeft = "";
       map.style.color = "white";
       social.style.color = "white";

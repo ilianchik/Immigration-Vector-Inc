@@ -715,12 +715,6 @@
       -webkit-transition: all 1s;
       -o-transition: all 1s;
       transition: all 1s;
-
-
-
-      &.opened::before {
-        height: 0;
-      }
     }
 
     &__contact-us {
@@ -740,23 +734,6 @@
       -o-transition: all 2s;
 
       transition: all 2s;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(255, 255, 255);
-        -webkit-transition: height 3s;
-        -o-transition: height 3s;
-        transition: height 3s;
-      }
-
-      &.opened::before {
-        height: 0;
-      }
     }
   }
 }
