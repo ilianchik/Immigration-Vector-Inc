@@ -333,7 +333,7 @@
     width: 1000px;
     top: 50%;
   }
-   90% {
+  90% {
     display: none;
     position: fixed;
     left: -850px;
@@ -361,7 +361,7 @@
     width: 1000px;
     top: 50%;
   }
-   90% {
+  90% {
     display: none;
     position: fixed;
     left: -850px;
@@ -389,7 +389,7 @@
     width: 1000px;
     bottom: 50%;
   }
-   90% {
+  90% {
     display: none;
     position: fixed;
     left: -850px;
@@ -417,7 +417,7 @@
     width: 1000px;
     bottom: 50%;
   }
-   90% {
+  90% {
     display: none;
     position: fixed;
     left: -850px;
@@ -579,7 +579,6 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
-
     }
   }
 
@@ -642,69 +641,64 @@
       animation-fill-mode: forwards;
     }
 
-.menu__mobile__nav__rolled-txt {
-    
+    .menu__mobile__nav__rolled-txt {
       -webkit-transition: right 2s;
       -o-transition: right 2s;
       transition: right 2s;
       opacity: 0;
-    
+
       position: absolute;
       right: 15%;
       -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
       transform: translateX(50%);
-    
+
       background: none;
       border: none;
 
-      
-      &>img{
+      & > img {
         max-height: 90vh;
         width: 80%;
-        margin-right: 10%;
+        margin-right: 0;
+        transform: translateX(-10%);
       }
-      
-}
-.menu__mobile__nav__rolled-txt::after {
-  position: absolute;
-  right: -120%;
-  top: -20%;
+    }
+    .menu__mobile__nav__rolled-txt::after {
+      position: absolute;
+      right: -120%;
+      top: -30%;
 
-  color: #fff;
-  content: "< back";
+      color: #fff;
+      content: "< back";
 
-  font-size: 2.4rem;
+      font-size: 2.4rem;
 
-  text-transform: uppercase;
-  -webkit-writing-mode: horizontal-tb;
-  -ms-writing-mode: lr-tb;
-  writing-mode: horizontal-tb;
-  text-orientation: upright;
-}
+      text-transform: uppercase;
+      -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+      writing-mode: horizontal-tb;
+      text-orientation: upright;
+    }
 
-&.rolled-up {
-  opacity: 1;
-  left: -90%;
-  top: 0px;
-  text-align: right;
-  color: black;
+    &.rolled-up {
+      opacity: 1;
+      left: -90%;
+      top: 0px;
+      text-align: right;
+      color: black;
 
-  .menu__mobile__nav__rolled-txt {
-    right: 5%;
-    opacity: 1;
-  }
- 
-}
+      .menu__mobile__nav__rolled-txt {
+        right: 5%;
+        opacity: 1;
+      }
+    }
 
-&.rolled-down {
-  opacity: 1;
-  top: 0;
-}
+    &.rolled-down {
+      opacity: 1;
+      top: 0;
+    }
 
-
-
-&__item {
+    &__item {
       position: relative;
       display: block;
       padding-bottom: 1.4rem;
