@@ -517,6 +517,7 @@
     line-height: 10px;
 
     position: relative;
+    width: 100%;
 
     cursor: pointer;
 
@@ -541,6 +542,7 @@
     }
 
     &.opened {
+
       .menu__mobile__btn__lines {
         -webkit-transition: -webkit-transform 1s;
         transition: -webkit-transform 1s;

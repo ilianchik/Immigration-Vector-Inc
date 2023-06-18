@@ -99,6 +99,7 @@ function changeMenuMobileClasses(type = "closed") {
   const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
   const map = document.querySelector(".map-icon");
   const social = document.querySelector(".sotial_networks");
+  var logoContainer = document.querySelector(".logo");
 
   if (window.innerWidth <= 850) {
     if (type === "rolled-up") {
@@ -115,6 +116,14 @@ function changeMenuMobileClasses(type = "closed") {
       document.body.style.marginLeft = "";
       map.style.color = "white";
       social.style.color = "white";
+    }
+    if(type === "closed"){
+      logoContainer.style.display = 'block';
+      changeContent(1);
+    }else{
+      setTimeout(() => {
+        logoContainer.style.display = 'none';
+      }, 2000);
     }
   }
 

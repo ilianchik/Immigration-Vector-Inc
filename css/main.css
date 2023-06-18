@@ -530,6 +530,7 @@ dialog {
   font-size: 2.4rem;
   line-height: 10px;
   position: relative;
+  width: 100%;
   cursor: pointer;
 }
 .menu__mobile__btn__lines {
