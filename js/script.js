@@ -212,7 +212,7 @@ let currentContent = 1;
 let isAnimating = false; // Додаємо змінну для відстеження стану анімації
 
 function changeContent(newContent) {
-  if(newContent === 1){
+  if(newContent !== 1){
     changeMenuMobileClasses("rolled-up");
   }
 
