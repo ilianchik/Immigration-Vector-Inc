@@ -135,6 +135,20 @@ if (window.innerWidth >= 848) {
     });
   });
 }
+if (window.innerWidth >= 848) {
+  window.addEventListener("scroll", function () {
+    var aboutContainers = document.querySelectorAll(".about__item");
+    var windowHeight = window.innerHeight;
+    var percentageOffset = windowHeight * 3.8;
+    aboutContainers.forEach(function (aboutContainer) {
+      if (window.scrollY > percentageOffset) {
+        aboutContainer.classList.add("scrolled");
+      } else {
+        aboutContainer.classList.remove("scrolled");
+      }
+    });
+  });
+}
 
 // $(".slider").slick({
 //   arrows: false,
