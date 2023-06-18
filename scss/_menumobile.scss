@@ -604,7 +604,7 @@
   text-align: right;
   color: black;
 
-  & .menu__mobile__nav__rolled-txt {
+  .menu__mobile__nav__rolled-txt {
     right: 5%;
     opacity: 1;
   }
@@ -634,7 +634,7 @@
 
 .menu__mobile__nav__rolled-txt {
   color: brown;
-  
+
   -webkit-transition: right 2s;
   -o-transition: right 2s;
   transition: right 2s;
@@ -655,6 +655,7 @@
   -webkit-text-orientation: upright;
   -moz-text-orientation: upright;
   text-orientation: upright;
+  
 }
 
     &__item {
