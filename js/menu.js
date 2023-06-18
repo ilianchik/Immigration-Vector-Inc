@@ -112,7 +112,6 @@ function changeMenuMobileClasses(type = "closed") {
       document.body.style.overflowY = "";
       document.documentElement.style.overflowY = "";
 
-      document.body.style.transition = "margin-left 2s";
       document.body.style.marginLeft = "";
       map.style.color = "white";
       social.style.color = "white";
