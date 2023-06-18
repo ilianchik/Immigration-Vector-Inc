@@ -1003,9 +1003,9 @@ dialog {
 .get_in_touch.closed > .get_in_touch__form {
   z-index: -1;
   opacity: 0;
-  -webkit-transform: none;
-  -ms-transform: none;
-  transform: none;
+  -webkit-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
 }
 
 .black-btn {
@@ -2103,17 +2103,45 @@ html {
   .get_in_touch {
     position: static;
   }
+  .get_in_touch__form {
+    position: absolute;
+    -webkit-transform: none;
+    -ms-transform: none;
+    bottom: 15%;
+    opacity: 1;
+    width: 85%;
+    height: 60vh;
+    background-color: rgba(7, 7, 7, 0.49);
+    border: 2px solid white;
+    -webkit-transition: opacity 2s, -webkit-transform 2s;
+    transition: opacity 2s, -webkit-transform 2s;
+    -o-transition: transform 2s, opacity 2s;
+    transition: transform 2s, opacity 2s;
+    transition: transform 2s, opacity 2s, -webkit-transform 2s;
+  }
+  .get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
+    background-color: rgba(37, 37, 37, 0);
+    border-bottom: 1px solid white;
+  }
+  .get_in_touch.closed > .get_in_touch__form {
+    z-index: -1;
+    opacity: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
     right: -5rem;
   }
   .get_in_touch.opened > .get_in_touch__btn {
+    z-index: 1;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
-    bottom: 10%;
+    bottom: 15%;
     right: 2rem;
-    margin-right: 6.5%;
+    margin-right: 6.3%;
   }
   .hero {
     height: 90vh;
@@ -2212,12 +2240,6 @@ html {
   .get_in_touch__btn {
     position: fixed;
   }
-  .get_in_touch__form {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
   .main__right .map-icon {
     height: auto;
     position: fixed;
@@ -2242,9 +2264,6 @@ html {
   }
   .grid__left {
     transition: all 0.5s ease-in-out;
-  }
-  .get_in_touch__form {
-    width: 85%;
   }
   .accordion .slider__inside-slide {
     padding-right: 14rem;

@@ -251,7 +251,7 @@
 
   //GET IN TOUCH
 
-  
+
 
   .get_in_touch__btn {
     position: absolute;
@@ -264,18 +264,58 @@
   }
   .get_in_touch {
     position: static;
+
+    &__form{
+      position: absolute;
+      -webkit-transform: none;
+      -ms-transform: none;
+      bottom: 15%;
+      opacity: 1;
+      width: 85%;
+      height: calc(60vh);
+
+      background-color: rgba(7, 7, 7, 0.49);
+      border: 2px solid white;
+
+
+      -webkit-transition: opacity 2s, -webkit-transform 2s;
+      transition: opacity 2s, -webkit-transform 2s;
+      -o-transition: transform 2s, opacity 2s;
+      transition: transform 2s, opacity 2s;
+      transition: transform 2s, opacity 2s, -webkit-transform 2s;
+
+      & input,
+      & select,
+      & option,
+      & textarea,
+      & input::placeholder,
+      & textarea::placeholder {
+        background-color: rgba(37, 37, 37, 0);
+        border-bottom: 1px solid white;
+      }
+    }
+
+    &.closed > &__form {
+      z-index: -1;
+      opacity: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+    }
+
   }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
     right: -5rem;
   }
   .get_in_touch.opened > .get_in_touch__btn {
+    z-index: 1;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
-    bottom: 10%;
+    bottom: 15%;
     right: 2rem;
-    margin-right: 6.5%;
+    margin-right: 6.3%;
 
   }
 
@@ -344,15 +384,6 @@
   .menu__mobile {
     display: block;
   }
-  .get_in_touch__form {
-    // position: absolute;
-    // right: 2rem;
-    // left: 2rem;
-    // top: 35%;
-    // width: auto;
-    // border: 5px black solid;
-    // padding-bottom: 22rem;
-  }
   .testimonial__title {
     width: 100%;
   }
@@ -391,12 +422,7 @@
   .get_in_touch__btn {
     position: fixed;
   }
-  .get_in_touch__form {
-    position: fixed;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+
   .main__right .map-icon {
     height: auto;
     position: fixed;
@@ -423,9 +449,7 @@
   .grid__left {
     transition: all 0.5s ease-in-out;
   }
-  .get_in_touch__form {
-    width: 85%;
-  }
+
   .accordion {
     .slider__inside-slide {
       padding-right: 14rem;
