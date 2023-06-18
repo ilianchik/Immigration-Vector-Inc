@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr;
   &__left {
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     background-color: white;
     z-index: 9999;
     -ms-overflow-style: none; /* Internet Explorer and Edge */
