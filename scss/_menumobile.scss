@@ -633,6 +633,8 @@
 }
 
 .menu__mobile__nav__rolled-txt {
+  color: brown;
+  
   -webkit-transition: right 2s;
   -o-transition: right 2s;
   transition: right 2s;
@@ -654,7 +656,6 @@
   -moz-text-orientation: upright;
   text-orientation: upright;
 }
-
 
     &__item {
       position: relative;
