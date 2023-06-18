@@ -629,8 +629,10 @@ dialog {
   background: none;
   border: none;
   -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
+  -ms-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  -moz-text-orientation: upright;
   text-orientation: upright;
 }
 .menu__mobile__nav__item {
