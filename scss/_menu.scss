@@ -186,70 +186,191 @@
   }
 }
 @-moz-document url-prefix() {
-  // .menu {
-  //   position: fixed;
-  //   z-index: 10000;
-  //   top: 45%;
-  //   -webkit-transition: all 0.7s;
-  //   -o-transition: all 0.7s;
-  //   transition: all 0.7s;
-  //   &.scrolled {
-  //     opacity: 1;
-  //     top: 1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
-  //   }
+  .menu {
+    position: fixed;
+    z-index: 10000;
+    top: 45%;
+    -webkit-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    &.scrolled {
+      opacity: 1;
+      top: 1rem; /* змініть на висоту, на яку ви хочете перемістити текст */
+    }
 
-  //   &__btn {
-  //     z-index: 3;
-  //     display: block;
+    &__btn {
+      z-index: 3;
+      display: block;
 
-  //     border: none;
-  //     background: transparent;
+      border: none;
+      background: transparent;
 
-  //     margin: 0;
-  //     padding: 0;
+      margin: 0;
+      padding: 0;
 
-  //     font-family: "ducine";
-  //     font-size: 1.8rem;
-  //     position: relative;
-  //     -webkit-writing-mode: vertical-rl;
-  //     -ms-writing-mode: tb-rl;
-  //     writing-mode: vertical-rl;
-  //     text-orientation: upright;
-  //     cursor: pointer;
+      font-family: "ducine";
+      font-size: 1.8rem;
+      position: relative;
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      cursor: pointer;
 
-  //     cursor: pointer;
+      cursor: pointer;
 
-  //     &::before,
-  //     &::after {
-  //       -webkit-transition: all 0.5s;
-  //       -o-transition: all 0.5s;
-  //       transition: all 0.5s;
-  //       font-size: 5.2rem;
-  //       color: black;
-  //       content: "|";
-  //       position: absolute;
-  //       left: -50%; /* Position from the left center */
-  //       top: 50%; /* Position from the top center */
-  //       -webkit-transform: translate(-50%, -50%);
-  //       -ms-transform: translate(-50%, -50%);
-  //       transform: translate(
-  //         -50%,
-  //         -50%
-  //       ); /* Rotate and center the pseudo-elements */
-  //     }
-  //     &.closed::before {
-  //       left: -75%;
-  //     }
-  //     &.opened::after {
-  //       -webkit-transform: translate(-63%, -50%) rotate(-45deg);
-  //       -ms-transform: translate(-63%, -50%) rotate(-45deg);
-  //       transform: translate(-63%, -50%) rotate(-45deg);
-  //     }
-  //     &.opened::before {
-  //       -webkit-transform: translate(-41%, -50%) rotate(45deg);
-  //       -ms-transform: translate(-41%, -50%) rotate(45deg);
-  //       transform: translate(-41%, -50%) rotate(45deg);
-  //     }
-  //   }
-  // }
+      &::before,
+      &::after {
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        font-size: 5.2rem;
+        color: black;
+        content: "|";
+        position: absolute;
+        left: -50%; /* Position from the left center */
+        top: 50%; /* Position from the top center */
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(
+          -50%,
+          -50%
+        ); /* Rotate and center the pseudo-elements */
+      }
+      &.closed::before {
+        left: -75%;
+      }
+      &.opened::after {
+        -webkit-transform: translate(-63%, -50%) rotate(-45deg);
+        -ms-transform: translate(-63%, -50%) rotate(-45deg);
+        transform: translate(-63%, -50%) rotate(-45deg);
+      }
+      &.opened::before {
+        -webkit-transform: translate(-41%, -50%) rotate(45deg);
+        -ms-transform: translate(-41%, -50%) rotate(45deg);
+        transform: translate(-41%, -50%) rotate(45deg);
+      }
+    }
+
+    &__nav {
+      -webkit-transition: top 2s;
+      -o-transition: top 2s;
+      transition: top 2s;
+      position: fixed;
+      left: 0;
+      width: 50%;
+      height: 100vh;
+      z-index: 2;
+      padding: 2.4rem 2.4rem 0 10rem;
+      background-color: white;
+      opacity: 0;
+      &.opened {
+        top: 0;
+      }
+      &.closed {
+        top: -100vh;
+      }
+
+      &__title {
+        font-family: "Mont", "Arial Narrow Bold", sans-serif;
+        font-size: 8.4rem;
+        font-weight: 900;
+        letter-spacing: 0.4rem;
+        color: #ccc;
+
+        & div:last-child {
+          text-align: right;
+        }
+      }
+
+      &__item {
+        position: relative;
+        display: block;
+        padding-bottom: 1.4rem;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        font-family: "ducine";
+        font-size: 3.6rem;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s;
+
+        &:hover {
+          margin-left: 3.6rem;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 5px;
+          width: 0;
+          height: 1.5px;
+          background-color: black;
+          -webkit-transition: width 0.5s ease;
+          -o-transition: width 0.5s ease;
+          transition: width 0.5s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(255, 255, 255);
+          -webkit-transition: height 3s;
+          -o-transition: height 3s;
+          transition: height 3s;
+        }
+
+        &.opened::before {
+          height: 0;
+        }
+      }
+
+      &__hr {
+        height: 1.5px;
+        background-color: black;
+        border: none;
+        margin-left: 16%;
+        margin-top: 1.8rem;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+
+        .closed > & {
+          margin-left: 100%;
+        }
+      }
+
+      &__contact-us {
+        font-family: "ducine";
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 3.8rem;
+        letter-spacing: 1px;
+        /*margin-top: 1.8rem;*/
+        position: absolute;
+        bottom: 2.4rem;
+        -webkit-transition: all 2s;
+        -o-transition: all 2s;
+        transition: all 2s;
+        .closed > & {
+          -webkit-transform: translateY(200vh);
+          -ms-transform: translateY(200vh);
+          transform: translateY(200vh);
+        }
+      }
+    }
+  }
 }
