@@ -96,17 +96,23 @@ function changeMenuMobileClasses(type = "closed") {
   const menuBody = document.querySelector(".menu__mobile__nav");
   var menuItems = document.querySelectorAll(".menu__mobile__nav__item");
   const menuContact = document.querySelector(".menu__mobile__nav__contact-us");
+  const map = document.querySelector(".map-icon");
+  const social = document.querySelector(".sotial_networks");
   if (window.innerWidth <= 850) {
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
       window.scrollTo({ top: 0 });
       document.body.style.overflowY = "hidden";
       document.documentElement.style.overflowY = "hidden";
+      map.style.color = "black";
+      social.style.color = "black";
     } else {
       document.body.style.overflowY = "";
       document.documentElement.style.overflowY = "";
 
       document.body.style.marginLeft = "";
+      map.style.color = "white";
+      social.style.color = "white";
     }
   }
 
