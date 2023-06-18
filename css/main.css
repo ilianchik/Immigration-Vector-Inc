@@ -557,16 +557,16 @@ dialog {
   transition: transform 1s, -webkit-transform 1s;
   -webkit-animation-name: menuMobileBtnOpenningLines;
   animation-name: menuMobileBtnOpenningLines;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 .menu__mobile__btn.opened .btn__line:first-child {
   -webkit-animation-name: menuMobileBtnOpenningFirstLine;
   animation-name: menuMobileBtnOpenningFirstLine;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-delay: 0.5s;
@@ -577,8 +577,8 @@ dialog {
 .menu__mobile__btn.opened .btn__line:last-child {
   -webkit-animation-name: menuMobileBtnOpenningLastLine;
   animation-name: menuMobileBtnOpenningLastLine;
-  -webkit-animation-duration: 5s;
-  animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-delay: 0.5s;
@@ -616,8 +616,8 @@ dialog {
   animation-name: menuMobileBtnOpenningNav;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -626,8 +626,8 @@ dialog {
 .menu__mobile__nav.closed {
   -webkit-animation-name: menuMobileBtnClosingNav;
   animation-name: menuMobileBtnClosingNav;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -694,18 +694,6 @@ dialog {
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-}
-.menu__mobile__nav__item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(255, 255, 255);
-  -webkit-transition: height 3s;
-  -o-transition: height 3s;
-  transition: height 3s;
 }
 .menu__mobile__nav__item.opened::before {
   height: 0;
