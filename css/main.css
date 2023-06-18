@@ -1001,10 +1001,11 @@ dialog {
   transform: translateX();
 }
 .get_in_touch.closed > .get_in_touch__form {
+  z-index: -1;
   opacity: 0;
-  -webkit-transform: translateY(300%);
-  -ms-transform: translateY(300%);
-  transform: translateY(300%);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 .black-btn {
@@ -2112,6 +2113,7 @@ html {
     transform: rotate(0deg);
     bottom: 10%;
     right: 2rem;
+    margin-right: 6.5%;
   }
   .hero {
     height: 90vh;
