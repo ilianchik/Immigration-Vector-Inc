@@ -410,6 +410,17 @@ dialog {
     display: none;
   }
 }
+.menuMobileBtnOpenningLine {
+  -webkit-animation-name: menuMobileBtnOpenningLine;
+  animation-name: menuMobileBtnOpenningLine;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 @-webkit-keyframes menuMobileBtnOpenningNav {
   0% {
     top: -100vh;
