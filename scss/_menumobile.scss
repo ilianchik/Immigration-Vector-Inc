@@ -371,7 +371,7 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-   90% {
+  90% {
     display: none;
     position: fixed;
     left: -850px;
@@ -558,7 +558,7 @@
     -ms-flex-pack: center;
     justify-content: center;
 
-    padding: 2.4rem 2.4rem 0 10rem;
+    padding: 2.4rem 5.4rem 0 10rem;
 
     background-color: white;
 
@@ -597,53 +597,57 @@
       animation-fill-mode: forwards;
     }
 
-&.rolled-up {
-  opacity: 1;
-  left: -90%;
-  top: 0px;
-  text-align: right;
-  color: black;
+    &.rolled-up {
+      opacity: 1;
+      left: -90%;
+      top: 0px;
+      text-align: right;
+      color: black;
 
-  & .menu__mobile__nav__rolled-txt {
-    right: 5%;
-    opacity: 1;
-  }
+      & .menu__mobile__nav__rolled-txt {
+        right: 5%;
+        opacity: 1;
+      }
 
-  .menu__mobile__nav__rolled-txt::after {
-    position: absolute;
-    right: -300%;
-    top: -20%;
+      .menu__mobile__nav__rolled-txt::after {
+        position: absolute;
+        right: -300%;
+        top: -20%;
 
-    color: #fff;
-    content: "< back";
+        color: #fff;
+        content: "< back";
 
-    font-size: 2.4rem;
+        font-size: 2.4rem;
 
-    text-transform: uppercase;
-    -webkit-writing-mode: horizontal-tb;
-    -ms-writing-mode: lr-tb;
-    writing-mode: horizontal-tb;
-    text-orientation: upright;
-  }
-}
+        text-transform: uppercase;
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+      }
+    }
 
-&.rolled-down {
-  opacity: 1;
-  top: 0;
-}
+    &.rolled-down {
+      opacity: 1;
+      top: 0;
+    }
 
-.menu__mobile__nav__rolled-txt {
-  -webkit-transition: right 2s;
-  -o-transition: right 2s;
-  transition: right 2s;
-  opacity: 0;
+    .menu__mobile__nav__rolled-txt {
+      -webkit-transition: right 2s;
+      -o-transition: right 2s;
+      transition: right 2s;
+      opacity: 0;
 
-  position: absolute;
-  right: 15%;
-  -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
+      position: absolute;
+      right: 15%;
+      -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+      transform: translateX(50%);
 
+<<<<<<< HEAD
+      background: none;
+      border: none;
+=======
   background: none;
   border: none;
 
@@ -654,7 +658,13 @@
   -moz-text-orientation: upright;
   text-orientation: upright;
 }
+>>>>>>> fd1096121d71ab01e95aecf0cb784c9ac412ac7d
 
+      -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+    }
 
     &__item {
       position: relative;
