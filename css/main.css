@@ -1999,6 +1999,7 @@ html {
   font-weight: 400;
   margin-bottom: 2rem;
   color: black;
+  text-align: center;
 }
 .contact__mail {
   font-family: "Josefin Sans";
@@ -2587,9 +2588,11 @@ html {
     right: 10%;
     top: 9%;
     max-width: 42rem;
+    text-align: center;
   }
   .about__text {
     margin-right: 6rem;
+    text-align: center;
   }
   .about__title {
     transform: translateY(80%);
