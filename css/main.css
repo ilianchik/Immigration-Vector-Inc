@@ -638,7 +638,7 @@ button {
   font-size: 4.4rem;
   position: absolute;
   top: 2rem;
-  right: 1.4rem;
+  right: 1%;
 }
 .menu__mobile__nav.opened {
   opacity: 1;
