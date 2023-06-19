@@ -118,6 +118,11 @@ dialog {
   border: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 @font-face {
   font-family: "Mont";
   src: url("../fonts/Mont-ExtraLight.woff");
