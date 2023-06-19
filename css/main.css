@@ -2737,6 +2737,9 @@ html {
   .menu__mobile__nav__item {
     font-size: 3.8rem;
   }
+  .menu__mobile__nav__contact-us {
+    bottom: 7.4rem;
+  }
 }
 /**************************/
 /* BELOW 450px */
@@ -2843,5 +2846,8 @@ html {
 @media (max-height: 37.5em) {
   html {
     font-size: 43.75%;
+  }
+  .menu__mobile__nav__contact-us {
+    bottom: 3.4rem;
   }
 }/*# sourceMappingURL=main.css.map */
