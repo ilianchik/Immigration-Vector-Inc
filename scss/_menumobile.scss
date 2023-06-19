@@ -481,7 +481,7 @@
   top: 1.2rem;
   right: 5%;
   z-index: 10002;
-  display: flex;
+  display: none;
 
   -webkit-transition: all 0.7s;
 
@@ -546,11 +546,6 @@
 
     &.opened {
 
-      & > span{
-        z-index: 10003;
-        color: black;
-      }
-
       .menu__mobile__btn__lines {
         -webkit-transition: -webkit-transform 1s;
         transition: -webkit-transform 1s;
@@ -590,12 +585,8 @@
         animation-fill-mode: forwards;
       }
     }
-    &.rolled-up{
-      & > span{
-        z-index: 10003;
-        color: black;
-      }
-
+    &.closed{
+      display: flex;
     }
   }
 

@@ -514,7 +514,7 @@ dialog {
   top: 1.2rem;
   right: 5%;
   z-index: 10002;
-  display: flex;
+  display: none;
   -webkit-transition: all 0.7s;
   -o-transition: all 0.7s;
   transition: all 0.7s;
@@ -564,10 +564,6 @@ dialog {
   width: 24px;
   background-color: #fff;
 }
-.menu__mobile__btn.opened > span {
-  z-index: 10003;
-  color: black;
-}
 .menu__mobile__btn.opened .menu__mobile__btn__lines {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -605,9 +601,8 @@ dialog {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.menu__mobile__btn.rolled-up > span {
-  z-index: 10003;
-  color: black;
+.menu__mobile__btn.closed {
+  display: flex;
 }
 .menu__mobile__nav {
   position: fixed;
