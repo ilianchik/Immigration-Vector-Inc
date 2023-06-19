@@ -51,16 +51,15 @@ if (window.innerWidth <= 848) {
         icons.forEach((icon) => {
           icon.classList.add("black");
         });
-        menuBtn.classList.toggle('black');
-      } else 
-          if (ent.isIntersecting === true) {
-            header.classList.remove("header");
-            social.classList.remove("social_network--header");
-
-            icons.forEach(icon => {
-              icon.classList.remove('black');
-            });
-          menuBtn.classList.toggle('remove');
+        menuBtn.classList.add("black");
+      } else if (ent.isIntersecting === true) {
+        header.classList.remove("header");
+        social.classList.remove("social_network--header");
+        menuBtn.classList.remove("black");
+        icons.forEach((icon) => {
+          icon.classList.remove("black");
+        });
+        menuBtn.classList.remove("remove");
       }
     },
     {
