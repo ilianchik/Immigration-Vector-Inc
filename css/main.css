@@ -884,6 +884,13 @@ button {
   height: 100vh;
   pointer-events: none;
 }
+.main__right .icon__link {
+  text-decoration: none;
+  color: white;
+}
+.main__right .icon__link.black {
+  color: black !important;
+}
 .main__right .icon {
   position: absolute;
   color: #fff;
@@ -1561,14 +1568,6 @@ button {
 .hero__arrow-btn--mobile {
   display: none;
   opacity: 0;
-}
-
-.icon__link {
-  text-decoration: none;
-  color: white;
-}
-.icon__link.black {
-  color: black !important;
 }
 
 html {
