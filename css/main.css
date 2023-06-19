@@ -1993,6 +1993,7 @@ html {
   font-weight: 400;
   margin-bottom: 2rem;
   color: black;
+  text-align: center;
 }
 .contact__mail {
   font-family: "Josefin Sans";
