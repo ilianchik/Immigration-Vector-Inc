@@ -107,7 +107,7 @@ function changeMenuMobileClasses(type = "closed") {
   //margin and oth
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
-      window.scrollTo({ top: 0 });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       document.body.style.overflowY = "hidden";
       document.documentElement.style.overflowY = "hidden";
 
@@ -169,13 +169,12 @@ function changeMenuMobileClasses(type = "closed") {
 }
 }
 
-function contactUs(){
-  if (window.innerWidth < 850) {  
-    window.scrollTo(0, document.body.scrollHeight);
+function contactUs() {
+  if (window.innerWidth < 850) {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     changeMenuMobileClasses();
-  }else{
+  } else {
     toggleMenu();
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
   }
-
 }
