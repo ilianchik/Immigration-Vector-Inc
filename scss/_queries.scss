@@ -722,7 +722,7 @@
     padding-left: 3rem;
   }
   .menu__mobile__nav__item {
-    font-size: 3.2rem;
+    font-size: 3.8rem;
   }
 }
 /**************************/
@@ -830,5 +830,13 @@
         max-height: 30rem;
       }
     }
+  }
+  .menu__mobile__nav__item {
+    font-size: 3.2rem;
+  }
+}
+@media (max-height: 37.5em) {
+  html {
+    font-size: 43.75%;
   }
 }
