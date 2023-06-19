@@ -846,4 +846,9 @@
   .menu__mobile__nav__contact-us {
     bottom: 3.4rem;
   }
+  .get_in_touch {
+    &__form {
+      height: 70vh;
+    }
+  }
 }
