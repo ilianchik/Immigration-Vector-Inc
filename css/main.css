@@ -2360,7 +2360,7 @@ html {
   .icon i {
     z-index: 99999999 !important;
   }
-  .main__right .map-icon {
+  .map-icon {
     left: 0;
     top: 0;
     padding-top: 1.2rem;
