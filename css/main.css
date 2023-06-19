@@ -839,6 +839,34 @@ button {
   width: 100%;
 }
 
+@keyframes get_in_touchOpen {
+  0% {
+    display: none;
+  }
+  10% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+}
+@keyframes get_in_touchClose {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  90% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+  100% {
+    display: none;
+  }
+}
 .main__right {
   position: fixed;
   display: -webkit-box;
@@ -2345,10 +2373,10 @@ html {
     -o-transition: transform 2s, opacity 2s;
     transition: transform 3s, opacity 2s;
     transition: transform 3s, opacity 2s, -webkit-transform 2s;
-    opacity: 0;
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(50%);
-    transform: translateY(50%);
+    animation: get_in_touchClose 2s forwards;
+  }
+  .get_in_touch.opened > .get_in_touch__form {
+    animation: get_in_touchOpen 2s forwards;
   }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;

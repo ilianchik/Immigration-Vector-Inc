@@ -23,11 +23,15 @@ function toggleGetInTouch() {
   const getInTouch = document.querySelector(".get_in_touch");
   var elements = document.querySelectorAll(".get_in_touch__reaction");
   const btn = document.querySelector(".get_in_touch__btn");
-  var textContainer = document.querySelector(".hero__text");
-  var arrowDown = document.querySelector(".hero__arrow-btn");
+
+  const form = document.querySelector('get_in_touch__form');
+
   var heroTextMobile = document.querySelector(".hero__text--mobile");
   var heroArrowMobile = document.querySelector(".hero__arrow-btn--mobile");
   const leftSide = document.querySelector(".grid__left");
+
+
+
   if (getInTouch.classList.contains("opened")) {
     //close
     btn.textContent = "Get in touch";
