@@ -525,7 +525,7 @@ dialog {
 }
 .menu__mobile__btn {
   color: #fff;
-  z-index: 10003;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -627,6 +627,13 @@ dialog {
   transition: top 2s, left 1s;
   opacity: 0;
   top: -100vh;
+}
+.menu__mobile__nav > .ph-x.nav-icon {
+  color: black;
+  font-size: 4.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 1.4rem;
 }
 .menu__mobile__nav.opened {
   opacity: 1;

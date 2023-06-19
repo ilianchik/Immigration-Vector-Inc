@@ -497,7 +497,7 @@
   &__btn {
     color: #fff;
 
-    z-index: 10003;
+    z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -622,6 +622,13 @@
 
     opacity: 0;
     top: -100vh;
+
+    & >.ph-x.nav-icon{
+      color: black;
+      font-size: 4.4rem;
+      position: absolute;
+      top:2rem;right: 1.4rem;
+    }
 
     &.opened {
       opacity: 1;
