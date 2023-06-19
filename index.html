@@ -54,6 +54,8 @@
     <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
     <script defer src="js/jquery-3.7.0.min.js"></script>
     <script defer src="js/slick.min.js"></script>
+    <script defer src="js/scrollAnimations.js"></script>
+    <script defer src="js/sliders.js"></script>
     <script defer src="js/menu.js"></script>
     <script defer src="js/form.js"></script>
     <script defer src="js/responsive.js"></script>
@@ -128,8 +130,10 @@
         </div>
       </a>
       <nav class="menu__mobile__nav closed">
-
-        <i class="ph ph-x nav-icon" onclick=" changeMenuMobileClasses('closed')"></i>
+        <i
+          class="ph ph-x nav-icon"
+          onclick=" changeMenuMobileClasses('closed')"
+        ></i>
         <a
           class="menu__mobile__nav__rolled-txt"
           onclick="changeMenuMobileClasses('rolled-down')"
@@ -193,11 +197,7 @@
         >
           IMMIGRATION REFUSALS
         </button>
-        <h3
-          class="menu__mobile__nav__contact-us"
-        >
-          contact us
-        </h3>
+        <h3 class="menu__mobile__nav__contact-us">contact us</h3>
       </nav>
     </menu>
 
