@@ -2472,6 +2472,7 @@ html {
     background-color: rgba(255, 255, 255, 0.818);
   }
   .main__right .sotial_networks.social_network--header {
+    position: fixed;
     flex-direction: row;
     top: 1.2rem;
     left: 6.2rem;
