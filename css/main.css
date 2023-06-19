@@ -139,11 +139,6 @@ dialog {
   font-weight: 400;
 }
 @font-face {
-  font-family: "Ducine";
-  src: url("../fonts/Ducine.woff");
-  font-weight: 400;
-}
-@font-face {
   font-family: "JournalSans";
   src: url("../fonts/JournalSans.woff");
   font-weight: 400;
