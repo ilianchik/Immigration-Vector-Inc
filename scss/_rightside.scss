@@ -27,6 +27,7 @@
     position: fixed;
     right: 1.8rem;
     top: 1.2rem;
+
     cursor: pointer;
     pointer-events: auto;
   }
@@ -55,10 +56,13 @@
 .get_in_touch {
   pointer-events: auto;
   width: 100%;
+
   -webkit-transition: all 3s;
   -o-transition: all 3s;
   transition: all 3s;
+
   position: relative;
+
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,14 +98,19 @@
     -o-transition: transform 2s, opacity 3s;
     transition: transform 2s, opacity 3s;
     transition: transform 2s, opacity 3s, -webkit-transform 2s;
+
     text-align: right;
+
     -webkit-transform: translateY(15%);
     -ms-transform: translateY(15%);
     transform: translateY(15%);
+
     width: 70%;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
