@@ -724,3 +724,10 @@
   display: none;
   opacity: 0;
 }
+.icon__link {
+  text-decoration: none;
+  color: white;
+  &.black {
+    color: black !important;
+  }
+}

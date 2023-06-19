@@ -1535,6 +1535,14 @@ button {
   opacity: 0;
 }
 
+.icon__link {
+  text-decoration: none;
+  color: white;
+}
+.icon__link.black {
+  color: black !important;
+}
+
 html {
   font-size: 62.5%;
 }
