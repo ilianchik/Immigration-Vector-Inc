@@ -566,7 +566,9 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
-
+      .btn__line{
+        background-color: white !important;
+      }
       .btn__line:first-child {
         -webkit-animation-name: menuMobileBtnOpenningFirstLine;
         animation-name: menuMobileBtnOpenningFirstLine;
