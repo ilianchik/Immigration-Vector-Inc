@@ -1894,7 +1894,7 @@ html {
 }
 
 .about {
-  margin-bottom: 15rem;
+  margin-bottom: 7.5rem;
 }
 .about__title {
   font-family: "Mont";
@@ -2581,6 +2581,9 @@ html {
   }
   .about__title {
     transform: translateY(80%);
+  }
+  .about {
+    margin-bottom: 15rem;
   }
 }
 /**************************/
