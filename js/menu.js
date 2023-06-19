@@ -107,7 +107,7 @@ function changeMenuMobileClasses(type = "closed") {
   //margin and oth
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0});
       document.body.style.overflowY = "hidden";
       document.documentElement.style.overflowY = "hidden";
 
@@ -171,10 +171,10 @@ function changeMenuMobileClasses(type = "closed") {
 
 function contactUs() {
   if (window.innerWidth < 850) {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    window.scrollTo({ top: document.body.scrollHeight});
     changeMenuMobileClasses();
   } else {
     toggleMenu();
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    window.scrollTo({ top: document.body.scrollHeight});
   }
 }
