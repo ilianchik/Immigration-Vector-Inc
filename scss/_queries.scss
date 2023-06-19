@@ -719,6 +719,15 @@
     max-width: 20rem;
     right: 6%;
   }
+  .menu__mobile__nav {
+    padding-left: 3rem;
+  }
+  .menu__mobile__nav__item {
+    font-size: 3.8rem;
+  }
+  .menu__mobile__nav__contact-us {
+    bottom: 15.4rem;
+  }
 }
 /**************************/
 /* BELOW 450px */
@@ -825,5 +834,16 @@
         max-height: 30rem;
       }
     }
+  }
+  .menu__mobile__nav__item {
+    font-size: 3.2rem;
+  }
+}
+@media (max-height: 43.75em) {
+  html {
+    font-size: 43.75%;
+  }
+  .menu__mobile__nav__contact-us {
+    bottom: 3.4rem;
   }
 }

@@ -38,6 +38,7 @@ if (window.innerWidth <= 848) {
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuLine = document.querySelectorAll(".btn__line");
   const icons = document.querySelectorAll(".icon");
+  const icons2 = document.querySelectorAll(".icon__link");
 
   const obs = new IntersectionObserver(
     function (entries) {
@@ -51,12 +52,18 @@ if (window.innerWidth <= 848) {
         icons.forEach((icon) => {
           icon.classList.add("black");
         });
+        icons2.forEach((icon) => {
+          icon.classList.add("black");
+        });
         menuBtn.classList.add("black");
       } else if (ent.isIntersecting === true) {
         header.classList.remove("header");
         social.classList.remove("social_network--header");
         menuBtn.classList.remove("black");
         icons.forEach((icon) => {
+          icon.classList.remove("black");
+        });
+        icons2.forEach((icon) => {
           icon.classList.remove("black");
         });
         menuBtn.classList.remove("remove");

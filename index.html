@@ -198,11 +198,8 @@
         >
           IMMIGRATION REFUSALS
         </button>
-        <h3
-          class="menu__mobile__nav__contact-us"
-          onclick="contactUs()"
-        >
-        contact us
+        <h3 class="menu__mobile__nav__contact-us" onclick="contactUs()">
+          contact us
         </h3>
       </nav>
     </menu>
@@ -340,8 +337,11 @@
                   <p class="testimonial__quotes">‘‘</p>
                 </div>
 
-                <img src="sourse/img/person.png" alt="Person img
-                class="testimonial__person-img" />
+                <img
+                  src="sourse/img/person.png"
+                  alt="Person img"
+                  class="testimonial__person-img"
+                />
                 <div class="testimonial__person-text">
                   <p class="testimonial__person-name">Karina</p>
                   <p class="testimonial__person-country">Ukraine</p>
@@ -969,9 +969,19 @@
             <div class="map-icon icon" onclick="contactUs()">
               <i class="ph-light ph-map-pin"></i>
             </div>
+
             <div class="sotial_networks icon">
-              <i class="ph-light ph-facebook-logo" onclick="openPage('www.facebook.com/ImmigrationVector')"></i>
-              <i class="ph-light ph-instagram-logo" onclick="openPage('www.instagram.com/immigrationvector/')"></i>
+              <a
+                href="https://www.facebook.com/ImmigrationVector"
+                class="icon__link"
+                ><i class="ph-light ph-facebook-logo"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/immigrationvector/"
+                class="icon__link"
+              >
+                <i class="ph-light ph-instagram-logo"></i
+              ></a>
             </div>
             <div class="get_in_touch closed">
               <button
