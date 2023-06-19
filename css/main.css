@@ -962,6 +962,7 @@ button {
   font-size: 2.2rem;
   font-family: "repeater";
   border-collapse: hidden;
+  text-decoration: none;
 }
 .get_in_touch__form input::-moz-placeholder, .get_in_touch__form textarea::-moz-placeholder {
   display: block;
@@ -978,6 +979,7 @@ button {
   font-size: 2.2rem;
   font-family: "repeater";
   border-collapse: hidden;
+  text-decoration: none;
 }
 .get_in_touch__form input:-ms-input-placeholder, .get_in_touch__form textarea:-ms-input-placeholder {
   display: block;
@@ -994,6 +996,7 @@ button {
   font-size: 2.2rem;
   font-family: "repeater";
   border-collapse: hidden;
+  text-decoration: none;
 }
 .get_in_touch__form input::-ms-input-placeholder, .get_in_touch__form textarea::-ms-input-placeholder {
   display: block;
@@ -1010,6 +1013,7 @@ button {
   font-size: 2.2rem;
   font-family: "repeater";
   border-collapse: hidden;
+  text-decoration: none;
 }
 .get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
   display: block;
@@ -1026,31 +1030,40 @@ button {
   font-size: 2.2rem;
   font-family: "repeater";
   border-collapse: hidden;
+  text-decoration: none;
+}
+.get_in_touch__form select {
+  text-align: end;
 }
 .get_in_touch__form input::-webkit-input-placeholder, .get_in_touch__form textarea::-webkit-input-placeholder {
   position: absolute;
   bottom: 0px;
   right: 0;
+  text-decoration: none;
 }
 .get_in_touch__form input::-moz-placeholder, .get_in_touch__form textarea::-moz-placeholder {
   position: absolute;
   bottom: 0px;
   right: 0;
+  text-decoration: none;
 }
 .get_in_touch__form input:-ms-input-placeholder, .get_in_touch__form textarea:-ms-input-placeholder {
   position: absolute;
   bottom: 0px;
   right: 0;
+  text-decoration: none;
 }
 .get_in_touch__form input::-ms-input-placeholder, .get_in_touch__form textarea::-ms-input-placeholder {
   position: absolute;
   bottom: 0px;
   right: 0;
+  text-decoration: none;
 }
 .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
   position: absolute;
   bottom: 0px;
   right: 0;
+  text-decoration: none;
 }
 .get_in_touch__form__submit {
   cursor: pointer;

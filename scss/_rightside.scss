@@ -19,7 +19,7 @@
     color: #fff;
     font-size: 4.2rem;
 
-    &.black{
+    &.black {
       color: black !important;
     }
   }
@@ -110,7 +110,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -135,6 +135,7 @@
       font-size: 2.2rem;
       font-family: "repeater";
       border-collapse: hidden;
+      text-decoration: none;
     }
     & input::-moz-placeholder,
     & textarea::-moz-placeholder {
@@ -152,6 +153,7 @@
       font-size: 2.2rem;
       font-family: "repeater";
       border-collapse: hidden;
+      text-decoration: none;
     }
     & input:-ms-input-placeholder,
     & textarea:-ms-input-placeholder {
@@ -169,6 +171,7 @@
       font-size: 2.2rem;
       font-family: "repeater";
       border-collapse: hidden;
+      text-decoration: none;
     }
     & input::-ms-input-placeholder,
     & textarea::-ms-input-placeholder {
@@ -186,6 +189,7 @@
       font-size: 2.2rem;
       font-family: "repeater";
       border-collapse: hidden;
+      text-decoration: none;
     }
     & input,
     & select,
@@ -207,6 +211,10 @@
       font-size: 2.2rem;
       font-family: "repeater";
       border-collapse: hidden;
+      text-decoration: none;
+    }
+    & select {
+      text-align: end;
     }
 
     & input::-webkit-input-placeholder,
@@ -214,30 +222,35 @@
       position: absolute;
       bottom: 0px;
       right: 0;
+      text-decoration: none;
     }
     & input::-moz-placeholder,
     & textarea::-moz-placeholder {
       position: absolute;
       bottom: 0px;
       right: 0;
+      text-decoration: none;
     }
     & input:-ms-input-placeholder,
     & textarea:-ms-input-placeholder {
       position: absolute;
       bottom: 0px;
       right: 0;
+      text-decoration: none;
     }
     & input::-ms-input-placeholder,
     & textarea::-ms-input-placeholder {
       position: absolute;
       bottom: 0px;
       right: 0;
+      text-decoration: none;
     }
     & input::placeholder,
     & textarea::placeholder {
       position: absolute;
       bottom: 0px;
       right: 0;
+      text-decoration: none;
     }
     &__submit {
       cursor: pointer;
