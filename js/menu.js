@@ -102,37 +102,35 @@ function changeMenuMobileClasses(type = "closed") {
   var logoContainer = document.querySelector(".logo");
   const icons = document.querySelectorAll('.icon');
 
-  if (window.innerWidth <= 850) {
+  //margin and oth
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
       window.scrollTo({ top: 0 });
       document.body.style.overflowY = "hidden";
       document.documentElement.style.overflowY = "hidden";
-      map.style.color = "black";
-      social.style.color = "black";
+
     } else {
       document.body.style.overflowY = "";
       document.documentElement.style.overflowY = "";
 
       document.body.style.marginLeft = "";
-      map.style.color = "white";
-      social.style.color = "white";
     }
+
+    let needBeClosed = false //variable to set true if menu musr be rolled down before closing
     if(type === "closed"){
       logoContainer.style.display = 'block';
       changeContent(1);
-      icons.forEach(icon => {
-        icon.classList.remove('black');
-      });
+
+      if(menuBtn.classList.contains('rolled-up')){
+        needBeClosed = true;
+        type = 'rolled-down';
+      }
     }else{
       setTimeout(() => {
         logoContainer.style.display = 'none';
       }, 2000);
-      icons.forEach(icon => {
-        icon.classList.add('black');
-      });
+
     }
-  }
 
   // btn
   menuBtn.classList.remove("closed", "rolled-up", "rolled-down", "opened");
@@ -160,4 +158,10 @@ function changeMenuMobileClasses(type = "closed") {
       menuContact.classList.add("opened");
     }
   }, 3000);
+
+  if(needBeClosed){
+    setTimeout(function () {
+    changeMenuMobileClasses('closed');
+  }, 1000);
+  }
 }
