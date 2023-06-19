@@ -1889,7 +1889,7 @@ html {
 }
 
 .about {
-  margin-bottom: 5rem;
+  margin-bottom: 7.5rem;
 }
 .about__title {
   font-family: "Mont";
@@ -1944,6 +1944,80 @@ html {
   font-weight: 400;
   margin-bottom: 3rem;
   color: black;
+}
+
+.contact {
+  margin-bottom: 5rem;
+}
+.contact__title {
+  font-family: "Mont";
+  font-size: 6rem;
+  font-weight: 700;
+  color: #7f7f7f;
+  text-align: center;
+  max-width: 42rem;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.contact__container {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  flex-direction: column;
+}
+.contact__text-box {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.contact__text {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: black;
+}
+.contact__mail {
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin-bottom: 5rem;
+}
+.contact__btn {
+  color: black;
+  border-radius: 0;
+  padding: 1rem 2.2rem 1rem;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateX(-2rem);
+  text-decoration: none;
+  font-family: "Josefin Sans";
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  border: 1px solid #e80d0d;
+  background-color: rgba(232, 13, 13, 0.2);
+}
+.contact__map-box {
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  width: 500;
+  height: 300;
+}
+.contact__map-box iframe {
+  width: 50rem;
+  height: 35rem;
 }
 
 @-webkit-keyframes jump {
@@ -2503,6 +2577,9 @@ html {
   .about__title {
     transform: translateY(80%);
   }
+  .about {
+    margin-bottom: 15rem;
+  }
 }
 /**************************/
 /* BELOW 700px */
@@ -2601,6 +2678,9 @@ html {
   .about__item {
     margin-left: 3rem;
   }
+  .contact__container {
+    margin-left: 1rem;
+  }
 }
 /**************************/
 /* BELOW 550px */
@@ -2621,6 +2701,10 @@ html {
     max-width: 15rem;
     right: 4%;
   }
+  .contact__map-box iframe {
+    width: 40rem;
+    max-height: 30rem;
+  }
 }
 /**************************/
 /* BELOW 400px */
@@ -2639,7 +2723,8 @@ html {
   .testimonial__title,
   .services__title,
   .advantages__title,
-  .about__title {
+  .about__title,
+  .contact__title {
     font-size: 5rem;
   }
   .services__text {
@@ -2700,5 +2785,9 @@ html {
   }
   .about__img {
     margin-right: 5rem;
+  }
+  .contact__map-box iframe {
+    width: 32rem;
+    max-height: 30rem;
   }
 }/*# sourceMappingURL=main.css.map */

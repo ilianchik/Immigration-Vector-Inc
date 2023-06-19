@@ -253,7 +253,6 @@
     width: 30rem;
   }
 
-
   //GET IN TOUCH
 
   .get_in_touch__btn {
@@ -423,10 +422,9 @@
     position: fixed;
   }
 
-
   //icons
   .icon {
-    position:fixed ;
+    position: fixed;
     z-index: 99999999 !important;
     & i {
       z-index: 99999999 !important;
@@ -593,6 +591,9 @@
   .about__title {
     transform: translateY(80%);
   }
+  .about {
+    margin-bottom: 15rem;
+  }
 }
 /**************************/
 /* BELOW 700px */
@@ -700,6 +701,9 @@
   .about__item {
     margin-left: 3rem;
   }
+  .contact__container {
+    margin-left: 1rem;
+  }
 }
 /**************************/
 /* BELOW 550px */
@@ -720,6 +724,14 @@
     max-width: 15rem;
     right: 4%;
   }
+  .contact {
+    &__map-box {
+      iframe {
+        width: 40rem;
+        max-height: 30rem;
+      }
+    }
+  }
 }
 /**************************/
 /* BELOW 400px */
@@ -738,7 +750,8 @@
   .testimonial__title,
   .services__title,
   .advantages__title,
-  .about__title {
+  .about__title,
+  .contact__title {
     font-size: 5rem;
   }
   .services__text {
@@ -799,5 +812,13 @@
   }
   .about__img {
     margin-right: 5rem;
+  }
+  .contact {
+    &__map-box {
+      iframe {
+        width: 32rem;
+        max-height: 30rem;
+      }
+    }
   }
 }
