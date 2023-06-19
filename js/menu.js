@@ -102,6 +102,8 @@ function changeMenuMobileClasses(type = "closed") {
   var logoContainer = document.querySelector(".logo");
   const icons = document.querySelectorAll('.icon');
 
+  
+  if (window.innerWidth < 850) {
   //margin and oth
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
@@ -164,4 +166,16 @@ function changeMenuMobileClasses(type = "closed") {
     changeMenuMobileClasses('closed');
   }, 1000);
   }
+}
+}
+
+function contactUs(){
+  if (window.innerWidth < 850) {  
+    window.scrollTo(0, document.body.scrollHeight);
+    changeMenuMobileClasses();
+  }else{
+    toggleMenu();
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
 }

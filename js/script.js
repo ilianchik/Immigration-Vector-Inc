@@ -321,7 +321,7 @@ if (window.innerWidth <= 848) {
   const sectionHeroEl = document.querySelector(".slider");
   const header = document.querySelector(".map-icon");
   const social = document.querySelector(".sotial_networks");
-  const menuText = document.querySelector(".menu__mobile__btn");
+  const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuLine = document.querySelectorAll(".btn__line");
   const icons = document.querySelectorAll('.icon');
 
@@ -337,10 +337,7 @@ if (window.innerWidth <= 848) {
         icons.forEach(icon => {
           icon.classList.add('black');
         });
-
-        for (var i = 0; i < menuLine.length; i++) {
-          menuLine[i].style.backgroundColor = "black";
-        }
+        menuBtn.classList.toggle('black');
       } else 
           if (ent.isIntersecting === true) {
             header.classList.remove("header");
@@ -349,10 +346,7 @@ if (window.innerWidth <= 848) {
             icons.forEach(icon => {
               icon.classList.remove('black');
             });
-
-            for (var i = 0; i < menuLine.length; i++) {
-              menuLine[i].style.backgroundColor = "white";
-            }
+          menuBtn.classList.toggle('remove');
       }
     },
     {
