@@ -2340,12 +2340,15 @@ html {
     border-bottom: 1px solid white;
   }
   .get_in_touch.closed > .get_in_touch__form {
+    -webkit-transition: opacity 2s, -webkit-transform 2s;
+    transition: opacity 2s, -webkit-transform 2s;
+    -o-transition: transform 2s, opacity 2s;
+    transition: transform 3s, opacity 2s;
+    transition: transform 3s, opacity 2s, -webkit-transform 2s;
     opacity: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    display: none;
-    z-index: -1;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
   }
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
