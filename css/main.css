@@ -548,6 +548,12 @@ button {
   width: fit-content;
   cursor: pointer;
 }
+.menu__mobile__btn.black {
+  color: black;
+}
+.menu__mobile__btn.black > .menu__mobile__btn__lines > div {
+  background-color: black;
+}
 .menu__mobile__btn > span {
   text-align: center;
 }
@@ -2442,12 +2448,11 @@ html {
     z-index: 99999999 !important;
   }
   .map-icon {
+    position: fixed;
     left: 0;
-    top: 0;
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-    padding-left: 1.8rem;
+    top: 0 !important;
     width: 100vw;
+    padding: 1rem;
   }
   .header {
     background-color: rgba(255, 255, 255, 0.818);

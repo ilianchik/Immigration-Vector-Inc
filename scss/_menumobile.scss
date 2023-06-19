@@ -520,6 +520,13 @@
 
     cursor: pointer;
 
+    &.black {
+      color: black;
+      & > .menu__mobile__btn__lines > div{
+        background-color: black;
+      }
+    }
+
     & > span{
       text-align: center;
     }
