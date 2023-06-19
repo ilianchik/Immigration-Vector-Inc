@@ -519,7 +519,7 @@ button {
   top: 1.2rem;
   right: 5%;
   z-index: 10002;
-  display: flex;
+  display: none;
   -webkit-transition: all 0.7s;
   -o-transition: all 0.7s;
   transition: all 0.7s;
@@ -530,7 +530,7 @@ button {
 }
 .menu__mobile__btn {
   color: #fff;
-  z-index: 10003;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,10 +569,6 @@ button {
   width: 24px;
   background-color: #fff;
 }
-.menu__mobile__btn.opened > span {
-  z-index: 10003;
-  color: black;
-}
 .menu__mobile__btn.opened .menu__mobile__btn__lines {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
@@ -610,9 +606,8 @@ button {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-.menu__mobile__btn.rolled-up > span {
-  z-index: 10003;
-  color: black;
+.menu__mobile__btn.closed {
+  display: flex;
 }
 .menu__mobile__nav {
   position: fixed;
@@ -637,6 +632,13 @@ button {
   transition: top 2s, left 1s;
   opacity: 0;
   top: -100vh;
+}
+.menu__mobile__nav > .ph-x.nav-icon {
+  color: black;
+  font-size: 4.4rem;
+  position: absolute;
+  top: 2rem;
+  right: 1.4rem;
 }
 .menu__mobile__nav.opened {
   opacity: 1;

@@ -481,7 +481,7 @@
   top: 1.2rem;
   right: 5%;
   z-index: 10002;
-  display: flex;
+  display: none;
 
   -webkit-transition: all 0.7s;
 
@@ -497,7 +497,7 @@
   &__btn {
     color: #fff;
 
-    z-index: 10003;
+    z-index: 3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -546,11 +546,6 @@
 
     &.opened {
 
-      & > span{
-        z-index: 10003;
-        color: black;
-      }
-
       .menu__mobile__btn__lines {
         -webkit-transition: -webkit-transform 1s;
         transition: -webkit-transform 1s;
@@ -590,12 +585,8 @@
         animation-fill-mode: forwards;
       }
     }
-    &.rolled-up{
-      & > span{
-        z-index: 10003;
-        color: black;
-      }
-
+    &.closed{
+      display: flex;
     }
   }
 
@@ -631,6 +622,13 @@
 
     opacity: 0;
     top: -100vh;
+
+    & >.ph-x.nav-icon{
+      color: black;
+      font-size: 4.4rem;
+      position: absolute;
+      top:2rem;right: 1.4rem;
+    }
 
     &.opened {
       opacity: 1;
