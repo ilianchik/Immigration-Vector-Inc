@@ -2738,7 +2738,7 @@ html {
     font-size: 3.8rem;
   }
   .menu__mobile__nav__contact-us {
-    bottom: 7.4rem;
+    bottom: 15.4rem;
   }
 }
 /**************************/
@@ -2843,7 +2843,7 @@ html {
     font-size: 3.2rem;
   }
 }
-@media (max-height: 37.5em) {
+@media (max-height: 43.75em) {
   html {
     font-size: 43.75%;
   }
