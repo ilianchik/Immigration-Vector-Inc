@@ -588,6 +588,9 @@ button {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
+.menu__mobile__btn.opened .btn__line {
+  background-color: white !important;
+}
 .menu__mobile__btn.opened .btn__line:first-child {
   -webkit-animation-name: menuMobileBtnOpenningFirstLine;
   animation-name: menuMobileBtnOpenningFirstLine;

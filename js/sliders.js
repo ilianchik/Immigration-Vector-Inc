@@ -80,16 +80,7 @@ function changeContent(newContent) {
   const btn = document.querySelector(".get_in_touch__btn");
 
   if (getInTouch.classList.contains("opened")) {
-    btn.textContent = "Get in touch";
-
-    getInTouch.classList.remove("opened");
-    getInTouch.classList.add("closed");
-
-    setTimeout(function () {
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].classList.remove("get_in_touch__opened");
-      }
-    }, 1500);
+      toggleGetInTouch(); 
   }
 
   setTimeout(() => {
