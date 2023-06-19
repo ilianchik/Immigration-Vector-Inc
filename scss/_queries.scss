@@ -252,12 +252,7 @@
   .logo__img {
     width: 30rem;
   }
-  .main__right .map-icon {
-    position: absolute;
-    right: auto;
-    left: 1.8rem;
-    height: 100vh;
-  }
+
 
   //GET IN TOUCH
 
@@ -428,9 +423,17 @@
     position: fixed;
   }
 
+
+  //icons
+  .icon {
+    position:fixed ;
+    z-index: 99999999 !important;
+    & i {
+      z-index: 99999999 !important;
+    }
+  }
+
   .main__right .map-icon {
-    height: auto;
-    position: fixed;
     left: 0;
     top: 0;
     padding-top: 1.2rem;
@@ -438,14 +441,11 @@
     padding-left: 1.8rem;
     width: 100vw;
   }
-  .main__right .sotial_networks {
-    position: fixed;
-  }
   .header {
     background-color: rgba(255, 255, 255, 0.818);
   }
+
   .main__right .sotial_networks.social_network--header {
-    // display: flex;
     flex-direction: row;
     top: 1.2rem;
     left: 6.2rem;

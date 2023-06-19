@@ -18,12 +18,15 @@
     position: absolute;
     color: #fff;
     font-size: 4.2rem;
+
+    &.black{
+      color: black !important;
+    }
   }
   .map-icon {
     position: fixed;
     right: 1.8rem;
     top: 1.2rem;
-    z-index: 1000;
     cursor: pointer;
     pointer-events: auto;
   }

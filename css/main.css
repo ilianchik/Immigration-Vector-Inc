@@ -511,10 +511,10 @@ dialog {
 .menu__mobile {
   position: fixed;
   z-index: 10000;
-  right: 2rem;
   top: 1.2rem;
+  right: 5%;
   z-index: 10002;
-  display: none;
+  display: flex;
   -webkit-transition: all 0.7s;
   -o-transition: all 0.7s;
   transition: all 0.7s;
@@ -525,14 +525,13 @@ dialog {
 }
 .menu__mobile__btn {
   color: #fff;
-  z-index: 3;
+  z-index: 10003;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   border: none;
   background: transparent;
   margin: 0;
@@ -541,8 +540,11 @@ dialog {
   font-size: 2.4rem;
   line-height: 10px;
   position: relative;
-  width: 100%;
+  width: fit-content;
   cursor: pointer;
+}
+.menu__mobile__btn > span {
+  text-align: center;
 }
 .menu__mobile__btn__lines {
   display: -webkit-box;
@@ -561,6 +563,10 @@ dialog {
   height: 2px;
   width: 24px;
   background-color: #fff;
+}
+.menu__mobile__btn.opened > span {
+  z-index: 10003;
+  color: black;
 }
 .menu__mobile__btn.opened .menu__mobile__btn__lines {
   -webkit-transition: -webkit-transform 1s;
@@ -598,6 +604,10 @@ dialog {
   animation-delay: 0.5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+.menu__mobile__btn.rolled-up > span {
+  z-index: 10003;
+  color: black;
 }
 .menu__mobile__nav {
   position: fixed;
@@ -835,11 +845,13 @@ dialog {
   color: #fff;
   font-size: 4.2rem;
 }
+.main__right .icon.black {
+  color: black !important;
+}
 .main__right .map-icon {
   position: fixed;
   right: 1.8rem;
   top: 1.2rem;
-  z-index: 1000;
   cursor: pointer;
   pointer-events: auto;
 }
@@ -2193,12 +2205,6 @@ html {
   .logo__img {
     width: 30rem;
   }
-  .main__right .map-icon {
-    position: absolute;
-    right: auto;
-    left: 1.8rem;
-    height: 100vh;
-  }
   .get_in_touch__btn {
     position: absolute;
     -webkit-transform: rotate(90deg);
@@ -2347,18 +2353,20 @@ html {
   .get_in_touch__btn {
     position: fixed;
   }
-  .main__right .map-icon {
-    height: auto;
+  .icon {
     position: fixed;
+    z-index: 99999999 !important;
+  }
+  .icon i {
+    z-index: 99999999 !important;
+  }
+  .main__right .map-icon {
     left: 0;
     top: 0;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     padding-left: 1.8rem;
     width: 100vw;
-  }
-  .main__right .sotial_networks {
-    position: fixed;
   }
   .header {
     background-color: rgba(255, 255, 255, 0.818);

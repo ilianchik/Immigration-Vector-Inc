@@ -478,10 +478,10 @@
 .menu__mobile {
   position: fixed;
   z-index: 10000;
-  right: 2rem;
   top: 1.2rem;
+  right: 5%;
   z-index: 10002;
-  display: none;
+  display: flex;
 
   -webkit-transition: all 0.7s;
 
@@ -497,14 +497,13 @@
   &__btn {
     color: #fff;
 
-    z-index: 3;
+    z-index: 10003;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 1.5rem;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
 
     border: none;
     background: transparent;
@@ -517,9 +516,13 @@
     line-height: 10px;
 
     position: relative;
-    width: 100%;
+    width: fit-content;
 
     cursor: pointer;
+
+    & > span{
+      text-align: center;
+    }
 
     &__lines {
       display: -webkit-box;
@@ -542,6 +545,11 @@
     }
 
     &.opened {
+
+      & > span{
+        z-index: 10003;
+        color: black;
+      }
 
       .menu__mobile__btn__lines {
         -webkit-transition: -webkit-transform 1s;
@@ -581,6 +589,13 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
+    }
+    &.rolled-up{
+      & > span{
+        z-index: 10003;
+        color: black;
+      }
+
     }
   }
 

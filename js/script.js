@@ -320,10 +320,10 @@ allLinks.forEach(function (link) {
 if (window.innerWidth <= 848) {
   const sectionHeroEl = document.querySelector(".slider");
   const header = document.querySelector(".map-icon");
-  const map = document.querySelector(".ph-light");
   const social = document.querySelector(".sotial_networks");
   const menuText = document.querySelector(".menu__mobile__btn");
   const menuLine = document.querySelectorAll(".btn__line");
+  const icons = document.querySelectorAll('.icon');
 
   const obs = new IntersectionObserver(
     function (entries) {
@@ -332,25 +332,27 @@ if (window.innerWidth <= 848) {
 
       if (ent.isIntersecting === false) {
         header.classList.add("header");
-        map.style.color = "black";
-        social.style.color = "black";
         social.classList.add("social_network--header");
-        menuText.style.color = "black";
+
+        icons.forEach(icon => {
+          icon.classList.add('black');
+        });
+
         for (var i = 0; i < menuLine.length; i++) {
           menuLine[i].style.backgroundColor = "black";
         }
-      }
+      } else 
+          if (ent.isIntersecting === true) {
+            header.classList.remove("header");
+            social.classList.remove("social_network--header");
 
-      if (ent.isIntersecting === true) {
-        header.classList.remove("header");
-        map.style.color = "white";
-        social.style.color = "white";
-        social.classList.remove("social_network--header");
+            icons.forEach(icon => {
+              icon.classList.remove('black');
+            });
 
-        menuText.style.color = "white";
-        for (var i = 0; i < menuLine.length; i++) {
-          menuLine[i].style.backgroundColor = "white";
-        }
+            for (var i = 0; i < menuLine.length; i++) {
+              menuLine[i].style.backgroundColor = "white";
+            }
       }
     },
     {

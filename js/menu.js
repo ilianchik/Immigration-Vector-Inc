@@ -100,6 +100,7 @@ function changeMenuMobileClasses(type = "closed") {
   const map = document.querySelector(".map-icon");
   const social = document.querySelector(".sotial_networks");
   var logoContainer = document.querySelector(".logo");
+  const icons = document.querySelectorAll('.icon');
 
   if (window.innerWidth <= 850) {
     if (type === "rolled-up") {
@@ -120,10 +121,16 @@ function changeMenuMobileClasses(type = "closed") {
     if(type === "closed"){
       logoContainer.style.display = 'block';
       changeContent(1);
+      icons.forEach(icon => {
+        icon.classList.remove('black');
+      });
     }else{
       setTimeout(() => {
         logoContainer.style.display = 'none';
       }, 2000);
+      icons.forEach(icon => {
+        icon.classList.add('black');
+      });
     }
   }
 
