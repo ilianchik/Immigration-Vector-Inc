@@ -1,39 +1,37 @@
-@keyframes get_in_touchOpen{
-  0%{
+@keyframes get_in_touchOpen {
+  0% {
     display: none;
   }
 
-  10%{
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
+  10% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
   }
 
-  100%{
-    
+  100% {
   }
 }
-@keyframes get_in_touchClose{
-  0%{      
-      opacity: 1;
-      -webkit-transform:none;
-      -ms-transform:none;
-      transform: none
-    }
-
-  90%{
-      opacity: 0;
-      -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-      transform: translateY(50%);
+@keyframes get_in_touchClose {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 
-  100%{
+  90% {
+    opacity: 0;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+  }
+
+  100% {
     display: none;
   }
 }
-
 
 .main__right {
   position: fixed;
