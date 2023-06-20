@@ -276,6 +276,7 @@
     position: static;
 
     &__form {
+      visibility: hidden;
       position: fixed;
       -webkit-transform: none;
       -ms-transform: none;
@@ -287,11 +288,11 @@
       background-color: rgba(7, 7, 7, 0.49);
       border: 2px solid white;
 
-      -webkit-transition: opacity 2s, -webkit-transform 2s;
-      transition: opacity 2s, -webkit-transform 2s;
-      -o-transition: transform 2s, opacity 2s;
-      transition: transform 2s, opacity 2s;
-      transition: transform 2s, opacity 2s, -webkit-transform 2s;
+      -webkit-transition: opacity 2s, -webkit-transform 2s, visibility 2s;
+      transition: opacity 2s, -webkit-transform 2s, visibility 2s;
+      -o-transition: transform 2s, opacity 2s, visibility 2s;
+      transition: transform 2s, opacity 2s, visibility 2s;
+      transition: transform 2s, opacity 2s, -webkit-transform 2s, visibility 2s;
 
       & input,
       & select,
@@ -305,11 +306,13 @@
     }
 
     &.closed > &__form {
-      -webkit-transition: opacity 2s, -webkit-transform 2s;
-      transition: opacity 2s, -webkit-transform 2s;
-      -o-transition: transform 2s, opacity 2s;
-      transition: transform 3s, opacity 2s;
-      transition: transform 3s, opacity 2s, -webkit-transform 2s;
+      -webkit-transition: opacity 2s, -webkit-transform 2s, visibility 2s;
+      transition: opacity 2s, -webkit-transform 2s, visibility 2s;
+      -o-transition: transform 2s, opacity 2s, visibility 2s;
+      transition: transform 3s, opacity 2s, visibility 2s;
+      transition: transform 3s, opacity 2s, -webkit-transform 2s, visibility 2s;
+      visibility: hidden;
+      pointer-events: auto;
 
       animation: get_in_touchClose 2s forwards;
     }
