@@ -47,8 +47,8 @@ if (window.innerWidth <= 848) {
   const menuLine = document.querySelectorAll(".btn__line");
   const icons = document.querySelectorAll(".icon");
   const icons2 = document.querySelectorAll(".icon__link");
-  const logoForm = document.querySelector(".logo__form ");
-
+  const logoForm = document.querySelector(".logo__form");
+  const form = document.querySelector(".get_in_touch__form");
   const obs = new IntersectionObserver(
     function (entries) {
       const ent = entries[0];
@@ -58,7 +58,7 @@ if (window.innerWidth <= 848) {
         logoForm.style.display = "block";
         header.classList.add("header");
         social.classList.add("social_network--header");
-
+        form.style.width = "85%";
         icons.forEach((icon) => {
           icon.classList.add("black");
         });
@@ -71,6 +71,7 @@ if (window.innerWidth <= 848) {
         header.classList.remove("header");
         social.classList.remove("social_network--header");
         menuBtn.classList.remove("black");
+        form.style.width = "75%";
         icons.forEach((icon) => {
           icon.classList.remove("black");
         });
