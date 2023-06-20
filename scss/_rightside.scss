@@ -3,7 +3,7 @@
     display: none;
   }
 
-  80% {
+  10% {
     opacity: 0;
     // visibility: hidden;
     -webkit-transform: translateY(50%);
@@ -26,8 +26,8 @@
   }
 
   90% {
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     // pointer-events: none;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
