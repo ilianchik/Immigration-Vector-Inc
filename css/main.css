@@ -858,6 +858,9 @@ button {
 @keyframes get_in_touchOpen {
   0% {
     display: none;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
   }
   10% {
     opacity: 0;
@@ -2400,7 +2403,7 @@ html {
     bottom: 15%;
     opacity: 1;
     width: 85%;
-    height: 60vh;
+    height: 55vh;
     background-color: rgba(7, 7, 7, 0.49);
     border: 2px solid white;
     -webkit-transition: opacity 2s, -webkit-transform 2s;

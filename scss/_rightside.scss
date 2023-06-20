@@ -1,6 +1,10 @@
 @keyframes get_in_touchOpen {
   0% {
     display: none;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+    
   }
 
   10% {
