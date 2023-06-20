@@ -5,17 +5,21 @@
 
   10% {
     opacity: 0;
+    // visibility: hidden;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
     transform: translateY(50%);
   }
 
   100% {
+    visibility: visible;
+    // // pointer-events: none;
   }
 }
 @keyframes get_in_touchClose {
   0% {
     opacity: 1;
+    visibility: visible;
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -23,6 +27,8 @@
 
   90% {
     opacity: 0;
+    visibility: hidden;
+    // pointer-events: none;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
     transform: translateY(50%);
@@ -30,6 +36,8 @@
 
   100% {
     display: none;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 .main__right {
