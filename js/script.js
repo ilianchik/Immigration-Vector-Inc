@@ -49,6 +49,9 @@ if (window.innerWidth <= 848) {
   const icons2 = document.querySelectorAll(".icon__link");
   const logoForm = document.querySelector(".logo__form");
   const form = document.querySelector(".get_in_touch__form");
+
+  const getInTouchBtn = document.querySelector(".get_in_touch__btn");
+
   const obs = new IntersectionObserver(
     function (entries) {
       const ent = entries[0];
@@ -59,6 +62,8 @@ if (window.innerWidth <= 848) {
         header.classList.add("header");
         social.classList.add("social_network--header");
         form.style.width = "85%";
+        getInTouchBtn.style.marginRight = "3%";
+
         icons.forEach((icon) => {
           icon.classList.add("black");
         });
@@ -72,6 +77,8 @@ if (window.innerWidth <= 848) {
         social.classList.remove("social_network--header");
         menuBtn.classList.remove("black");
         form.style.width = "75%";
+        getInTouchBtn.style.marginRight = "6.3%";
+
         icons.forEach((icon) => {
           icon.classList.remove("black");
         });

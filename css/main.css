@@ -2439,7 +2439,7 @@ html {
     -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     bottom: 15%;
-    right: 3rem;
+    right: 3rem !important;
     margin-right: 6.3%;
   }
   .hero {
