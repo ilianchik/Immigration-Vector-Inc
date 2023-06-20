@@ -4,15 +4,23 @@
 const allLinks = document.querySelectorAll("a");
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
-    e.preventDefault();
     const href = link.getAttribute("href");
 
+    // If the link is an external link or a different page, let the browser handle it
+    if (!href.startsWith("#")) {
+      return;
+    }
+
+    // Prevent default behavior for in-page links
+    e.preventDefault();
+
     // Scroll back to top
-    if (href === "#")
+    if (href === "#") {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
+    }
 
     // Scroll to other links
     if (href !== "#" && href.startsWith("#")) {
