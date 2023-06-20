@@ -110,7 +110,7 @@ function changeMenuMobileClasses(type = "closed") {
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
       // window.scrollTo(0, 0);
-      document.querySelector(".grid__right").scrollIntoView();
+      window.scrollTo({ top: 0 });
 
       document.body.style.overflowY = "hidden";
       document.documentElement.style.overflowY = "hidden";
