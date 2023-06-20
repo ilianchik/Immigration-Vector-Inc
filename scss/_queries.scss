@@ -601,6 +601,14 @@
   .about {
     margin-bottom: 15rem;
   }
+  .logo__form {
+    display: block;
+  }
+  .get_in_touch.opened {
+    .logo__form {
+      opacity: 1;
+    }
+  }
 }
 /**************************/
 /* BELOW 700px */
