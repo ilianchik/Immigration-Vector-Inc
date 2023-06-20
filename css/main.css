@@ -2402,7 +2402,7 @@ html {
     -ms-transform: none;
     bottom: 15%;
     opacity: 1;
-    width: 85%;
+    width: 75%;
     height: 55vh;
     background-color: rgba(7, 7, 7, 0.49);
     border: 2px solid white;
@@ -2672,7 +2672,7 @@ html {
     right: -6rem;
   }
   .get_in_touch.opened > .get_in_touch__btn {
-    right: 1rem;
+    right: 3rem;
   }
   .menu__mobile__nav {
     padding-left: 7rem;
@@ -2939,6 +2939,6 @@ html {
     bottom: 3.4rem;
   }
   .get_in_touch__form {
-    height: 70vh;
+    height: 50vh;
   }
 }/*# sourceMappingURL=main.css.map */
