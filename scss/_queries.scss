@@ -582,7 +582,7 @@
     right: -6rem;
   }
   .get_in_touch.opened > .get_in_touch__btn {
-    right: 3rem;
+    right: 1rem;
   }
   .menu__mobile__nav {
     padding-left: 7rem;
@@ -618,6 +618,7 @@
   .get_in_touch.opened {
     .logo__form {
       opacity: 1;
+      top: -15rem !important;
     }
   }
 }
@@ -870,7 +871,7 @@
   }
   .get_in_touch {
     &__form {
-      height: 50vh;
+      height: 70vh;
     }
   }
 }
