@@ -349,9 +349,7 @@
   }
 }
 
-.bg-bottom {
-  background-position: bottom !important;
-}
+
 
 .get_in_touch__reaction {
   -webkit-transition: background-position 2s;
@@ -783,4 +781,8 @@
   top: -20% !important;
   display: none;
   opacity: 0;
+}
+
+.bg-bottom {
+  background-position: bottom !important;
 }
