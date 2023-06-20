@@ -109,7 +109,11 @@ function changeMenuMobileClasses(type = "closed") {
     //margin and oth
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
-      window.scroll(0, 1);
+      // window.scroll(0, 0);
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth", // Optionally, you can set the scroll behavior to smooth for a smooth scrolling effect
+      });
       document.body.style.overflowY = "hidden";
       document.documentElement.style.overflowY = "hidden";
     } else {
