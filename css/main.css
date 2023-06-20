@@ -859,7 +859,7 @@ button {
   0% {
     display: none;
   }
-  10% {
+  80% {
     opacity: 0;
     -webkit-transform: translateY(50%);
     -ms-transform: translateY(50%);
