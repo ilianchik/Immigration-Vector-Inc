@@ -94,7 +94,13 @@ function toggleMenu() {
     }, 1500);
   }
 }
-
+const scrollToTop = function () {
+  if ("scrollBehavior" in document.documentElement.style) {
+    document.documentElement.scrollTo(0, 0);
+  } else {
+    document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+  }
+};
 function changeMenuMobileClasses(type = "closed") {
   const menuBtn = document.querySelector(".menu__mobile__btn");
   const menuBody = document.querySelector(".menu__mobile__nav");
@@ -110,7 +116,7 @@ function changeMenuMobileClasses(type = "closed") {
     if (type === "rolled-up") {
       document.body.style.marginLeft = "10%";
       // window.scroll(0, 0);
-      document.documentElement.scrollTo({ top: 0, behavior: "instant" });
+      scrollToTop();
       setTimeout(() => {
         document.body.style.overflowY = "hidden";
         document.documentElement.style.overflowY = "hidden";
