@@ -1947,10 +1947,13 @@ html {
   margin-bottom: 10px;
   border-top: 1px black solid;
   border-bottom: 1px black solid;
+  background-image: url("../sourse/img/textslider.webp");
+  background-position: center;
+  background-size: cover;
 }
 
 .accordion-header {
-  background-color: transparent;
+  background-color: white;
   font-family: "Josefin Sans";
   font-weight: 300;
   font-size: 3rem;
@@ -2549,7 +2552,7 @@ html {
   .accordion .slider__inside-text,
   .accordion .slider__inside-list,
   .accordion .slider__inside-item {
-    color: black;
+    color: white;
     text-align: justify;
     font-size: 2.2rem;
   }
@@ -2568,6 +2571,7 @@ html {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    color: white;
   }
   .accordion .accordion-next {
     background: transparent;
