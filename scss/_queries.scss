@@ -221,6 +221,13 @@
 /**************************/
 
 @media (max-width: 53.125em) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
