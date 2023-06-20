@@ -60,9 +60,6 @@ function toggleGetInTouch() {
       leftSide.style.transform = "translateX(100%)";
       document.documentElement.style.overflowY = "hidden";
       
-      for (var i = 0; i < elements.length; i++) {
-        elements[i].style.backgroundPosition = "bottom";
-      }
     }
     btn.textContent = "Close";
     getInTouch.classList.remove("closed");
