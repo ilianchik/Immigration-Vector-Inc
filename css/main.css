@@ -2403,11 +2403,11 @@ html {
     height: 60vh;
     background-color: rgba(7, 7, 7, 0.49);
     border: 2px solid white;
-    -webkit-transition: opacity 2s, -webkit-transform 2s, visibility 2s;
-    transition: opacity 2s, -webkit-transform 2s, visibility 2s;
-    -o-transition: transform 2s, opacity 2s, visibility 2s;
-    transition: transform 2s, opacity 2s, visibility 2s;
-    transition: transform 2s, opacity 2s, -webkit-transform 2s, visibility 2s;
+    -webkit-transition: opacity 2s, -webkit-transform 2s;
+    transition: opacity 2s, -webkit-transform 2s;
+    -o-transition: transform 2s, opacity 2s;
+    transition: transform 2s, opacity 2s;
+    transition: transform 2s, opacity 2s, -webkit-transform 2s;
   }
   .get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
     background-color: rgba(37, 37, 37, 0);
