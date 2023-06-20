@@ -243,7 +243,8 @@
     width: 100%;
   }
 
-  .logo {
+  .logo,
+  .logo__form {
     position: absolute;
     top: 10rem;
     left: 50%;
@@ -303,13 +304,13 @@
       transition: transform 3s, opacity 2s;
       transition: transform 3s, opacity 2s, -webkit-transform 2s;
 
-      animation: get_in_touchClose 2s forwards ;
+      animation: get_in_touchClose 2s forwards;
     }
-    &.opened > &__form{
-      animation: get_in_touchOpen 2s forwards ;
+    &.opened > &__form {
+      animation: get_in_touchOpen 2s forwards;
     }
   }
-  
+
   .get_in_touch.closed > .get_in_touch__btn {
     bottom: 10%;
     right: -5rem;
@@ -417,7 +418,8 @@
     display: flex;
     opacity: 1;
   }
-  .logo {
+  .logo,
+  .logo__form {
     z-index: 10001;
   }
   .grid__right {
@@ -801,7 +803,8 @@
   .advantages__content-box {
     padding-left: 2rem;
   }
-  .logo {
+  .logo,
+  .logo__form {
     top: 7.5rem;
   }
   .get_in_touch__btn {
