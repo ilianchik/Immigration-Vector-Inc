@@ -1778,6 +1778,7 @@ html {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  border-radius: 50%;
 }
 .testimonial__person-text {
   -ms-flex-item-align: center;
@@ -1869,19 +1870,16 @@ html {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border: 1px solid #e80d0d;
-  background-color: rgba(232, 13, 13, 0.2);
+  border: 1px solid black;
+  background-color: transparent;
   padding: 1.6rem 10.8rem;
   cursor: pointer;
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
-.services__btn:hover {
-  background-color: rgba(232, 13, 13, 0.3);
-}
 .services__btn:active {
-  background-color: rgba(232, 13, 13, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .advantages {
@@ -1979,7 +1977,7 @@ html {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  color: #ff0506;
+  color: black;
   padding: 10px;
   cursor: pointer;
 }
@@ -2012,7 +2010,7 @@ html {
   margin-left: 8rem;
   border-bottom: 1px black solid;
   margin-right: 2rem;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(50px);
   -ms-transform: translateY(50px);
   transform: translateY(50px);
@@ -2104,14 +2102,19 @@ html {
   margin: 0 auto;
   text-align: center;
   transform: translateX(-2rem);
+  padding-top: 1.4rem;
   text-decoration: none;
   font-family: "Josefin Sans";
   font-weight: 500;
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  border: 1px solid #e80d0d;
-  background-color: rgba(232, 13, 13, 0.2);
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(1%);
+}
+.contact__btn:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .contact__map-box {
   margin: 0 auto;
