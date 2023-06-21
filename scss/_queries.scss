@@ -646,7 +646,7 @@
   .testimonial__person-text {
     transform: translateY(90%);
     margin: 0;
-    margin-left: 32%;
+    margin-left: 34%;
   }
   .testimonial__text-box {
     border: none;
@@ -768,6 +768,9 @@
       }
     }
   }
+  .testimonial__person-text {
+    margin-left: 30%;
+  }
 }
 /**************************/
 /* BELOW 400px */
@@ -777,6 +780,7 @@
   .hero__text--mobile {
     margin-top: -11rem;
   }
+
   .testimonial__text-box {
     width: 32rem;
   }
@@ -837,7 +841,7 @@
     padding: 0 2rem;
   }
   .testimonial__person-text {
-    margin-left: 34%;
+    margin-left: 36%;
   }
   .about__subtitle {
     position: static;
