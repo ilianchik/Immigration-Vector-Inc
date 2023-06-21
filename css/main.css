@@ -2061,6 +2061,7 @@ html {
   display: block;
   margin: 0 auto;
   padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 .contact__container {
   display: flex;
@@ -2719,6 +2720,9 @@ html {
 @media (max-width: 43.75em) {
   .about__subtitle {
     max-width: 30rem;
+  }
+  .contact__title {
+    padding-top: 0rem;
   }
 }
 /**************************/
