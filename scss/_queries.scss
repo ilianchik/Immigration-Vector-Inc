@@ -300,7 +300,7 @@
       & textarea,
       & input::placeholder,
       & textarea::placeholder {
-        background-color: rgba(37, 37, 37, 0);
+        background-color: rgba(37, 37, 37, 0.5);
         border-bottom: 1px solid white;
       }
     }

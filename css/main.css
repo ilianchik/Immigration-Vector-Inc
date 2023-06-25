@@ -2417,7 +2417,7 @@ html {
     transition: transform 2s, opacity 2s, -webkit-transform 2s;
   }
   .get_in_touch__form input, .get_in_touch__form select, .get_in_touch__form option, .get_in_touch__form textarea, .get_in_touch__form input::placeholder, .get_in_touch__form textarea::placeholder {
-    background-color: rgba(37, 37, 37, 0);
+    background-color: rgba(37, 37, 37, 0.5);
     border-bottom: 1px solid white;
   }
   .get_in_touch.closed > .get_in_touch__form {
