@@ -23,10 +23,10 @@
     font-family: "ducine";
     font-size: 1.8rem;
     position: relative;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
+    // -webkit-writing-mode: vertical-rl;
+    // -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl !important;
+    text-orientation: upright !important;
     cursor: pointer;
 
     cursor: pointer;
@@ -40,7 +40,7 @@
       color: black;
       content: "|";
       position: absolute;
-      left: -50%; /* Position from the left center */
+      left: -40%; /* Position from the left center */
       top: 50%; /* Position from the top center */
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -50,17 +50,18 @@
       ); /* Rotate and center the pseudo-elements */
     }
     &.closed::before {
-      left: -75%;
+      left: -55%;
     }
     &.opened::after {
       -webkit-transform: translate(-59%, -50%) rotate(-45deg);
       -ms-transform: translate(-59%, -50%) rotate(-45deg);
-      transform: translate(-59%, -50%) rotate(-45deg);
+      // transform: translate(-59%, -50%) rotate(-45deg);
+      transform: translate(-144%, -50%) rotate(-45deg);
     }
     &.opened::before {
       -webkit-transform: translate(-41%, -50%) rotate(45deg);
       -ms-transform: translate(-41%, -50%) rotate(45deg);
-      transform: translate(-41%, -50%) rotate(45deg);
+      transform: translate(-20%, -50%) rotate(45deg);
     }
   }
 
